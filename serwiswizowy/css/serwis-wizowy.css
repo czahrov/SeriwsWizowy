@@ -1,0 +1,2852 @@
+@charset "UTF-8";
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031}}
+* {
+  cursor: default;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000035}}
+a,
+a * {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000310}}
+body {
+  font-size: 20px;
+  color: #212529;
+  background: #f3f3f3;
+  font-family: 'Mukta Mahee', 'Times New Roman', serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000318}}
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000323}}
+p a {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000327}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000337}}
+a {
+  color: #212529;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000344}}
+a:focus,
+a:hover {
+  color: #0085A1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000349}}
+blockquote {
+  font-style: italic;
+  color: #868e96;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000354}}
+.section-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000360}}
+.caption {
+  font-size: 14px;
+  font-style: italic;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000371}}
+::-moz-selection {
+  color: #fff;
+  background: #8b425f;
+  text-shadow: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000377}}
+::-moz-selection {
+  color: #fff;
+  background: #8b425f;
+  text-shadow: none;
+}
+::selection {
+  color: #fff;
+  background: #8b425f;
+  text-shadow: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000383}}
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000388}}
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\0000393}}
+#mainNav {
+  position: absolute;
+  border-bottom: 1px solid #e9ecef;
+  background-color: white;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003101}}
+#mainNav .navbar-brand {
+  font-weight: 400;
+  color: #343a40;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003107}}
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003116}}
+#mainNav .navbar-nav > li.nav-item > a {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003124}}
+  #mainNav {
+    border-bottom: 1px solid transparent;
+    background: #fff;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003129}}
+  #mainNav .navbar-brand {
+    padding: 10px 20px;
+    color: #3b3b3b;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003134}}
+  #mainNav .navbar-brand:focus,
+  #mainNav .navbar-brand:hover {
+    color: #3b3b3b;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003139}}
+  #mainNav .navbar-nav > li.nav-item > a {
+    padding: 10px 20px;
+    color: #3b3b3b;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003144}}
+  #mainNav .navbar-nav > li.nav-item > a.active {
+    background: #8b425f;
+    color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 0px solid #000000;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003153}}
+  #mainNav .navbar-nav > li.nav-item > a.nav-button {
+    background: #8b425f;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 0px solid #000000;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003165}}
+  #mainNav .navbar-nav > li.nav-item > a:focus,
+  #mainNav .navbar-nav > li.nav-item > a:hover {
+    color: #8b425f;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003170}}
+  #mainNav .navbar-nav > li.nav-item > a.nav-button:focus,
+  #mainNav .navbar-nav > li.nav-item > a.nav-button:hover {
+    color: #fff;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003175}}
+  #mainNav .navbar-nav > li.nav-item > a.active:focus,
+  #mainNav .navbar-nav > li.nav-item > a.active:hover {
+    color: #fff;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003180}}
+  li.nav-button {
+    padding: 10px 20px;
+    list-style: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003184}}
+  li.nav-button > a.nav-button {
+    font-size: 12px;
+    font-weight: 500;
+    background: #8b425f;
+    color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 0px solid #000000;
+    text-transform: uppercase;
+  }
+}
+@media only screen and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003198}}
+  #mainNav {
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003211}}
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -67px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: white;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003222}}
+  #mainNav.is-fixed .navbar-brand {
+    color: #212529;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003226}}
+  #mainNav.is-fixed .navbar-brand:focus,
+  #mainNav.is-fixed .navbar-brand:hover {
+    color: #3b3b3b;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003231}}
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #3b3b3b;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003235}}
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a.active {
+    color: #fff;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003239}}
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a.nav-button {
+    color: #fff;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003243}}
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus,
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #8b425f;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003248}}
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a.active:focus,
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a.active:hover {
+    color: #fff;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003253}}
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a.active:focus,
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a.nav-button:hover {
+    color: #fff;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003258}}
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    border-bottom: 1px solid #f3f3f3;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003270}}
+header.masthead {
+  position: relative;
+  margin-bottom: 40px;
+  height: 100vh;
+  min-height: 600px;
+  background-image: url("../img/splash.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003280}}
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #444444;
+  opacity: 0.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003290}}
+header.masthead > .bgvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003297}}
+  header.masthead > .bgvideo {
+    width: 100%;
+  }
+}
+@media (max-aspect-ratio: 16 / 9) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003303}}
+  header.masthead > .bgvideo {
+    height: 100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003308}}
+header.masthead > .container {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  min-height: 490px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003313}}
+header.masthead > .container > .introduction {
+  margin-bottom: 120px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003317}}
+header.masthead .page-heading,
+header.masthead .post-heading {
+  padding: 150px 0 150px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003324}}
+  header.masthead .page-heading,
+  header.masthead .post-heading {
+    padding: 175px 0 85px 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003330}}
+header.masthead .site-heading {
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003334}}
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003339}}
+header.masthead .page-heading h1,
+header.masthead .site-heading h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003345}}
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003356}}
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 60px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003362}}
+header.masthead .post-heading h1 {
+  font-size: 35px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003366}}
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+  line-height: 1.1;
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003372}}
+header.masthead .post-heading .subheading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003379}}
+header.masthead .post-heading .meta {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003386}}
+header.masthead .post-heading .meta a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003391}}
+  header.masthead .post-heading h1 {
+    font-size: 55px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003394}}
+  header.masthead .post-heading .subheading {
+    font-size: 30px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003399}}
+.post-preview > a {
+  color: #212529;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003403}}
+.post-preview > a:focus,
+.post-preview > a:hover {
+  text-decoration: none;
+  color: #0085A1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003409}}
+.post-preview > a > .post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003415}}
+.post-preview > a > .post-subtitle {
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003420}}
+.post-preview > .post-meta {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+  color: #868e96;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003427}}
+.post-preview > .post-meta > a {
+  text-decoration: none;
+  color: #212529;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003432}}
+.post-preview > .post-meta > a:focus,
+.post-preview > .post-meta > a:hover {
+  text-decoration: underline;
+  color: #0085A1;
+}
+
+@media only screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003439}}
+  .post-preview > a > .post-title {
+    font-size: 36px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003444}}
+.floating-label-form-group {
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #dee2e6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003452}}
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  resize: none;
+  border: none;
+  border-radius: 0;
+  background: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003466}}
+.floating-label-form-group input::-webkit-input-placeholder,
+.floating-label-form-group textarea::-webkit-input-placeholder {
+  color: #868e96;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003472}}
+.floating-label-form-group label {
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  position: relative;
+  z-index: 0;
+  top: 2em;
+  display: block;
+  margin: 0;
+  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
+  transition: top 0.3s ease, opacity 0.3s ease;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003489}}
+.floating-label-form-group .help-block {
+  margin: 15px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003493}}
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003498}}
+.floating-label-form-group-with-focus label {
+  color: #0085A1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003502}}
+form .form-group:first-child .floating-label-form-group {
+  border-top: 1px solid #dee2e6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003506}}
+footer {
+  padding: 50px 0 65px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003510}}
+footer .list-inline {
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003515}}
+footer .copyright {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003521}}
+.btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003531}}
+.btn-primary {
+  background-color: #0085A1;
+  border-color: #0085A1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003536}}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #fff;
+  background-color: #00657b !important;
+  border-color: #00657b !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003544}}
+.btn-lg {
+  font-size: 16px;
+  padding: 25px 35px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003549}}
+.steps-home {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-bottom: solid 30px #f3f3f3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003556}}
+.step1-home {
+  padding-left: 15px;
+  width: 25%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-right: 1px solid #b2afb6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003564}}
+.step1-home:last-child {
+  border-right: 1px solid transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003568}}
+.step1-home > p {
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  max-width: 60%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003576}}
+.icon-info {
+  margin-right: 5%;
+  float: left;
+  margin-top: 24px;
+  margin-left: 6.4%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003583}}
+.introduction p {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003590}}
+.introduction span {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003597}}
+.visa {
+  margin-top: 50px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003602}}
+.visa-select {
+  border: 1px solid #842a4e;
+  width: 52%;
+  background-color: rgba(132, 42, 78, 0.8);
+  color: #fff;
+  font-size: 16px;
+  padding: 17px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003611}}
+.visa-btn {
+  border: 1px solid #842a4e;
+  background-color: rgba(132, 42, 78, 0.8);
+  color: #fff;
+  font-size: 14px;
+  padding: 17px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003621}}
+.arrow-banner {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003627}}
+.arrow-steps {
+  text-align: center;
+  color: #3b3b3b;
+  position: absolute;
+  background: #f3f3f3;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  line-height: 3;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003640}}
+.view-steps {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Sekcja pod sliderem */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003648}}
+.large {
+  height: 410px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003652}}
+.half {
+  height: 240px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003656}}
+.visa-section1 .ask-expert {
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003662}}
+.visa-section1 .select-country {
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003668}}
+.visa-section1 .client-individual {
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003674}}
+.visa-section1 .client-business {
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003680}}
+.visa-section1 .cell {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003684}}
+.visa-section1 .cell .bg-zoom {
+  margin: 0 -15px;
+  height: 100%;
+  -webkit-transition: -webkit-transform .4s linear;
+  transition: -webkit-transform .4s linear;
+  transition: transform .4s linear;
+  transition: transform .4s linear, -webkit-transform .4s linear;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003693}}
+.visa-section1 .cell:hover .bg-zoom {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003697}}
+.banner-text {
+  padding: 35px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003705}}
+.banner-text-small {
+  padding: 25px;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003713}}
+.banner-text h3,
+.banner-text-small h3 {
+  font-size: 34px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003720}}
+.banner-text h3 > span,
+.banner-text-small h3 > span {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003726}}
+.img-mask-violet {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(132, 42, 78, 0.8);
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003736}}
+.img-mask-dark {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 59, 59, 0.8);
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003746}}
+.banner-text p {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003752}}
+.arrow-button {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  margin-top: -30px;
+  line-height: 2.8;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003769}}
+.cell:hover .arrow-button {
+  opacity: 1.0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003774}}
+.hit-box {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*dlaczego my*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003786}}
+.why-us {
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003790}}
+.why-us-col {
+  background: #fff;
+  padding: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003795}}
+.why-us-photo {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003800}}
+.why-us-text h3 {
+  font-size: 34px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003806}}
+.why-us-text h3::after {
+  content: '';
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 5%;
+  right: 0;
+  left: 40%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003815}}
+.why-us:hover h3::after {
+  content: '';
+  border-bottom: 1px solid #8b425f;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003821}}
+.why-us-text p {
+  font-size: 15px;
+  color: #3b3b3b;
+  font-weight: 300;
+  padding-right: 35px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003828}}
+.why-us-text p.icon-list {
+  font-size: 21px;
+  color: #3b3b3b;
+  font-weight: 600;
+  padding-right: 35px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003835}}
+.why-us-text img {
+  width: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003839}}
+.why-us-text p.icon-list:last-child {
+  margin: 0;
+}
+
+/*testymoniale*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003846}}
+.arrows-comment {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 10px 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003853}}
+i.arrow-banner-comment-left {
+  color: #3b3b3b;
+  font-size: 30px;
+  margin-right: 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003859}}
+i.arrow-comment-slider-right {
+  color: #3b3b3b;
+  font-size: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003864}}
+.testymonial {
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003870}}
+.arrow-button-slider {
+  text-align: center;
+  color: #3b3b3b;
+  bottom: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: 2px solid #3b3b3b;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 2.4;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003884}}
+.arrow-button-slider:hover {
+  text-align: center;
+  color: #fff;
+  bottom: 1rem;
+  right: 1rem;
+  background: #8b425f;
+  border: 2px solid #8b425f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 2.4;
+  z-index: 10;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003901}}
+.testymonial-single::before {
+  content: '';
+  background: url("../img/ikony/comment.png");
+  width: 84px;
+  height: 73px;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003909}}
+.testymonial-single p {
+  font-size: 15px;
+  color: #3b3b3b;
+  font-weight: 300;
+  margin: 0;
+  padding: 12px 65px 0px 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003917}}
+.testymonial-single span {
+  font-size: 15px;
+  color: #3b3b3b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*Join us*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003927}}
+.join-us {
+  padding: 60px 0;
+  margin-top: 40px;
+  text-align: center;
+  background: #8b425f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003933}}
+.join-us a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003941}}
+.join-us h3 {
+  font-size: 34px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003948}}
+.join-us h3 > span {
+  font-weight: 800;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003952}}
+.join-us p {
+  text-align: center;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/*Footer*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003963}}
+footer {
+  padding: 20px;
+  background: #3b3b3b;
+  height: auto;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003970}}
+.brand-footer {
+  background: url(../img/logo-stopka.png);
+  width: 200px;
+  height: 47px;
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003982}}
+.line {
+  border-bottom: 1px solid red;
+  width: 100%;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\00003988}}
+.arrow-button-footer {
+  text-align: center;
+  color: #7d7d7d;
+  bottom: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: 2px solid #7d7d7d;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 2.4;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031002}}
+.arrow-button-footer:hover {
+  text-align: center;
+  color: #fff;
+  bottom: 1rem;
+  right: 1rem;
+  background: #8b425f;
+  border: 2px solid #8b425f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 2.4;
+  z-index: 10;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031017}}
+span.up {
+  color: #7d7d7d;
+  font-size: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031022}}
+.gotop {
+  position: fixed;
+  padding: 20px;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
+  z-index: 50;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031031}}
+.gotop:not(.open) {
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+
+/* menu footer */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031038}}
+ul.menu-footer {
+  margin: 0px;
+  padding: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031043}}
+.menu-footer li {
+  list-style: none;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031048}}
+li.title-section {
+  color: #8b425f;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031055}}
+.menu-footer a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #7d7d7d;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031064}}
+.nav-button {
+  background: #8b425f;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border: 0px solid #000000;
+  z-index: 20;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031077}}
+.copyright {
+  background: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031081}}
+.copyright p {
+  color: #3b3b3b;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031088}}
+.copyright span a {
+  color: #8b425f;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031094}}
+.arrows-slider {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 10px 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031101}}
+i.arrow-banner-slider-left {
+  color: #3b3b3b;
+  font-size: 30px;
+  margin-right: 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031107}}
+i.arrow-banner-slider-right {
+  color: #3b3b3b;
+  font-size: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031112}}
+.comment_slider {
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031116}}
+.comment_slider .view {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031120}}
+.comment_slider .arrows-comment {
+  position: static;
+  margin: 10px 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031125}}
+.comment_slider .arrows-comment-mobile {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 10px 30px;
+}
+
+/*O firmie*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031135}}
+.breadcrumb {
+  margin-top: 65px;
+  position: relative;
+  background: #f3f3f3;
+  padding: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031142}}
+.breadcrumb h3 {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031146}}
+p.link-bread {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin: 0 70px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031154}}
+header.breadcrumb h3 {
+  display: inline;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031162}}
+.link-bread {
+  position: relative;
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031167}}
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031172}}
+.link-bread::after {
+  left: 100%;
+  width: 50px;
+  margin-left: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031178}}
+.link-bread::after {
+  content: '';
+  position: absolute;
+  top: 31%;
+  height: 2px;
+  background-color: #e2e1e0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031186}}
+.white-page {
+  background: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031190}}
+.page-title {
+  padding: 50px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031194}}
+.page-title h3,
+.offer-title h3,
+.box-single-page h3,
+.service-single h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031203}}
+.offer-single p,
+.service-single p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #3b3b3b;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031211}}
+.offer-single {
+  margin: 0 -15px;
+  border: 1px solid #f4f4f4;
+  position: relative;
+  padding: 90px 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031220}}
+.country-single {
+  margin: 0 20px;
+  border: 1px solid #f4f4f4;
+  position: relative;
+  padding: 20px 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031227}}
+.country-single-content {
+  webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031233}}
+.country-single:hover {
+  background: #f3f3f3;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031238}}
+.country-single:hover .arrow-offer {
+  background-color: #8b425f;
+  color: #fff;
+  border: 2px solid #8b425f;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031245}}
+.country-single:not(:last-child) {
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031249}}
+.offer-single:not(:last-child) {
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031253}}
+.offer-single .box {
+  position: relative;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031258}}
+.arrow-offer {
+  text-align: center;
+  color: #3b3b3b;
+  bottom: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: 2px solid #3b3b3b;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031271}}
+.hit-box-grey {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 20;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031281}}
+.offer-single:hover {
+  background: #f3f3f3;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031286}}
+.offer-single:hover .arrow-offer {
+  background-color: #8b425f;
+  color: #fff;
+  border: 2px solid #8b425f;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031294}}
+  .o-firmie-single .box {
+    padding-top: 110px;
+  }
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031294}}
+  .o-firmie-single .box {
+    padding: 110px 134px 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031305}}
+.o-firmie-single .imgs {
+  padding: 0;
+  margin: 0 -30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031309}}
+.o-firmie-single .imgs > .img {
+  width: 100vw;
+  max-width: 100%;
+  margin: 5px 0;
+  padding: 0 5px;
+  padding: 0;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031305}}
+  .o-firmie-single .imgs {
+    margin: 0 -20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031321}}
+  .o-firmie-single .imgs > .img {
+    padding: 0 20px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031326}}
+.o-firmie-single .accordion {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031329}}
+  .o-firmie-single .accordion a {
+    padding-left: 150px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031334}}
+  .o-firmie-single .accordion a::before, .o-firmie-single .accordion a::after {
+    left: 65px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031345}}
+.o-firmie-single .informacje {
+  padding: 0;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031345}}
+  .o-firmie-single .informacje {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031345}}
+  .o-firmie-single .informacje {
+    margin-left: -150px;
+    margin-right: -120px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031367}}
+.o-firmie-single .title {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031367}}
+  .o-firmie-single .title {
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031367}}
+  .o-firmie-single .title {
+    padding-left: 150px;
+  }
+}
+
+/*Service*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031388}}
+.box-single-page {
+  border: 1px solid #f4f4f4;
+  position: relative;
+  padding: 110px 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031394}}
+.arrow-prev {
+  text-align: center;
+  color: #3b3b3b;
+  bottom: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: 2px solid #3b3b3b;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  line-height: 2.8;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031409}}
+.single-page-content p {
+  margin: 0 0 30px 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031416}}
+.service-single:hover {
+  background: #f3f3f3;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031421}}
+.service-single:hover .arrow-service {
+  background-color: #8b425f;
+  color: #fff;
+  border: 2px solid #8b425f;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+/*UsÃ…â€šugi*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031433}}
+.services {
+  margin: 0 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031437}}
+.service-single {
+  background: transparent;
+  width: 50%;
+  border: 1px solid #f4f4f4;
+  position: relative;
+  padding: 40px 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031445}}
+.arrow-service {
+  color: #3b3b3b;
+  bottom: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: 2px solid #3b3b3b;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+}
+
+/*AKORDEON */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031460}}
+.accordion {
+  margin: 0;
+  border: 1px solid #f4f4f4;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031466}}
+.accordion-contact {
+  width: 100%;
+  margin: 0 50px;
+  border: 1px solid #f4f4f4;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031473}}
+.accordion li {
+  padding: 25px 0;
+  border-bottom: 1px solid #f4f4f4;
+  position: relative;
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031480}}
+.accordion li:hover {
+  background: #f3f3f3;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031485}}
+.accordion li p {
+  display: none;
+  padding: 4px 25px 30px 95px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #3b3b3b;
+  margin: 0;
+  background: #f3f3f3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031495}}
+.accordion a {
+  position: relative;
+  padding: 0 65px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 3;
+  font-size: 25px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031495}}
+  .accordion a {
+    padding: 0 80px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031513}}
+.accordion a::before,
+.accordion a::after {
+  content: '';
+  position: absolute;
+  top: 1.5em;
+  left: 15px;
+  width: 16px;
+  height: 3px;
+  background-color: #3b3b3b;
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031513}}
+  .accordion a::before,
+  .accordion a::after {
+    left: 35px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031532}}
+.accordion a::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031536}}
+.accordion li.active a::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031540}}
+.accordion p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 2;
+  padding: 10px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031548}}
+.accordion .active {
+  background: #f3f3f3;
+}
+
+/* KONTAKT */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031555}}
+.violet-bg {
+  background: #8b425f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031559}}
+.violet-bg .page-title h3 {
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031563}}
+.violet-bg .content p,
+.violet-bg .content a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031572}}
+.violet-bg .content h4 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031581}}
+.fast-contact {
+  padding: 20px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031585}}
+.violet-bg .content {
+  margin: 30px -15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031589}}
+.contact-icon {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031593}}
+.contact-content {
+  padding-left: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031597}}
+.line-title {
+  border-bottom: 1px solid #f4f4f4;
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031602}}
+.contact-form-section-title {
+  border-left: 1px solid #f4f4f4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031606}}
+.contact-section-title p {
+  font-size: 15px;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031611}}
+.msg-button {
+  padding: 0 15px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031616}}
+.msg-button p {
+  display: inline-block;
+  font-size: 13px;
+  color: #3b3b3b;
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031623}}
+.arrow-send {
+  text-align: center;
+  color: #3b3b3b;
+  background: transparent;
+  border: 2px solid #3b3b3b;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 2.8;
+  z-index: 10;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031637}}
+.msg-button:hover .arrow-send {
+  color: #fff;
+  background: #8b425f;
+  border: 2px solid #8b425f;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031644}}
+.msg-button:hover p {
+  color: #8b425f;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031649}}
+.google-map {
+  position: relative;
+  background: #f3f3f3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031654}}
+.google-map-com {
+  z-index: 20;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031661}}
+.mapa > iframe {
+  width: 100%;
+  max-width: 1295px;
+}
+
+/*KRAJE*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031670}}
+.kraje #country-filter {
+  width: 400px;
+  max-width: 90%;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031682}}
+span.alph {
+  font-weight: 400;
+  color: #3b3b3b;
+  font-size: 17px;
+}
+
+/* USŁUGI */
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031697}}
+  .uslugi .service-single:nth-child(even) {
+    border-left: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031702}}
+  .uslugi .service-single:nth-child(n+3) {
+    border-top: none;
+  }
+}
+
+/* WIZA */
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031717}}
+  .wiza .main {
+    padding: 0 20px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031728}}
+.wiza .view-steps .step1-home {
+  min-height: 120px;
+  padding: 10px;
+  border: solid #f4f4f4;
+  border-width: 0 1px 1px;
+  opacity: 0.4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031735}}
+.wiza .view-steps .step1-home > .icon-info {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031748}}
+.wiza .view-steps .step1-home > p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031755}}
+.wiza .view-steps .step1-home.kraj > .icon-info {
+  background-image: url(../img/ikony/icon_1.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031760}}
+.wiza .view-steps .step1-home.kraj.active > .icon-info {
+  background-image: url(../img/ikony/icon_1_white.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031769}}
+.wiza .view-steps .step1-home.opcje > .icon-info {
+  background-image: url(../img/ikony/icon_2.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031774}}
+.wiza .view-steps .step1-home.opcje.active > .icon-info {
+  background-image: url(../img/ikony/icon_2_white.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031783}}
+.wiza .view-steps .step1-home.wniosek > .icon-info {
+  background-image: url(../img/ikony/icon_3.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031788}}
+.wiza .view-steps .step1-home.wniosek.active > .icon-info {
+  background-image: url(../img/ikony/icon_3_white.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031797}}
+.wiza .view-steps .step1-home.gotowe > .icon-info {
+  background-image: url(../img/ikony/icon_4.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031802}}
+.wiza .view-steps .step1-home.gotowe.active > .icon-info {
+  background-image: url(../img/ikony/icon_4_white.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031809}}
+.wiza .view-steps .step1-home:not(:first-child) {
+  border-left: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031814}}
+.wiza .view-steps .step1-home:last-child {
+  border-right: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031819}}
+.wiza .view-steps .step1-home.active {
+  background-color: #8b425f;
+  color: #fff;
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031836}}
+.wiza.wniosek .main .side .box-wiza {
+  position: relative;
+  border: solid 1px #f3f3f3;
+  padding-top: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031841}}
+.wiza.wniosek .main .side .box-wiza .top {
+  padding: 40px 0 10px 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031844}}
+.wiza.wniosek .main .side .box-wiza .top > * {
+  position: relative;
+  margin: 50px 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031851}}
+.wiza.wniosek .main .side .box-wiza .top > *::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -32px;
+  bottom: 0;
+  width: 2px;
+  background-color: #8b425f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031868}}
+.wiza.wniosek .main .side .box-wiza .mid .wiersz {
+  min-height: 60px;
+  border: solid #f3f3f3;
+  border-width: 1px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031873}}
+.wiza.wniosek .main .side .box-wiza .mid .wiersz .name {
+  padding-left: 30px;
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031879}}
+.wiza.wniosek .main .side .box-wiza .mid .wiersz .cost {
+  width: 90px;
+  background-color: #f3f3f3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031883}}
+.wiza.wniosek .main .side .box-wiza .mid .wiersz .cost::after {
+  padding-left: 5px;
+  content: 'zł';
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031893}}
+.wiza.wniosek .main .side .box-wiza .mid .wiersz.total .name {
+  color: #8b425f;
+  font-size: 21px;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031901}}
+.wiza.wniosek .main .side .box-wiza .mid .wiersz.total .cost {
+  color: #fff;
+  background-color: #8b425f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031909}}
+.wiza.wniosek .main .side .box-wiza .mid .wiersz:not(:first-child) {
+  border-top: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031924}}
+.wiza.wniosek .main .box .page-title {
+  padding-left: 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031934}}
+.wiza.wniosek .main .box .opcje > .title {
+  padding: 70px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031939}}
+.wiza.wniosek .main .box .opcje form {
+  margin: 0 -15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031944}}
+.wiza.wniosek .main .box .opcje form .opt-single label {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031947}}
+.wiza.wniosek .main .box .opcje form .opt-single label .checkbox-custom {
+  width: 30px;
+  height: 30px;
+  background-color: #f6f6f6;
+  border: solid 1px #dedede;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031954}}
+.wiza.wniosek .main .box .opcje form .opt-single label .checkbox-custom .icon {
+  position: relative;
+  opacity: 0;
+  top: -5px;
+  font-size: 20px;
+  -webkit-transition-property: opacity, top;
+  transition-property: opacity, top;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031966}}
+.wiza.wniosek .main .box .opcje form .opt-single label .text {
+  font-size: 16px;
+  padding-left: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031972}}
+.wiza.wniosek .main .box .opcje form .opt-single label .help {
+  margin-left: 10px;
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031976}}
+.wiza.wniosek .main .box .opcje form .opt-single label .help .hint {
+  position: absolute;
+  padding: 10px;
+  min-width: 300px;
+  top: 100%;
+  left: 50%;
+  background-color: #f6f6f6;
+  border: solid 1px #dedede;
+  font-size: 16px;
+  z-index: 50;
+  text-transform: none;
+  line-height: 30px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031994}}
+.wiza.wniosek .main .box .opcje form .opt-single label .help:not(:hover) .hint {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032009}}
+.wiza.wniosek .main .box .opcje form .opt-single.sub label .checkbox-custom {
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032014}}
+.wiza.wniosek .main .box .opcje form .opt-single.sub label .text {
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032023}}
+.wiza.wniosek .main .box .opcje form .opt-single input:checked + label .icon {
+  opacity: 1;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032029}}
+.wiza.wniosek .main .box .opcje form .opt-single input:disabled + label .icon {
+  color: silver;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032038}}
+.wiza.wniosek .main .box .opcje .total {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 30px;
+  background-color: #8b425f;
+  color: #fff;
+  z-index: 50;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032055}}
+.wiza.wniosek .main .box .opcje .total .price::after {
+  content: 'zł';
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000031932}}
+  .wiza.wniosek .main .box .opcje {
+    padding: 60px 50px 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032071}}
+.wiza.wniosek .main .box .informacje {
+  padding: 0;
+  margin-top: 40px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032080}}
+.wiza.wniosek .main .box .informacje .page-title {
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032080}}
+  .wiza.wniosek .main .box .informacje .page-title {
+    padding-left: 80px;
+  }
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032071}}
+  .wiza.wniosek .main .box .informacje {
+    margin-left: -30px;
+    margin-right: 0px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032103}}
+.wiza.wniosek .main .box .uwaga .title {
+  padding: 20px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032107}}
+.wiza.wniosek .main .box .uwaga .text {
+  margin: 0 -15px;
+  padding: 30px 15px;
+  background-color: #f6f6f6;
+  border: solid 1px #dedede;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032107}}
+  .wiza.wniosek .main .box .uwaga .text {
+    margin: initial;
+    padding: 30px 35px;
+  }
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032101}}
+  .wiza.wniosek .main .box .uwaga {
+    padding: 0 20px 0 50px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032131}}
+.wiza.wniosek .main .box .opis .title {
+  padding: 20px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032135}}
+.wiza.wniosek .main .box .opis .text {
+  margin: 0 -15px;
+  padding: 30px 15px;
+  background-color: #f6f6f6;
+  border: solid 1px #dedede;
+  font-size: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032142}}
+.wiza.wniosek .main .box .opis .text ol, .wiza.wniosek .main .box .opis .text ul {
+  list-style-position: outside;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032145}}
+.wiza.wniosek .main .box .opis .text ol li, .wiza.wniosek .main .box .opis .text ul li {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032148}}
+.wiza.wniosek .main .box .opis .text ol li div, .wiza.wniosek .main .box .opis .text ul li div {
+  padding: 10px 0;
+  font-weight: initial;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032135}}
+  .wiza.wniosek .main .box .opis .text {
+    margin: initial;
+    padding: 30px 35px;
+  }
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032129}}
+  .wiza.wniosek .main .box .opis {
+    padding: 0 20px 0 50px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032182}}
+.wiza.formularz .box-single-page h3 {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032185}}
+.wiza.formularz .box-single-page h3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -32px;
+  bottom: 0;
+  width: 2px;
+  background-color: #8b425f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032200}}
+.wiza.formularz .box {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin: 0 -15px;
+  max-width: 710px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032212}}
+  .wiza.formularz .box .text {
+    padding-top: 40px;
+  }
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032200}}
+  .wiza.formularz .box {
+    padding: 70px 30px;
+    margin: auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032229}}
+.wiza.formularz .belka {
+  min-height: 116px;
+  padding: 10px 50px;
+  background-color: #8b425f;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032239}}
+.wiza.formularz .belka .sep {
+  margin: 0 50px;
+  height: 2px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #ac3d68;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032253}}
+.wiza.formularz form {
+  padding: 30px 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032257}}
+.wiza.formularz form .cell {
+  margin-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032260}}
+.wiza.formularz form .cell label {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032263}}
+.wiza.formularz form .cell label .help {
+  margin-left: 10px;
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032267}}
+.wiza.formularz form .cell label .help .hint {
+  position: absolute;
+  padding: 10px;
+  min-width: 300px;
+  top: 100%;
+  left: 50%;
+  background-color: #f6f6f6;
+  border: solid 1px #dedede;
+  font-size: 16px;
+  z-index: 50;
+  text-transform: none;
+  line-height: 30px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032285}}
+.wiza.formularz form .cell label .help:not(:hover) .hint {
+  display: none;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032253}}
+  .wiza.formularz form {
+    padding: 30px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032305}}
+.wiza.formularz .opis {
+  padding-bottom: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032308}}
+.wiza.formularz .opis > *:first-child {
+  padding-left: 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032308}}
+  .wiza.formularz .opis > *:first-child {
+    padding-left: 30px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032320}}
+.wiza.formularz .opis .text {
+  padding: 30px;
+  background-color: #f6f6f6;
+  border: solid 1px #dedede;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032305}}
+  .wiza.formularz .opis {
+    padding: 0 50px 40px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032335}}
+.wiza.formularz .head {
+  position: relative;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding-left: 30px;
+  margin-bottom: 40px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032343}}
+.wiza.formularz .head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #8b425f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032358}}
+.wiza.formularz .msg-button .msg-btn {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032363}}
+.wiza.formularz .msg-button .fa {
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032376}}
+.wiza.gotowe .box-single-page h3 {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032379}}
+.wiza.gotowe .box-single-page h3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -32px;
+  bottom: 0;
+  width: 2px;
+  background-color: #8b425f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032394}}
+.wiza.gotowe .box {
+  padding: 70px 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032400}}
+.wiza.gotowe .box .head {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032405}}
+.wiza.gotowe .box .head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #8b425f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032418}}
+.wiza.gotowe .box .content {
+  max-width: 710px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032421}}
+.wiza.gotowe .box .content b {
+  color: #8f4664;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032428}}
+.wiza.gotowe .box .kontakt {
+  padding-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032431}}
+.wiza.gotowe .box .kontakt .img {
+  margin-right: 30px;
+}
+
+/*GUI*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032446}}
+.form-single {
+  padding-bottom: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032450}}
+label {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032457}}
+input,
+select,
+textarea {
+  display: block;
+  height: 40px;
+  background: #f6f6f6;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  color: #3b3b3b;
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032470}}
+textarea {
+  min-height: 200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032474}}
+textarea:focus,
+input:focus {
+  outline: none !important;
+  border: 1px solid #8b425f;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032481}}
+.btn_hover {
+  -webkit-transition-property: background, font, border;
+  transition-property: background, font, border;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032485}}
+.btn_hover:hover {
+  background-color: #8b425f;
+  border-color: #8b425f;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032496}}
+.fpslider .fpslider_view {
+  padding: 0;
+}
+
+/*RWD*/
+@media (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032506}}
+  .visa-section1 {
+    margin: 0 -15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032509}}
+  .visa-section1 .ask-expert {
+    padding: 10px 0px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032512}}
+  .visa-section1 .select-country {
+    padding: 10px 0px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032515}}
+  .visa-section1 .client-individual {
+    padding: 10px 0px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032518}}
+  .visa-section1 .client-business {
+    padding: 10px 0px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032521}}
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032524}}
+  .visa-select {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032527}}
+  .step1-home {
+    background-color: white;
+    border-right: 0px;
+    min-height: 150px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032532}}
+  .icon-list img {
+    margin-bottom: 5px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032535}}
+  .why-us {
+    padding: 10px 0px 10px 0px;
+    margin: 0 -15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032539}}
+  .offer-single {
+    padding: 0px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032542}}
+  .offer-single .title {
+    margin: 28px 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032545}}
+  .offer-single .title h3 {
+    position: relative;
+    padding-left: 30px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032549}}
+  .offer-single .title h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-left: solid 1px #8b4260;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032557}}
+  .offer-single .content {
+    margin-bottom: 35px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032560}}
+  .offer-single .arrow {
+    margin-bottom: 30px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032563}}
+  .services {
+    margin: 0 -15px;
+    border: 1px solid #f4f4f4;
+    position: relative;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032568}}
+  .service-single {
+    padding: 40px 0px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032571}}
+  .accordion a {
+    font-size: 18px;
+    line-height: 2;
+    text-indent: 0px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032576}}
+  .accordion a::before,
+  .accordion a::after {
+    top: 1em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032583}}
+  .accordion-contact {
+    width: auto;
+    margin: 0 -15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032587}}
+  .contact-form-section-title {
+    border-left: 1px solid transparent;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032591}}
+  .fast-contact {
+    padding: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032594}}
+  .country-single {
+    margin: 0 -15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032597}}
+  form {
+    margin: 0 -15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032600}}
+  .section-title {
+    margin-bottom: -80px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032603}}
+  .mapa > iframe {
+    margin: 0 -15px;
+    width: 100%;
+    width: 100vw;
+    width: calc( 100% + 30px);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032612}}
+header.masthead .page-heading,
+header.masthead .post-heading {
+  padding: 135px 0 67px;
+}
+
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032618}}
+  .visa-section1 {
+    margin: initial;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032621}}
+  .visa-section1 .ask-expert {
+    padding: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032624}}
+  .visa-section1 .select-country {
+    padding: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032627}}
+  .icon-list img {
+    margin-right: 30px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032630}}
+  .visa-section1 .client-individual {
+    padding: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032633}}
+  .visa-section1 .client-business {
+    padding: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032636}}
+  .page-title {
+    padding: 50px 0 50px 15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032639}}
+  .offer-single {
+    margin: 0 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032642}}
+  .offer-single .title {
+    border-left: solid 1px #8b4260;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032645}}
+  .breadcrumb {
+    padding: 15px 30px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032648}}
+  .violet-bg .content {
+    margin: 30px 0px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032651}}
+  header.masthead > .container {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032654}}
+  header.masthead > .container > .introduction {
+    margin-bottom: 300px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032660}}
+  .informacje .accordion {
+    margin: 0 15px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032665}}
+  .informacje .accordion li p {
+    position: relative;
+    padding: 0 24px;
+    margin: 40px 0 40px 80px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032670}}
+  .informacje .accordion li p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #8b4260;
+  }
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032695}}
+  .large {
+    height: 500px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032698}}
+  .half {
+    height: 250px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032701}}
+  .contact-content {
+    padding-left: 30px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032704}}
+  .google-map {
+    margin: 0px 15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032707}}
+  header.masthead > .container {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032710}}
+  header.masthead > .container > .introduction {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032716}}
+  .why-us-text h3::after {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032719}}
+  .why-us-text p {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032723}}
+  .why-us-text p.icon-list {
+    padding-right: 15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032726}}
+  .service-single {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032729}}
+  .accordion li p {
+    padding: 4px 25px 30px 80px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032732}}
+  .service-single .content {
+    margin-bottom: 35px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032735}}
+  #mainNav .navbar-nav > li.nav-item > a {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032742}}
+  .nav-link {
+    margin-top: 15px;
+    display: block;
+    padding: 0.6rem 1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032747}}
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #3b3b3b;
+    background: #f3f3f3;
+    font-weight: 500;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032752}}
+  .navbar-collapse {
+    margin: 0 -20px;
+  }
+}
+@media (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032760}}
+  .comment_slider {
+    margin: 0 -15px;
+    padding: 30px 0 80px;
+    background-color: #fff;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/Praca\/Poligon\/serwiswizowy\/themes\/serwiswizowy\/css\/serwis-wizowy\.scss}line{font-family:\000032768}}
+  .informacje .accordion li p {
+    padding: 30px 15px 40px;
+  }
+}

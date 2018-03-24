@@ -1,0 +1,4 @@
+media/
+fonts/
+*.min.*
+test.php
