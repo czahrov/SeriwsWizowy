@@ -1,7 +1,7 @@
 <?php
 
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'widgets' );
+// add_theme_support( 'post-thumbnails' );
+// add_theme_support( 'widgets' );
 
 register_nav_menu( 'main-menu', 'Menu główne' );
 register_nav_menu( 'footer-1', 'Stopka, slot 1' );

@@ -1,3 +1,4 @@
+<?php printBreadcrumb(); ?>
 <div class="white-page informacje">
 <div class="container">
 	<div class="page-title">
@@ -5,39 +6,16 @@
 	</div>
 	<ul class="accordion">
 		<?php
-			$pytania = array(
-				array(
-					'title' => 'Ile kosztuje wiza do Chin',
-					'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.'
-				),
-				array(
-					'title' => 'Jakie dokumenty będą potrzebne, aby otrzymać wizę?',
-					'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.'
-				),
-				array(
-					'title' => 'Czy wizę można włączyć do kosztów firmy?',
-					'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.'
-				),
-				array(
-					'title' => 'Ile kosztuje wiza do Chin',
-					'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.'
-				),
-				array(
-					'title' => 'Jakie dokumenty będą potrzebne, aby otrzymać wizę?',
-					'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.'
-				),
-				array(
-					'title' => 'Czy wizę można włączyć do kosztów firmy?',
-					'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.'
-				),
-				
-			);
+			$informacje = get_post_meta( get_post()->ID, 'informacje', true );
 			
-			foreach( $pytania as $pytanie ):
+			foreach( explode( "\n", trim( $informacje ) ) as $line ):
 		?>
 		<li class='fp_slidein'>
-			<a><?php echo $pytanie[ 'title' ]; ?></a>
-			<p><?php echo $pytanie[ 'content' ]; ?></p>
+			<?php
+				$part = explode( "|", $line );
+			?>
+			<a><?php echo $part[ 0 ]; ?></a>
+			<p><?php echo $part[ 1 ]; ?></p>
 		</li>
 		<?php endforeach; ?>
 	</ul>

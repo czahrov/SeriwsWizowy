@@ -1,3 +1,4 @@
+<?php printBreadcrumb(); ?>
 <div class="white-page uslugi">
 <div class="container">
 	<div class="page-title">
@@ -18,7 +19,15 @@
 				<h3><?php echo $strona->post_title; ?></h3>
 			</div>
 			<div class="content col-12 col-md-7">
-				Lorem ipsum
+			<!--
+			-->
+				<?php
+					$pattern = "~(?:\S+\s+){0,20}~";
+					preg_match( $pattern, $strona->post_content, $match );
+					// print_r( $match );
+					echo $match[0] . "[...]";
+					
+				?>
 			</div>
 			<div class="arrow col-12 col-md align-items-top justify-content-end justify-content-md-right d-flex">
 				<i class="fa fa-angle-right fa-1x arrow-service d-flex align-items-center justify-content-center" aria-hidden="true"></i>

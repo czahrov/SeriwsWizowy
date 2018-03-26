@@ -1,3 +1,4 @@
+<?php printBreadcrumb(); ?>
 <div class="white-page kontakt">
 	<div class="container">
 		<div class="page-title">
@@ -118,6 +119,10 @@
 			</div>
 			<!-- / page-title col-12 col-md-3 -->
 		</div>
+		<?php
+			$faq = get_post_meta( get_post()->ID, 'faq', true );
+			if( !empty( $faq ) ):
+		?>
 		<div class="box d-flex justify-content-between flex-wrap">
 			<div class="section-title page-title col-12 col-md-3 contact-section-title">
 				<h3>FaQ</h3>
@@ -126,26 +131,21 @@
 			<!-- / page-title col-12 col-md-3 -->
 			<div class="page-title col-12 col-md-9 contact-form-section-title  d-flex align-items-center">
 				<ul class="accordion accordion-contact">
+					<?php foreach( explode( "\n", trim( $faq ) ) as $line ): ?>
 					<li>
-						<a>Ile kosztuje wiza do Chin</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.</p>
+						<?php
+							$part = explode( "|", $line );
+						?>
+						<a><?php echo $part[ 0 ]; ?></a>
+						<p><?php echo $part[ 1 ]; ?></p>
 					</li>
-					<li>
-						<a>Jakie dokumenty będą potrzebne, aby otrzymać wizę?</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.</p>
-					</li>
-					<li>
-						<a>Czy wizę można włączyć do kosztów firmy?</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.</p>
-					</li>
-					<li>
-						<a>Czy wizę można włączyć do kosztów firmy?</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas.</p>
-					</li>
+					<?php endforeach; ?>
+					
 				</ul>
 				<!-- / accordion -->
 			</div>
 			<!-- / page-title col-12 col-md-3 -->
 		</div>
+		<?php endif; ?>
 	</div>
 	<!-- / container -->

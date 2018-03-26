@@ -1689,6 +1689,11 @@ span.alph {
 .wiza.wniosek .main .side .box-wiza .mid .wiersz:not(:first-child) {
   border-top: none;
 }
+.wiza.wniosek .main .side .box-wiza .mid .wiersz[hidden] {
+  height: 0;
+  min-height: initial;
+  overflow: hidden;
+}
 .wiza.wniosek .main .box .page-title {
   padding-left: 0;
   font-size: 25px;
