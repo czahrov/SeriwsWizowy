@@ -2524,24 +2524,17 @@ body.adminbar #mainNav {
   }
 }
 
-header.masthead {
-  padding-bottom: 150px;
-  height: calc( 100vh - 60px );
-}
-header.masthead > .container {
-  min-height: 350px;
-}
 header.masthead > .container > .introduction {
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-  header.masthead > .container > .introduction {
-    margin-bottom: 90px;
-  }
+  margin-bottom: 160px;
 }
 @media (min-width: 768px) {
-  header.masthead > .container {
-    min-height: 500px;
+  header.masthead > .container > .introduction {
+    margin-bottom: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead > .container > .introduction {
+    margin-bottom: 160px;
   }
 }
 header.breadcrumb a {
