@@ -212,3 +212,294 @@ function printBreadcrumb(){
 	
 }
 
+// formularz z opcjami do wizy
+function genWizaOpts(){
+	$country = get_post()->post_title;
+	$include = __DIR__ . "/cennik/{$country}.php";
+	if( file_exists( $include ) ){
+		include $include;
+		
+		// OPCJA
+		foreach( $data as $seg_num => $segment ){
+			$seg_data = array_merge(
+				array(
+					'name' => $segment[ 'title' ],
+					'value' => $segment[ 'title' ],
+					'opts_name' => $segment[ 'title' ] . "-opts",
+					'hint' => '',
+					'type' => 'checkbox',
+					'required' => false,
+					
+				),
+				$segment
+			);
+			
+			if( !empty( $seg_data[ 'hint' ] ) ){
+				$hint = sprintf(
+					'<div class="help fa fa-question-circle-o">
+							<div class="hint">%s</div>
+							
+						</div>',
+					$seg_data[ 'hint' ]
+					
+				);
+				
+			}
+			else{
+				$hint = '';
+				
+			}
+			
+			printf(
+				'<div class="opt-single col-12">
+					<input id="opt%u" class="" type="%s" name="%s" value="%s" hidden %s>
+					<label for="opt%1$u" class="d-flex align-items-center">
+						<div class="checkbox-custom d-flex align-items-center justify-content-center">
+							<div class="icon fa fa-check"></div>
+						</div>
+						<div class="text">
+							%s
+						</div>
+						%s
+					</label>
+				</div>',
+				$seg_num,
+				$seg_data[ 'type' ],
+				$seg_data[ 'name' ],
+				$seg_data[ 'value' ],
+				$seg_data[ 'required' ]?( 'checked disabled' ):( '' ),
+				$seg_data[ 'title' ],
+				$hint
+				
+			);
+			
+			// WARIANTY
+			foreach( $segment[ 'opts' ] as $opt_num => $opt ){
+				
+				$opt_data = array_merge(
+					array(
+						'name' => $seg_data[ 'opts_name' ],
+						'value' => $opt[ 'title' ],
+						'hint' => '',
+						'type' => 'radio',
+						'price' => 0,
+						'selected' => false,
+						
+					),
+					$opt
+					
+				);
+				
+				if( !empty( $opt_data[ 'hint' ] ) ){
+					$hint = sprintf(
+						'<div class="help fa fa-question-circle-o">
+								<div class="hint">%s</div>
+								
+							</div>',
+						$opt_data[ 'hint' ]
+						
+					);
+					
+				}
+				else{
+					$hint = '';
+					
+				}
+				
+				printf(
+					'<div class="opt-single sub col-12 col-md-6">
+						<input id="opt%u-%u" class="" type="%s" name="%s" value="%s" hidden price=%u %s>
+						<label for="opt%1$u-%2$u" class="d-flex align-items-center">
+							<div class="checkbox-custom d-flex align-items-center justify-content-center">
+								<div class="icon fa fa-check"></div>
+							</div>
+							<div class="text">
+								%s
+							</div>
+							%s
+						</label>
+					</div>',
+					$seg_num,
+					$opt_num,
+					$opt_data[ 'type' ],
+					$opt_data[ 'name' ],
+					$opt_data[ 'value' ],
+					$opt_data[ 'price' ],
+					$opt_data[ 'selected' ]?( 'checked' ):( '' ),
+					$opt_data[ 'title' ],
+					$hint
+					
+				);
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+// formularz z danymi do wizy
+function genWizaDane(){
+	$country = $_POST[ 'kraj' ];
+	$include = __DIR__ . "/formularz/{$country}.php";
+	if( file_exists( $include ) ){
+		include $include;
+		
+	}
+	elseif( file_exists( __DIR__ . "/formularz/std.php" ) ){
+		include __DIR__ . "/formularz/std.php";
+		
+	}
+	else return false;
+		
+	// SEGMENT
+	foreach( $data as $seg_num => $segment ){
+		
+		printf(
+			'<div class="belka d-none d-md-flex align-items-center">
+				<div class="name">
+					%s
+				</div>
+				<div class="sep"></div>
+				<div class="numb">
+					%u
+				</div>
+				
+			</div>
+			<div class="main d-flex flex-wrap align-items-center">
+				<h4 class="head d-md-none col-12">
+					%1$s
+				</h4>',
+			$segment[ 'title' ],
+			$seg_num+1
+			
+		);
+		
+		// POLA
+		foreach( $segment[ 'fields' ] as $field_num => $field ){
+			$field_data = array_merge(
+				array(
+					'field_type' => 'input',
+					'type' => 'text',
+					'name' => $field[ 'title' ],
+					'hint' => '',
+					'required' => false,
+					'atts' => array(),
+					
+				),
+				$field
+			);
+			
+			$required = $field_data['required']?( 'required' ):( '' );
+			
+			if( !empty( $field['hint'] ) ){
+				$hint = sprintf(
+					'<div class="help fa fa-question-circle-o">
+						<div class="hint">%s</div>
+						
+					</div>',
+					$field['hint']
+					
+				);
+				
+			}
+			else{
+				$hint = '';
+				
+			}
+			
+			$atts = '';
+			if( !empty( $field_data['atts'] ) ){
+				$t = array();
+				foreach( $field_data['atts'] as $param => $value ){
+					$t[] = sprintf(
+						'%s="%s"',
+						$param,
+						$value
+						
+					);
+					
+				}
+				
+				$atts = implode( " ", $t );
+			}
+			
+			switch( $field_data['field_type'] ){
+				case 'input':
+					$input = sprintf(
+						'<input type="%s" name="%s" %s %s>',
+						$field_data['type'],
+						$field_data['name'],
+						$required,
+						$atts
+						
+					);
+					
+				break;
+				case 'textarea':
+					$input = sprintf(
+						'<textarea name="%s" %s %s></textarea>',
+						$field_data['name'],
+						$required,
+						$atts
+						
+					);
+					
+				break;
+				case 'select':
+					$opts = "";
+					foreach( $field['opts'] as $num_sub => $sub ){
+						$sub_data = array_merge(
+							array(
+								'value' => $sub['title'],
+							),
+							$sub
+						);
+						
+						$opts .= sprintf(
+							'<option value="%s">%s</option>',
+							$sub_data['value'],
+							$sub_data['title']
+							
+						);
+						
+					}
+					
+					$input = sprintf(
+						'<select name="%s" %s %s>%s</select>',
+						$field_data['name'],
+						$required,
+						$atts,
+						$opts
+						
+					);
+					
+				break;
+				
+			}
+			
+			printf(
+				'<div class="cell col-12 col-md-4 d-flex flex-column">
+					<label class="d-flex align-items-center">
+						<div>
+							%s
+						</div>
+						%s
+					</label>
+					%s
+					
+				</div>',
+				$field_data[ 'title' ],
+				$hint,
+				$input
+				
+			);
+			
+		}
+		
+		echo "</div>";
+		
+	}
+	
+}

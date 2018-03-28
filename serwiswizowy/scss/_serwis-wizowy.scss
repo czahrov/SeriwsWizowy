@@ -1670,7 +1670,7 @@ span.alph {
 			&.kraj{
 				
 				& > .icon-info{
-					background-image: url( mediaikony/icon_1.png );
+					background-image: url( media/ikony/icon_1.png );
 					
 				}
 				
@@ -1788,7 +1788,12 @@ span.alph {
 							border-width: 1px 0;
 							
 							.name{
-								padding-left: 30px;
+								padding:{
+									top: 15px;
+									left: 30px;
+									bottom: 15px;
+									
+								};
 								font-size: 16px;
 								
 							}
@@ -2387,7 +2392,7 @@ textarea {
 	border-radius: 3px;
 	color: #3b3b3b;
 	font-size: 15px;
-	padding: 0 15px;
+	padding: 7px 15px;
 }
 
 .formularz{

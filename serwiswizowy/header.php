@@ -51,6 +51,7 @@
 			wp_enqueue_script( 'FP-Filter', get_template_directory_uri() . "/js/fp_filter{$infix}.js", array(), $buster, true );
 			wp_enqueue_script( 'FP-Form', get_template_directory_uri() . "/js/fp_form{$infix}.js", array(), $buster, true );
 			wp_enqueue_script( 'FP-default', get_template_directory_uri() . "/js/default{$infix}.js", array(), $buster, true );
+			wp_enqueue_script( 'FP-opcje', get_template_directory_uri() . "/js/fp_opcje{$infix}.js", array(), $buster, true );
 			
 		?>
 		<?php wp_head(); ?>

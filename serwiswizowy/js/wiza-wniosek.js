@@ -10,7 +10,7 @@ try{
 		var self = $(this);
 		var items = self.find( '.opt-single' );
 		
-		var items_hidder = ( fast ) => {
+		var items_hidder = function( fast ){
 			// ukrywanie opcji dodatkowych
 			items
 			.not( '.sub' )
