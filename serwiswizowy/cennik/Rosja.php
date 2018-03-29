@@ -9,6 +9,7 @@
 		hint				(string)		(podpowiedź)
 		type				(string)		(rodzaj inputu)
 		required		(boolean)	(pole zaznaczone na stałe)
+		selected		(boolean)	(pole domyślnie zaznaczone)
 		opts = [
 			title			(string)		(tytuł wyświetlany na stronie)
 			value		(string)		(wartość pola w formularzu)
@@ -26,7 +27,7 @@ $data = array(
 		'title' => 'Opłata konsularna za wydanie wizy',
 		'name' => 'opłata konsularna',
 		'value' => 'tak',
-		'opts_name' => 'opłata konsularna tryb',
+		'opts_name' => 'Opłata konsularna tryb',
 		'required' => true,
 		'opts' => array(
 			array(
@@ -51,7 +52,7 @@ $data = array(
 	array(
 		'title' => 'Opłata serwisowa pobierana przez Rosyjskie Centrum Wizowe',
 		'value' => 'tak',
-		'opts_name' => 'opłata serwisowa',
+		'opts_name' => 'Opłata serwisowa',
 		'required' => true,
 		'opts' => array(
 			array(
@@ -67,7 +68,6 @@ $data = array(
 	),
 	array(
 		'title' => 'Pośrednictwo wizowe',
-		'name' => 'pośrednictwo',
 		'value' => 'tak',
 		'opts_name' => 'pośrednictwo tryb',
 		'required' => true,
@@ -111,6 +111,33 @@ $data = array(
 		
 	),
 	array(
+		'title' => 'Polisa ubezpieczeniowa',
+		'value' => 'tak',
+		'opts_name' => 'Polisa na dni',
+		'opts' => array(
+			array(
+				'title' => 'Polisa do 7 dni',
+				'value' => '7',
+				'price' => 0,
+				
+			),
+			array(
+				'title' => 'Polisa do 14 dni',
+				'value' => '14',
+				'price' => 0,
+				
+			),
+			array(
+				'title' => 'Polisa do 30 dni',
+				'value' => '30',
+				'price' => 0,
+				
+			),
+			
+		),
+		
+	),
+	array(
 		'title' => 'Wiza jednokrotna',
 		'name' => 'rodzaj wizy',
 		'opts_name' => 'wiza jednokrotna',
@@ -118,12 +145,14 @@ $data = array(
 		'hint' => 'Wizy jednokrotne i dwukrotne czas wyrabiania:<br>
 		Standardowy do 7 dni roboczych<br>
 		Ekspres do 3-4 dni roboczych ',
+		'selected' => true,
 		'opts' => array(
 			array(
 				'title' => 'turystyczna',
 				'hint' => 'cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 30 dni od daty wydania',
 				'type' => 'radio',
 				'price' => 0,
+				'selected' => true,
 				
 			),
 			array(

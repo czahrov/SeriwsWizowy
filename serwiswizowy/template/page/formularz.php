@@ -13,7 +13,7 @@
 ?>
 <?php printBreadcrumb(); ?>
 <!--
-<?php print_r( $_POST ); ?>
+<?php if( DMODE ) print_r( $_POST ); ?>
 -->
 <div class="white-page wiza formularz">
 	<div class="d-flex flex-column">
@@ -45,7 +45,7 @@
 						);
 						
 					?>
-					<a class='btn_prev'>
+					<a class='' href='<?php echo home_url( 'kraje' ); ?>'>
 						<i class="btn_hover fa fa-angle-left fa-1x arrow-prev" aria-hidden="true"></i>
 					</a>
 				</div>

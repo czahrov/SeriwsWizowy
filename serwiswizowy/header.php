@@ -11,8 +11,6 @@
 		
 	}
 	
-	define( 'DMODE', isset( $_COOKIE[ 'sprytne' ] ) );
-	
 ?>
 <!DOCTYPE html>
 <html lang="pl">

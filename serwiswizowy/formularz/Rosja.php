@@ -104,6 +104,7 @@ $data = array(
 			),
 			array(
 				'title' => 'Obywatelstwo Rosji (w przeszłości)',
+				'name' => 'Posiadał(a) obywatelstwo Rosji',
 				'hint' => 'czy posiadałeś wcześniej obywatelstwo Rosji',
 				'field_type' => 'select',
 				'required' => true,
@@ -122,7 +123,12 @@ $data = array(
 			),
 			array(
 				'title' => 'Numer paszportu',
+				'hint' => 'Numer paszportu składa się z dwóch liter (tzw seria) oraz siedmiu cyfr.<br>Przykład: AA 1234567',
 				'required' => true,
+				'atts' => array(
+					'pattern' => '[A-Z]{2} \d{7}',
+					
+				),
 				
 			),
 			array(
@@ -175,7 +181,7 @@ $data = array(
 				'required' => true,
 				'atts' => array(
 					'pattern' => '\d{2}-\d{3}',
-					'title' => 'np: 22-333',
+					'title' => 'xx-xxx, x to cyfry 0-9. Na przykład: 22-345',
 					
 				),
 				
@@ -277,38 +283,11 @@ $data = array(
 		
 	),
 	array(
-		'title' => 'Wiza',
-		'fields' => array(
-			array(
-				'title' => 'Krotność wizy',
-				'field_type' => 'select',
-				'required' => true,
-				'opts' => array(
-					array(
-						'title' => 'Jednokrotna',
-						
-					),
-					array(
-						'title' => 'Dwukrotna',
-						
-					),
-					array(
-						'title' => 'Wielokrotna',
-						
-					),
-					
-				),
-				
-			),
-			
-		),
-		
-	),
-	array(
 		'title' => 'Rodzina',
 		'fields' => array(
 			array(
 				'title' => 'Czy starający się o wizę posiada rodzinę w Rosji',
+				'name' => 'Posiada rodzinę w Rosji',
 				'field_type' => 'select',
 				'required' => true,
 				'opts' => array(
@@ -333,6 +312,7 @@ $data = array(
 		'fields' => array(
 			array(
 				'title' => 'Czy starający się o wizę posiada ważne w Rosji ubezpieczenie',
+				'name' => 'Posiada Rosyjskie ubezpiecznie',
 				'hint' => 'Do Rosji wymagane jest ubezpieczenie ważne w Rosji (koszty leczenia min. 30 000 euro)',
 				'required' => true,
 				'field_type' => 'select',
@@ -381,43 +361,6 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Cel wizyty',
-				'field_type' => 'select',
-				'required' => true,
-				'opts' => array(
-					array(
-						'title' => 'turystyczny',
-						
-					),
-					array(
-						'title' => 'biznesowy',
-						
-					),
-					array(
-						'title' => 'naukowy',
-						
-					),
-					array(
-						'title' => 'kulturalny',
-						
-					),
-					array(
-						'title' => 'pracowniczy',
-						
-					),
-					array(
-						'title' => 'prywatny',
-						
-					),
-					array(
-						'title' => 'tranzyt',
-						
-					),
-					
-				),
-				
-			),
-			array(
 				'title' => 'Trasa podróży',
 				'field_type' => 'textarea',
 				'hint' => 'Maksymalnie 5 miejscowości',
@@ -433,6 +376,7 @@ $data = array(
 		'fields' => array(
 			array(
 				'title' => 'Do jakiej instytucji Pan/Pani się wybiera',
+				'name' => 'Odwiedzana instytucja',
 				'hint' => '- W przypadku wyjazdu turystycznego prosimy o podanie nazwy oraz numeru indeksowego przyjmującej firmy turystycznej. <br>
 				- W przypadku wyjazdu w celu biznesowym prosimy o podanie nazwy przyjmującej organizacji lub firmy oraz miasta. <br>
 				- W przypadku wyjazdu w celu prywatnym prosimy o podanie nazwiska, imienia oraz adresu zamieszkania osoby zapraszającej',
@@ -465,6 +409,7 @@ $data = array(
 		'fields' => array(
 			array(
 				'title' => 'Dzieci do lat 16 podróżujące razem do Rosji',
+				'name' => 'Dzieci',
 				'field_type' => 'textarea',
 				'hint' => 'Jeśli tak, należy podać dane personalne i adres',
 				

@@ -1,5 +1,7 @@
 <?php
 
+define( 'DMODE', isset( $_COOKIE[ 'sprytne' ] ) );
+
 // add_theme_support( 'post-thumbnails' );
 // add_theme_support( 'widgets' );
 
@@ -229,6 +231,7 @@ function genWizaOpts(){
 					'hint' => '',
 					'type' => 'checkbox',
 					'required' => false,
+					'selected' => false,
 					
 				),
 				$segment
@@ -252,7 +255,7 @@ function genWizaOpts(){
 			
 			printf(
 				'<div class="opt-single col-12">
-					<input id="opt%u" class="" type="%s" name="%s" value="%s" hidden %s>
+					<input id="opt%u" class="" type="%s" name="%s" value="%s" hidden %s %s>
 					<label for="opt%1$u" class="d-flex align-items-center">
 						<div class="checkbox-custom d-flex align-items-center justify-content-center">
 							<div class="icon fa fa-check"></div>
@@ -268,6 +271,7 @@ function genWizaOpts(){
 				$seg_data[ 'name' ],
 				$seg_data[ 'value' ],
 				$seg_data[ 'required' ]?( 'checked disabled' ):( '' ),
+				$seg_data[ 'selected' ]?( 'checked' ):( '' ),
 				$seg_data[ 'title' ],
 				$hint
 				
