@@ -326,7 +326,7 @@ header{
 /* ========== STRONY ========== */
 
 .home{
-	
+		
 	.expert{
 		
 		& > .bg-zoom{
@@ -379,3 +379,27 @@ header{
 	}
 	
 }
+
+.kontakt{
+	
+	#msg
+	{
+		padding: 20px 15px;
+		font-weight: bold;
+		letter-spacing: 0.1em;
+		color: #fff;
+		
+		&.ok{
+			background-color: hsl(120, 50%, 40%);
+			
+		}
+		
+		&.err{
+			background-color: hsl(0, 60%, 40%);
+			
+		}
+		
+	}
+	
+}
+	

@@ -1665,9 +1665,9 @@ span.alph {
   border-width: 1px 0;
 }
 .wiza.wniosek .main .side .box-wiza .mid .wiersz .name {
-  padding-top: 15px;
   padding-left: 30px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 16px;
 }
 .wiza.wniosek .main .side .box-wiza .mid .wiersz .cost {
@@ -2617,6 +2617,19 @@ header.breadcrumb h3:not(:first-child)::before {
   background-color: #fff;
   color: #8b425f;
   font-weight: 600;
+}
+
+.kontakt #msg {
+  padding: 20px 15px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+.kontakt #msg.ok {
+  background-color: #339933;
+}
+.kontakt #msg.err {
+  background-color: #a32929;
 }
 
 /*# sourceMappingURL=style.css.map */
