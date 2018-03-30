@@ -1,0 +1,110 @@
+<?php
+$mail->Body = sprintf(
+			'Wniosek o wizę do: %s
+
+Dane osobowe klienta
+-----------------------------
+Imię/imiona: %s
+Nazwisko: %s
+Inne nazwiska: %s
+Płeć: %s
+Urodzony(a): %s, %s, %s
+Zamieszkały(a): %s %s, %s %s, %s
+Telefon: %s
+Email: %s
+Status zatrudnienia: %s
+
+Dane Zakładu pracy
+-----------------------------
+Nazwa: %s
+Adres: %s
+Telefon: %s
+FAX: %s
+Email: %s
+
+Paszport
+-----------------------------
+Miejsce wydania: %s
+Numer: %s
+Data wydania: %s
+Ważny do: %s
+
+Wiza - wybrane opcje
+-----------------------------
+Rodzaj: %s
+Krotność: %s
+Pośrednictwo wizowe: tryb %s
+Opłata serwisowa: %s
+Opłata konsularna: tryb %s
+Polisa: %s
+Voucher do Rosji: %s
+
+Podróż
+-----------------------------
+Data wjazdu: %s
+Data wyjazdu: %s
+Plan podróży:
+%s
+
+Dodatkowe informacje
+-----------------------------
+Ilość wjazdów: %s
+Ilość odbytych wizyt: %s
+Obywatelstwo Rosji: %s
+Posiadał(a) obywatelstwo: %s
+Rodzina w Rosji: %s
+Posiada ubezpieczenie: %s
+Dzieci:
+%s
+
+---
+Mail wygenerowany automatycznie na stronie %s',
+			$formularz['kraj'],
+			implode( " ", array( $formularz['Imię'], $formularz['Drugie_imię'] ) ),
+			$formularz['Nazwisko'],
+			$formularz['Inne_nazwiska'],
+			$formularz['Płeć'],
+			$formularz['Data_urodzenia'],
+			$formularz['Miejsce_urodzenia_-_miejscowość'],
+			$formularz['Miejsce_urodzenia_-_kraj'],
+			$formularz['Zameldowanie_-_ulica'],
+			implode( "/", array( $formularz['Zameldowanie_-_budynek'], $formularz['Zameldowanie_-_lokal'] ) ),
+			$formularz['Zameldowanie_-_kod_pocztowy'],
+			$formularz['Zameldowanie_-_miejscowość'],
+			$formularz['Zameldowanie_-_kraj'],
+			$formularz['Kontakt_-_telefon'],
+			$formularz['Kontakt_-_email'],
+			$formularz['Status_zatrudnienia'],
+			$formularz['Nazwa_zakładu_pracy'],
+			$formularz['Adres_zakładu_pracy'],
+			$formularz['Telefon_do_zakładu_pracy'],
+			$formularz['FAX_Zakładu_pracy'],
+			$formularz['E-mail_zakładu_pracy'],
+			$formularz['Miejsce_wydania_paszportu'],
+			$formularz['Numer_paszportu'],
+			$formularz['Data_wydania_paszportu'],
+			$formularz['Data_ważności_paszportu'],
+			strpos( $formularz['rodzaj_wizy'], 'jedno')?( $formularz['wiza_jednokrotna'] ):(
+				strpos( $formularz['rodzaj_wizy'], 'dwu')?( $formularz['wiza_dwukrotna'] ):(  $formularz['wiza_wielokrotna']  )
+			),
+			$formularz['rodzaj_wizy'],
+			$formularz['pośrednictwo_tryb'],
+			$formularz['Opłata_serwisowa'],
+			$formularz['Opłata_konsularna_tryb'],
+			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
+			$formularz['Voucher_do_Rosji'] === 'tak'?( "na {$formularz['voucher_na']}" ):( $formularz['Voucher_do_Rosji'] ),
+			$formularz['Data_wjazdu'],
+			$formularz['Data_wyjazdu'],
+			$formularz['Trasa_podróży'],
+			$formularz['Ilość_wjazdów'],
+			$formularz['Dane_dotyczące_poprzednich_wizyt'],
+			$formularz['Obywatelstwo_Rosji'],
+			$formularz['Posiadał(a)_obywatelstwo_Rosji'],
+			$formularz['Posiada_rodzinę_w_Rosji'],
+			$formularz['Posiada_Rosyjskie_ubezpiecznie'],
+			$formularz['Dzieci'],
+			home_url()
+			
+		);
+		
+		

@@ -338,12 +338,14 @@ $data = array(
 		'fields' => array(
 			array(
 				'title' => 'Data wjazdu do Rosji',
+				'name' => 'Data wjazdu',
 				'type' => 'date',
 				'required' => true,
 				
 			),
 			array(
 				'title' => 'Data wyjazdu z Rosji',
+				'name' => 'Data wyjazdu',
 				'type' => 'date',
 				'required' => true,
 				

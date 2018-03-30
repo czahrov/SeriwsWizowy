@@ -29,7 +29,7 @@
 			</div>
 		</div>
 		<div class="box col-md-8 single-page-content">
-			<p><?php echo apply_filters( 'the_content', $post->post_content ); ?></p>
+			<?php echo apply_filters( 'the_content', $post->post_content ); ?>
 			<?php if( !empty( $pdf ) ): ?>
 			<a class='custom_button' href='<?php echo $pdf; ?>' download>
 				Pobierz PDF
