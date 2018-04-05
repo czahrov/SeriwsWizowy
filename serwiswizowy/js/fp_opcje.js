@@ -6,7 +6,7 @@ try{
 	
 	$(function(){
 		
-		(function( box, form ){
+		(function( box, form, pin ){
 			var items = function(){
 				return box.children( '.wiersz' );
 			};
@@ -28,6 +28,7 @@ try{
 					
 					// generowanie aktualnej listy wybranych opcji
 					var price_total = 0;
+					
 					opcje()
 					.filter( ':checked' )
 					.each( function(){
@@ -38,6 +39,9 @@ try{
 					items()
 					.filter( '.total' )
 					.children( '.cost' )
+					.text( price_total );
+					
+					$( '#price .cost' )
 					.text( price_total );
 					
 				},
@@ -89,7 +93,8 @@ try{
 		})
 		(
 			$( '.box-wiza > .mid' ),
-			$( '.opcje > form' )
+			$( '.opcje > form' ),
+			$( '.wiza.wniosek > #price' )
 			
 		);
 		

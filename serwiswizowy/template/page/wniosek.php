@@ -5,6 +5,18 @@
 	
 ?>
 <div class="white-page wiza wniosek">
+<div id='price' class='d-block d-md-none'>
+	<div class="wiersz total d-flex d-md-none flex-wrap">
+		<div class="name col-6 d-flex align-items-center justify-content-center">
+			Całkowity koszt
+		</div>
+		<div class="cost col-6 d-flex align-items-center justify-content-center">
+			
+		</div>
+	
+	</div>
+	
+</div>
 <div class="">
 	<div class="view-steps d-flex flex-md-wrap">
 		<div class="kraj p-2 step1-home d-none d-lg-flex align-items-center justify-content-around col-lg-3">
@@ -92,7 +104,7 @@
 				<h4 class='page-title col-12'>
 					Informacje
 				</h4>
-				<ul class="accordion col-12">
+				<ul class="accordion">
 					<?php foreach( explode( "\n", trim( $informacje ) ) as $line ): ?>
 					<li>
 						<?php

@@ -2619,6 +2619,53 @@ header.breadcrumb h3:not(:first-child)::before {
   color: #8b425f;
   font-weight: 600;
 }
+.wiza.wniosek {
+  margin-bottom: 30px;
+}
+.wiza.wniosek #price {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+.wiza.wniosek #price .wiersz .name {
+  background-color: #8b425f;
+  color: #fff;
+  font-size: 21px;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.wiza.wniosek #price .wiersz .cost {
+  color: #fff;
+  background-color: #8b425f;
+}
+.wiza.wniosek #price .wiersz .cost::after {
+  content: 'zł';
+  padding: 0 10px;
+}
+.wiza.wniosek .main .opis ol {
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .wiza.wniosek .main .informacje .page-title {
+    padding-left: 50px;
+  }
+}
+.wiza.wniosek .main .informacje .accordion {
+  width: 100vw;
+  margin: 0 -15px;
+}
+@media (min-width: 768px) {
+  .wiza.wniosek .main .informacje .accordion {
+    margin: 0 20px 0 -30px;
+  }
+}
+@media (min-width: 768px) {
+  .wiza.wniosek {
+    margin-bottom: 0;
+  }
+}
 
 .kontakt #msg {
   padding: 20px 15px;

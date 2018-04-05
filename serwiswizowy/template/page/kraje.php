@@ -2,11 +2,11 @@
 <div class="white-page wiza kraje">
 <div class="container">
 	<div class="view-steps d-flex flex-md-wrap">
-		<div class="kraj p-2 step1-home d-none d-lg-flex align-items-center justify-content-around col-lg-3 active">
+		<div class="kraj p-2 step1-home d-flex align-items-center justify-content-around col-12 col-lg-3 active">
 			<div class="icon-info"></div>
 			<p>Wyszukaj kraj do którego potrzebujesz wizy</p>
 		</div>
-		<div class="opcje p-2 step1-home d-flex align-items-center justify-content-around col-12 col-lg-3">
+		<div class="opcje p-2 step1-home d-none d-lg-flex align-items-center justify-content-around col-lg-3">
 			<div class="icon-info"></div>
 			<p>Wybierz odpowiednie opcje i przejdź do nastepnego kroku</p>
 		</div>
