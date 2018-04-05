@@ -186,6 +186,11 @@ body{
 			top: 35px;
 			bottom: 35px;
 		}
+		font:{
+			size: 25px;
+			weight: 600;
+			
+		};
 		
 		@media (min-width: 768px) {
 			padding-left: 50px;
@@ -485,4 +490,36 @@ header{
 		
 	}
 	
+	.accordion-contact{
+		
+		@media(max-width: 767px){
+			width: 100vw;
+			
+		}
+		
+		@media(min-width: 768px){
+			margin: 0 15px
+			
+		}
+		
+	}
+	
 }
+
+.o-firmie-single{
+	
+}
+
+.uslugi{
+	
+	.service-single{
+		
+		.content{
+			font-size: 15px;
+			
+		}
+		
+	}
+	
+}
+

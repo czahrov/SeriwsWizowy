@@ -45,9 +45,9 @@
 			<?php endif; ?>
 			<?php if( !empty( $informacje ) ): ?>
 			<div class="informacja d-flex flex-wrap align-items-center">
-				<h3 class='title col-12'>
+				<h4 class='title col-12'>
 					informacje
-				</h3>
+				</h4>
 				<ul class="accordion col-12">
 					<?php foreach( explode( "\n", trim( $informacje ) ) as $line ): ?>
 					<li>

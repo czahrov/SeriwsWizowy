@@ -143,11 +143,11 @@ Wiadomość wygenerowana automatycznie na stronie %s',
 				<form id='kontakt_form' class="d-flex flex-wrap" method='post'>
 					<div class="form-single flex-column d-flex col-12 col-md-6">
 						<label for="name">Imię</label>
-						<input type="text" id="imie" name="imie"  required pattern='[a-zęóąśżźćńA-ZĘÓĄŚŁŻŹĆŃ \-]+' title='Dozwolone znaki to: litery, myślinki oraz spacje'>
+						<input type="text" id="imie" name="imie"  required pattern='[\D]+'>
 					</div>
 					<div class="form-single flex-column d-flex col-12 col-md-6">
 						<label for="name">Nazwisko</label>
-						<input type="text" id="nazwisko" name="nazwisko" required pattern='[a-zęóąśżźćńA-ZĘÓĄŚŁŻŹĆŃ \-]+' title='Dozwolone znaki to: litery, myślinki oraz spacje'>
+						<input type="text" id="nazwisko" name="nazwisko" required pattern='[\D]+'>
 					</div>
 					<div class="form-single flex-column d-flex col-12 col-md-6">
 						<label for="name">Numer telefonu</label>
@@ -155,7 +155,7 @@ Wiadomość wygenerowana automatycznie na stronie %s',
 					</div>
 					<div class="form-single flex-column d-flex col-12 col-md-6">
 						<label for="name">Adres e-mail</label>
-						<input type="text" id="mail" name="mail" required pattern='^\w+@\w+\.\w+$' title='Format pola: [nazwa użytkownika]@[domena], np: jan.kowalski@hog.xom'>
+						<input type="text" id="mail" name="mail" required pattern='^[^@]+@[^\.]+\.[^\.]+$' title='Format pola: [nazwa użytkownika]@[domena], np: jan.kowalski@hog.xom'>
 					</div>
 					<div class="form-single flex-column d-flex col-12">
 						<label for="name">Treść Twojej wiadomości</label>

@@ -2091,7 +2091,7 @@ input:focus,
 }
 
 /*RWD*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .visa-section1 {
     margin: 0 -15px;
   }
@@ -2509,6 +2509,8 @@ body {
 .o-firmie-single .title {
   padding-top: 35px;
   padding-bottom: 35px;
+  font-size: 25px;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .o-firmie-single .title {
@@ -2678,6 +2680,20 @@ header.breadcrumb h3:not(:first-child)::before {
 }
 .kontakt #msg.err {
   background-color: #a32929;
+}
+@media (max-width: 767px) {
+  .kontakt .accordion-contact {
+    width: 100vw;
+  }
+}
+@media (min-width: 768px) {
+  .kontakt .accordion-contact {
+    margin: 0 15px;
+  }
+}
+
+.uslugi .service-single .content {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

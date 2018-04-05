@@ -21,7 +21,18 @@
 			</div>
 			<div class="content col-12 col-md-7">
 				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				<?php
+					$zajawka = get_post_meta( $strona->ID, 'zajawka', true );
+					if( empty( $zajawka ) ){
+						preg_match( "~(\S+\s){1,50}~", $strona->post_content, $match );
+						$zajawka = $match[0];
+						
+					}
+					
+					echo $zajawka;
+					// print_r( $match );
+					
+				?>
 				</p>
 			</div>
 			<div class="arrow col-12 col-md align-items-top justify-content-end justify-content-md-center d-flex">
