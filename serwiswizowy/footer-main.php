@@ -1,15 +1,6 @@
 <div class="join-us">
 	<div class="container">
-		<div class="d-flex justify-content-center text-center">
-			<h3>
-				Dołącz do grona naszych <span> zadowolonych klientów</span>
-				<p>
-					<a href='tel:+22811221421'>
-						+22 811 221 421
-					</a>
-				</p>
-			</h3>
-		</div>
+	<?php dynamic_sidebar( 'footbar' ); ?>
 	</div>
 </div>
 <!-- join us -->
@@ -35,13 +26,7 @@
 			<?php printFooterMenu( 'uslugi', 'Usługi' ); ?>
 		</div>
 		<div class="p-4 col-12 col-md-4 col-lg">
-			<ul class="menu-footer d-flex flex-column align-items-center align-items-lg-start">
-				<li class="title-section">Kontakt</li>
-				<li><a href="tel:+48511717110">tel: 511 717 110</a></li>
-				<li><a href="mailto:serwiswizowy@serwiswizowy.com">serwiswizowy@serwiswizowy.com</a></li>
-				<li><a href="mailto:pomocwiza@serwiswizowy.com">pomocwiza@serwiswizowy.com</a></li>
-				<a class="nav-link nav-button" href="<?php echo home_url( 'kraje' ); ?>" style="margin-top:15px;">Wypełnij wniosek</a>
-			</ul>
+			<?php printFooterMenu( 'kontakt', 'Kontakt' ); ?>
 		</div>
 	</div>
 </footer>

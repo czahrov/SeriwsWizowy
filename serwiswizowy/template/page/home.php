@@ -15,40 +15,37 @@
 						<h1>Znajdź wizę na wyjazd</h1>
 						<span class="subheading">Dokąd się wybierasz? </span>
 						<div class="d-flex justify-content-center visa">
-							<select class="visa-select" name="wubierz kraj">
-								<option class="disabled-select" value="" disabled="" selected="">Wybierz kraj</option>
-								<optgroup label="A">
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
+							<select class="visa-select" name="wybierz kraj">
+								<option class="disabled-select" value="" disabled="" selected="">
+									Wybierz kraj
+								</option>
+								<?php
+									$kraje = get_pages( array(
+										'parent' => 6,
+										
+									) );
+
+									$ret = array();
+
+									foreach( $kraje as $kraj ){
+										$t = substr( $kraj->post_title, 0, 1 );
+										$ret[ $t ][] = array(
+											'title' => $kraj->post_title,
+											'url' => get_the_permalink( $kraj->ID ),
+											
+										);
+										
+									}
+									
+									foreach( $ret as $name => $items ):
+								?>
+								<optgroup label="<?php echo $name; ?>">
+									<?php foreach( $items as $item ): ?>
+									<option class="random-select" uri='<?php echo $item['url'] ?>'><?php echo $item['title']; ?></option>
+									<?php endforeach; ?>
 								</optgroup>
-								<optgroup label="B">
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
-								</optgroup>
-								<optgroup label="C">
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
-								</optgroup>
-								<optgroup label="D">
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
-								</optgroup>
-								<optgroup label="E">
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
-									<option class="random-select">Rosja</option>
-									<option class="random-select">Austria</option>
-								</optgroup>
+								<?php endforeach; ?>
 							</select>
-							<button type="button" class="btn visa-btn">Wyślij wniosek</button>
 						</div>
 					</div>
 				</div>
@@ -181,13 +178,23 @@
 				<i class="fa fa-angle-left fa-1x arrow-button-slider" aria-hidden="true"></i>
 			</div>
 			<div class="fpslider_view d-flex view col">
-				<?php for( $i=0; $i<6; $i++ ): ?>
+				<?php
+					$items = get_posts( array(
+						'category_name' => 'Komentarz',
+						'order' => 'ASC',
+						'orderby' => 'date',
+						
+					) );
+					foreach( $items as $item ):
+				?>
 				<div class='fpslider_slide testymonial-single col-12 col-lg-6'>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br>
-						<span><?php echo $i; ?> ANDRZEJ, WIZA DO ROSJI</span>
+					<p>
+						<?php echo $item->post_content; ?>
+						<br>
+						<span><?php echo get_post_meta( $item->ID, 'osoba', true ); ?></span>
 					</p>
 				</div>
-				<?php endfor; ?>
+				<?php endforeach; ?>
 				
 			</div>
 			<div class="arrows-comment next fpslider_nav_next d-none d-md-flex">

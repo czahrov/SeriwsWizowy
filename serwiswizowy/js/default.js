@@ -10,6 +10,24 @@ $(function(){
 	})
 	(
 		$( 'a.btn_prev' )
-	)
+	);
+	
+	// visa select
+	(function( select, items ){
+		select
+		.on({
+			change: function( e ){
+				var uri = $(this).find( 'option:selected' ).attr( 'uri' );
+				if( uri !== undefined ) window.location = uri;
+				
+			},
+			
+		});
+		
+	})
+	(
+		$( '.visa-select' ),
+		$( '.visa-select option' )
+	);
 	
 });

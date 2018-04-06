@@ -10,6 +10,17 @@ register_nav_menu( 'footer-1', 'Stopka, slot 1' );
 register_nav_menu( 'footer-2', 'Stopka, slot 2' );
 register_nav_menu( 'footer-3', 'Stopka, slot 3' );
 register_nav_menu( 'footer-4', 'Stopka, slot 4' );
+register_nav_menu( 'footer-5', 'Stopka, slot 5' );
+
+register_sidebar( array(
+	'id' => 'footbar',
+	'name' => 'Panel w stopce',
+	'description' => 'Panel informacyjny wyświetlany w stopce strony',
+	'before_widget' => '<div>',
+	'after_widget' => '</div>',
+	'class' => 'd-flex justify-content-center text-center',
+	
+) );
 
 // funkcja dodająca klasy do body
 function bodyMarkUp(){
