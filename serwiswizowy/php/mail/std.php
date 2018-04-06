@@ -42,6 +42,8 @@ Plan podróży:
 Dodatkowe informacje
 -----------------------------
 Ilość wjazdów: %s
+Transport dokumentów: %s
+Transport dokumentów - tryb: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -76,6 +78,8 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Data_wyjazdu'],
 			$formularz['Trasa_podróży'],
 			$formularz['Ilość_wjazdów'],
+			$formularz['dokumenty_kierunek'],
+			$formularz['dokumenty_tryb'],
 			home_url()
 			
 		);

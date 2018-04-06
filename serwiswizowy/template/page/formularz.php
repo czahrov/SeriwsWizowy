@@ -79,6 +79,16 @@
 			
 		</form>
 		
+		<div class="opis">
+			<h4 class="">
+				Uwaga!
+			</h4>
+			<div class="text">
+				W przypadku znalezienia błędów w przesłanym do biura papierowym wniosku i konieczności poprawienia w celu skutecznego złożenia w Konsulacie wykonania poprawki koszt usługi poprawienia lub przepisania wniosku w poprawnej formie wynosi 20,00 PLN (brutto).
+			</div>
+			
+		</div>
+		
 		<?php if( !empty( $informacja ) ): ?>
 		<div class="opis">
 			<h4 class="">

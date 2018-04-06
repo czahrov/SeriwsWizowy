@@ -134,7 +134,7 @@
 			<div class="col-3 d-flex flex-wrap col-12 col-xl-3">
 				<div class="client-individual d-flex col-12 col-md-6 col-xl-12 half">
 					<div class="cell col-12 ind-client">
-						<a href="" class="hit-box"></a>
+						<a href="<?php echo home_url( 'klienci-indywidualni' ); ?>" class="hit-box"></a>
 						<div class="banner-text-small">
 							<h3>Klienci <br><span>indywidualni</span></h3>
 						</div>
@@ -146,7 +146,7 @@
 				</div>
 				<div class="client-business d-flex col-12 col-md-6 col-xl-12 half">
 					<div class="cell col-12 business-client">
-						<a href="" class="hit-box"></a>
+						<a href="<?php echo home_url( 'klienci-biznesowi' ); ?>" class="hit-box"></a>
 						<div class="banner-text-small">
 							<h3>Klienci <br><span>biznesowi</span></h3>
 						</div>
