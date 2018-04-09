@@ -8,14 +8,14 @@ Imię/imiona: %s
 Nazwisko: %s
 Inne nazwiska: %s
 Płeć: %s
-Urodzony(a): %s, %s, %s
+Urodzony(a): %s, %s, %s, %s
 PESEL: %s
 Stan cywilny: %s
 Status zatrudnienia: %s
 
 Dane kontaktowe
 -----------------------------
-Zamieszkały(a): %s %s, %s %s %s, %s
+Zamieszkały(a): %s %s, %s %s, %s
 Adres do korenspondencji: %s
 Telefon: %s
 Email: %s
@@ -26,8 +26,6 @@ Data wydania: %s
 
 Wiza - wybrane opcje
 -----------------------------
-Rodzaj: %s
-Krotność: %s
 Pośrednictwo wizowe: tryb %s
 Opłata konsularna: tryb %s
 Polisa: %s
@@ -72,10 +70,6 @@ Mail wygenerowany automatycznie na stronie %s',
 			
 			$formularz['Data_wydania_paszportu'],
 			
-			strpos( $formularz['rodzaj_wizy'], 'jedno')?( $formularz['wiza_jednokrotna'] ):(
-				strpos( $formularz['rodzaj_wizy'], 'dwu')?( $formularz['wiza_dwukrotna'] ):(  $formularz['wiza_wielokrotna']  )
-			),
-			$formularz['rodzaj_wizy'],
 			$formularz['pośrednictwo_tryb'],
 			$formularz['Opłata_konsularna_tryb'],
 			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),

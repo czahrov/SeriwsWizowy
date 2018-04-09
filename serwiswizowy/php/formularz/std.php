@@ -48,6 +48,11 @@ $data = array(
 				
 			),
 			array(
+				'title' => 'Inne nazwiska',
+				'hint' => '',
+				
+			),
+			array(
 				'title' => 'Płeć',
 				'field_type' => 'select',
 				'required' => true,
@@ -164,6 +169,7 @@ $data = array(
 			),
 			array(
 				'title' => 'Adres korenspondencji',
+				'name' => 'Kontakt - korenspondencja',
 				'hint' => 'Podać jeśli jest inny niż adres zameldowania',
 				'name' => 'Kontakt - korenspondencja',
 				
