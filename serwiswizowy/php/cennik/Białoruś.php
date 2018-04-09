@@ -22,6 +22,8 @@
 	]
 */
 
+$euro = 4.2027475;
+
 $data = array(
 	array(
 		'title' => 'Opłata konsularna za wydanie wizy',
@@ -31,18 +33,32 @@ $data = array(
 		'required' => true,
 		'opts' => array(
 			array(
-				'title' => 'tryb normalny',
-				'value' => 'normalny',
-				'hint' => '7 - 9 dni',
-				'price' => 145,
+				'title' => 'tryb normalny, wiza jednokrotna',
+				'value' => 'normalny, jednokrotna',
+				'hint' => 'czas oczekiwania: 5-9 dni',
+				'price' => round( 25 * $euro, 2 ),
 				'selected' => true,
 				
 			),
 			array(
-				'title' => 'tryb ekspresowy',
-				'value' => 'ekpresowy',
-				'hint' => '3 dni<br>Tylko dla wiz biznesowych oraz turystycznych',
-				'price' => 290,
+				'title' => 'tryb normalny, wiza dwukrotna',
+				'value' => 'normalny, dwukrotna',
+				'hint' => 'czas oczekiwania: 5-9 dni',
+				'price' => round( 35 * $euro, 2 ),
+				
+			),
+			array(
+				'title' => 'tryb ekpresowy, wiza jednokrotna',
+				'value' => 'ekspresowy, jednokrotna',
+				'hint' => 'czas oczekiwania: 2-4 dni',
+				'price' => round( 50 * $euro, 2 ),
+				
+			),
+			array(
+				'title' => 'tryb ekpresowy, wiza dwukrotna',
+				'value' => 'ekspresowy, dwukrotna',
+				'hint' => 'czas oczekiwania: 2-4 dni',
+				'price' => round( 60 * $euro, 2 ),
 				
 			),
 			
@@ -58,7 +74,7 @@ $data = array(
 			array(
 				'title' => 'tryb normalny',
 				'value' => 'normalny',
-				'price' => 90,
+				'price' => 100,
 				'selected' => true,
 				
 			),

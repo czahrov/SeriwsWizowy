@@ -8,40 +8,55 @@ Imię/imiona: %s
 Nazwisko: %s
 Inne nazwiska: %s
 Płeć: %s
-Urodzony(a): %s, %s, %s
+Urodzony(a): %s, %s, %s, %s
+Obywatelstwo: %s
+Poprzednie obywatelstwo: %s
 PESEL: %s
+Numer dowodu osobistego: %s
 Stan cywilny: %s
 Status zatrudnienia: %s
 
 Dane kontaktowe
 -----------------------------
-Zamieszkały(a): %s %s, %s %s %s, %s
-Adres do korenspondencji: %s
+Zamieszkały(a): %s %s, %s %s, %s
 Telefon: %s
 Email: %s
 
 Paszport
 -----------------------------
-Data wydania: %s
+Rodzaj paszportu: %s
 
 Wiza - wybrane opcje
 -----------------------------
-Rodzaj: %s
-Krotność: %s
 Pośrednictwo wizowe: tryb %s
 Opłata konsularna: tryb %s
 Polisa: %s
 
 Podróż
 -----------------------------
+Najdłuższy z planowanych pobytow w Chinach (dni): %s
 Data wjazdu: %s
 Data wyjazdu: %s
-Plan podróży:
-%s
+Adres pobytu: %s
 
 Dodatkowe informacje
 -----------------------------
-Ilość wjazdów: %s
+Dane członka rodziny:
+%s
+Osoba do kontaktu:
+%s
+Organ zapraszający:
+%s
+Ostatnia wiza do Chin:
+%s
+Ilość wyjazdów za granicę w ciągu ostatnich 12 miesięcy ( nie licząc Chin ): %s
+Karany w Chinach:
+%s
+Choroby zakaźne: %s
+Przekroczyłem(am) czas pobytu w Chinach: %s
+Odmówiono mi wizy do Chin: %s
+Posiadam ważne ubezpieczenie: %s
+Posiadam bilet lotniczy: %s
 Transport dokumentów: %s
 Transport dokumentów - tryb: %s
 
@@ -57,7 +72,10 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Miejsce_urodzenia_-_miejscowość'],
 			$formularz['Miejsce_urodzenia_-_województwo'],
 			$formularz['Miejsce_urodzenia_-_kraj'],
+			$formularz['Obywatelstwo'],
+			$formularz['Poprzednie_obywatelstwo'],
 			$formularz['PESEL'],
+			$formularz['Numer_dowodu_osobistego'],
 			$formularz['Stan_cywilny'],
 			$formularz['Status_zatrudnienia'],
 			
@@ -66,25 +84,31 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Zameldowanie_-_kod_pocztowy'],
 			$formularz['Zameldowanie_-_miejscowość'],
 			$formularz['Zameldowanie_-_kraj'],
-			$formularz['Kontakt_-_korenspondencja'],
 			$formularz['Kontakt_-_telefon'],
 			$formularz['Kontakt_-_email'],
 			
-			$formularz['Data_wydania_paszportu'],
+			$formularz['Rodzaj_paszportu'],
 			
-			strpos( $formularz['rodzaj_wizy'], 'jedno')?( $formularz['wiza_jednokrotna'] ):(
-				strpos( $formularz['rodzaj_wizy'], 'dwu')?( $formularz['wiza_dwukrotna'] ):(  $formularz['wiza_wielokrotna']  )
-			),
-			$formularz['rodzaj_wizy'],
 			$formularz['pośrednictwo_tryb'],
 			$formularz['Opłata_konsularna_tryb'],
 			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
 			
+			$formularz['najdłuższy_pobyt'],
 			$formularz['Data_wjazdu'],
 			$formularz['Data_wyjazdu'],
-			$formularz['Trasa_podróży'],
+			$formularz['Adres_pobytu'],
 			
-			$formularz['Ilość_wjazdów'],
+			$formularz['Dane_członka_rodziny'],
+			$formularz['Osoba_do_kontaktu'],
+			$formularz['Organ_zapraszający'],
+			$formularz['Ostatnia_wiza_do_Chin'],
+			$formularz['Ilość_wyjazdów'],
+			$formularz['karany'],
+			$formularz['Choroby'],
+			$formularz['przekroczony_czas'],
+			$formularz['odmowa'],
+			$formularz['ubezpieczenie'],
+			$formularz['Bilet_lotniczy'],
 			$formularz['dokumenty_kierunek'],
 			$formularz['dokumenty_tryb'],
 			

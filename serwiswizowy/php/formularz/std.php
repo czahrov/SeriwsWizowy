@@ -76,6 +76,11 @@ $data = array(
 				
 			),
 			array(
+				'title' => 'Miejsce urodzenia - województwo',
+				'required' => true,
+				
+			),
+			array(
 				'title' => 'Miejsce urodzenia - miejscowość',
 				'required' => true,
 				

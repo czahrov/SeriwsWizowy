@@ -8,40 +8,49 @@ Imię/imiona: %s
 Nazwisko: %s
 Inne nazwiska: %s
 Płeć: %s
-Urodzony(a): %s, %s, %s
-PESEL: %s
+Urodzony(a): %s, %s, %s, %s
+Obywatelstwo: %s
+Poprzednie obywatelstwo: %s
 Stan cywilny: %s
 Status zatrudnienia: %s
 
 Dane kontaktowe
 -----------------------------
-Zamieszkały(a): %s %s, %s %s %s, %s
-Adres do korenspondencji: %s
+Zamieszkały(a): %s %s, %s %s, %s
 Telefon: %s
 Email: %s
-
-Paszport
------------------------------
-Data wydania: %s
 
 Wiza - wybrane opcje
 -----------------------------
 Rodzaj: %s
-Krotność: %s
+Kategoria wizy: %s
 Pośrednictwo wizowe: tryb %s
-Opłata konsularna: tryb %s
+Opłata konsularna tryb i krotność wizy: %s
 Polisa: %s
 
 Podróż
 -----------------------------
+Rodzaj paszportu: %s
+Cel podróży: %s
 Data wjazdu: %s
 Data wyjazdu: %s
+Planowany okres pobytu: %s
+Adres tymczasowego pobytu: %s
 Plan podróży:
 %s
 
 Dodatkowe informacje
 -----------------------------
+Był(a) wcześniej w Białorusi: %s
+Był(a) deportowany(a) z innego kraju: %s
+Był(a) karany za nieprzestrzeganie prawa: %s
+Źródło środków na czas pobytu w Białorusi: %s
+Środek transportu: %s
+Ubezpieczenie w Białorusi: %s
 Ilość wjazdów: %s
+Dotychczasowe wizyty: %s
+Odmowa wizy: %s
+Posiada bilet lotniczy: %s
 Transport dokumentów: %s
 Transport dokumentów - tryb: %s
 
@@ -57,7 +66,8 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Miejsce_urodzenia_-_miejscowość'],
 			$formularz['Miejsce_urodzenia_-_województwo'],
 			$formularz['Miejsce_urodzenia_-_kraj'],
-			$formularz['PESEL'],
+			$formularz['Obywatelstwo'],
+			$formularz['Poprzednie_obywatelstwo'],
 			$formularz['Stan_cywilny'],
 			$formularz['Status_zatrudnienia'],
 			
@@ -66,27 +76,36 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Zameldowanie_-_kod_pocztowy'],
 			$formularz['Zameldowanie_-_miejscowość'],
 			$formularz['Zameldowanie_-_kraj'],
-			$formularz['Kontakt_-_korenspondencja'],
 			$formularz['Kontakt_-_telefon'],
 			$formularz['Kontakt_-_email'],
 			
-			$formularz['Data_wydania_paszportu'],
-			
-			strpos( $formularz['rodzaj_wizy'], 'jedno')?( $formularz['wiza_jednokrotna'] ):(
-				strpos( $formularz['rodzaj_wizy'], 'dwu')?( $formularz['wiza_dwukrotna'] ):(  $formularz['wiza_wielokrotna']  )
-			),
-			$formularz['rodzaj_wizy'],
+			$formularz['Rodzaj_wizy'],
+			$formularz['Kategoria_wizy'],
 			$formularz['pośrednictwo_tryb'],
 			$formularz['Opłata_konsularna_tryb'],
 			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
 			
+			$formularz['Rodzaj_paszportu'],
+			$formularz['Cel_podróży'],
 			$formularz['Data_wjazdu'],
 			$formularz['Data_wyjazdu'],
+			$formularz['Planowany_okres_pobytu'],
+			$formularz['Adres_tymczasowego_pobytu'],
 			$formularz['Trasa_podróży'],
 			
+			$formularz['Czy_byłeś_wcześniej_na_Białorusi'],
+			$formularz['Czy_byłeś_deportowany_z_innego_kraju'],
+			$formularz['Nieprzestrzeganie_prawa'],
+			$formularz['Źródło_środków_na_wizytę_w_Białorusi'],
+			$formularz['Środek_stransportu'],
+			$formularz['Ubezpieczenie_w_Białorusi'],
 			$formularz['Ilość_wjazdów'],
+			$formularz['Dotychczasowe_wizyty'],
+			$formularz['Odmowa_wizy'],
+			$formularz['Bilet_lotniczy'],
 			$formularz['dokumenty_kierunek'],
 			$formularz['dokumenty_tryb'],
+			
 			
 			home_url()
 			

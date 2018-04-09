@@ -33,16 +33,16 @@ $data = array(
 			array(
 				'title' => 'tryb normalny',
 				'value' => 'normalny',
-				'hint' => '7 - 9 dni',
-				'price' => 145,
+				'hint' => 'czas oczekiwania: 6-9 dni',
+				'price' => 260,
 				'selected' => true,
 				
 			),
 			array(
 				'title' => 'tryb ekspresowy',
 				'value' => 'ekpresowy',
-				'hint' => '3 dni<br>Tylko dla wiz biznesowych oraz turystycznych',
-				'price' => 290,
+				'hint' => 'czas oczekiwania: 4 dni',
+				'price' => 370,
 				
 			),
 			
@@ -58,7 +58,7 @@ $data = array(
 			array(
 				'title' => 'tryb normalny',
 				'value' => 'normalny',
-				'price' => 90,
+				'price' => 100,
 				'selected' => true,
 				
 			),

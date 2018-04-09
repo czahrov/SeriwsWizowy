@@ -32,7 +32,7 @@
 		<span class="alph">Kraje sortowane są od A do Z w kolejnośći alfabetycznej. Wybierz kraj, a następnie wypełnij wniosek.</span>
 	</div>
 	<div class='d-flex flex-column'>
-		<input id='country-filter' type='text' placeholder='Wpisz kilka liter szukanego kraju'>
+		<input id='country-filter' type='text' placeholder='Wpisz kilka liter szukanego kraju' autofocus>
 	</div>
 	<?php
 		foreach( $kraje as $kraj ):
