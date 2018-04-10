@@ -28,7 +28,7 @@
 
 $data = array(
 	array(
-		'title' => 'Twoje dane',
+		'title' => 'Dane personalne',
 		'fields' => array(
 			array(
 				'title' => 'Imię',
@@ -47,11 +47,11 @@ $data = array(
 				'required' => true,
 				
 			),
-			array(
+			/* array(
 				'title' => 'Inne nazwiska',
 				'hint' => '',
 				
-			),
+			), */
 			array(
 				'title' => 'Płeć',
 				'field_type' => 'select',
@@ -80,11 +80,11 @@ $data = array(
 				'required' => true,
 				
 			),
-			array(
+			/* array(
 				'title' => 'Miejsce urodzenia - województwo',
 				'required' => true,
 				
-			),
+			), */
 			array(
 				'title' => 'Miejsce urodzenia - miejscowość',
 				'required' => true,
@@ -101,8 +101,28 @@ $data = array(
 				
 			),
 			array(
+				'title' => 'Obywatelstwo',
+				'required' => true,
+				
+			),
+			array(
+				'title' => 'Numer paszportu',
+				'required' => true,
+				'atts' => array(
+					'pattern' => '[a-zA-Z]{2}\s?\d{7}',
+					'title' => 'Numer paszportu składa się z dwóch liter (tzw seria) oraz 7 cyfr',
+					
+				),
+				
+			),
+			/* array(
 				'title' => 'Data wydania paszportu',
 				'type' => 'date',
+				'required' => true,
+				
+			), */
+			array(
+				'title' => 'Miejsce wydania paszportu',
 				'required' => true,
 				
 			),
@@ -178,7 +198,7 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Adres korenspondencji',
+				'title' => 'Adres Kontaktowy',
 				'name' => 'Kontakt - korenspondencja',
 				'hint' => 'Podać jeśli jest inny niż adres zameldowania',
 				'name' => 'Kontakt - korenspondencja',
@@ -187,7 +207,7 @@ $data = array(
 			
 		),
 	),
-	array(
+	/* array(
 		'title' => 'Zatrudnienie',
 		'fields' => array(
 			array(
@@ -222,8 +242,8 @@ $data = array(
 			
 		),
 		
-	),
-	array(
+	), */
+	/* array(
 		'title' => 'Rodzina',
 		'fields' => array(
 			array(
@@ -254,17 +274,31 @@ $data = array(
 			
 		),
 		
-	),
+	), */
 	array(
 		'title' => 'Dane dotyczące wizy',
 		'fields' => array(
 			array(
 				'title' => 'Ilość wjazdów',
-				'hint' => 'Podać planowaną ilość wjazdów w przypadku wybrania wizy wielokrotnej',
-				'type' => 'number',
-				'atts' => array(
-					'min' => 1,
-					'step' => 1,
+				'field_type' => 'select',
+				'required' => true,
+				'opts' => array(
+					array(
+						'title' => 'pojedynczy',
+						'selected' => true,
+					),
+					array(
+						'title' => 'podwójny',
+						
+					),
+					array(
+						'title' => 'potrójny',
+						
+					),
+					array(
+						'title' => 'wielokrotny',
+						
+					),
 					
 				),
 			),
@@ -273,7 +307,7 @@ $data = array(
 		
 	),
 	array(
-		'title' => 'Plan podróży',
+		'title' => 'Dane dotyczące podróży',
 		'fields' => array(
 			array(
 				'title' => 'Data wjazdu',
@@ -290,19 +324,98 @@ $data = array(
 			array(
 				'title' => 'Cel wizyty',
 				'required' => true,
+				'field_type' => 'select',
+				'opts' => array(
+					array(
+						'title' => 'turystyczny',
+						'selected' => true,
+					),
+					array(
+						'title' => 'biznesowy',
+						
+					),
+					array(
+						'title' => 'inny',
+						
+					),
+					
+				),
 				
 			),
 			array(
+				'title' => 'Miejsce wjazdu do Wietnamu - lotnisko',
+				'required' => true,
+				'field_type' => 'select',
+				'opts' => array(
+					array(
+						'title' => 'SGN',
+						'selected' => true,
+					),
+					array(
+						'title' => 'HAN',
+						
+					),
+					array(
+						'title' => 'DAD',
+						
+					),
+					
+				),
+				
+			),
+			array(
+				'title' => 'Posiadam bilet lotniczy',
+				'required' => true,
+				'field_type' => 'select',
+				'opts' => array(
+					array(
+						'title' => 'nie',
+						'selected' => true,
+					),
+					array(
+						'title' => 'tak',
+						
+					),
+					
+				),
+				
+			),
+			/* array(
 				'title' => 'Planowane miejsca odwiedzin',
 				'name' => 'Trasa podróży',
 				'field_type' => 'textarea',
 				'required' => true,
+				
+			), */
+			
+		),
+		
+	),
+	array(
+		'title' => 'Dane dotyczące ubezpieczenia',
+		'fields' => array(
+			array(
+				'title' => 'Posiadam ubezpieczenie',
+				'field_type' => 'select',
+				'required' => true,
+				'opts' => array(
+					array(
+						'title' => 'nie, chcę zakupić',
+						'selected' => true,
+					),
+					array(
+						'title' => 'tak',
+						
+					),
+					
+				),
 				
 			),
 			
 		),
 		
 	),
+	
 	
 );
 

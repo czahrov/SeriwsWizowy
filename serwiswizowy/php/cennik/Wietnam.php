@@ -24,25 +24,17 @@
 
 $data = array(
 	array(
-		'title' => 'Opłata konsularna za wydanie wizy',
-		'name' => 'opłata konsularna',
+		'title' => 'Promesa wizowa',
 		'value' => 'tak',
-		'opts_name' => 'Opłata konsularna tryb',
+		'opts_name' => 'Promesa tryb',
 		'required' => true,
 		'opts' => array(
 			array(
 				'title' => 'tryb normalny',
 				'value' => 'normalny',
-				'hint' => '7 - 9 dni',
-				'price' => 145,
+				'hint' => '',
+				'price' => 45,
 				'selected' => true,
-				
-			),
-			array(
-				'title' => 'tryb ekspresowy',
-				'value' => 'ekpresowy',
-				'hint' => '3 dni<br>Tylko dla wiz biznesowych oraz turystycznych',
-				'price' => 290,
 				
 			),
 			
@@ -58,14 +50,8 @@ $data = array(
 			array(
 				'title' => 'tryb normalny',
 				'value' => 'normalny',
-				'price' => 90,
+				'price' => 50,
 				'selected' => true,
-				
-			),
-			array(
-				'title' => 'tryb ekspresowy',
-				'value' => 'ekspresowy',
-				'price' => 140,
 				
 			),
 			
@@ -144,6 +130,7 @@ $data = array(
 				'hint' => '',
 				'price' => 42,
 				'type' => 'radio',
+				'selected' => true,
 				
 			),
 			array(
@@ -151,7 +138,6 @@ $data = array(
 				'hint' => 'List polecony z potwierdzeniem odbioru',
 				'price' => 22,
 				'type' => 'radio',
-				'selected' => true,
 				
 			),
 			
