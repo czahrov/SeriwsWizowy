@@ -54,7 +54,14 @@
 		
 		if( DMODE ) echo "<!--<div>{$mail->Body}</div>-->";
 		
-		$mail->send();
+		if( DMODE ){
+			// $mail->send();
+			
+		}
+		else{
+			$mail->send();
+			
+		}
 		
 		$mail_status = sprintf(
 			'Gratulacje. Twój wniosek został wysłany pomyślnie!<br>
