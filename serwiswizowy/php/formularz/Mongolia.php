@@ -28,7 +28,7 @@
 
 $data = array(
 	array(
-		'title' => 'Twoje dane',
+		'title' => 'Dane personalne',
 		'fields' => array(
 			array(
 				'title' => 'Imię',
@@ -80,13 +80,18 @@ $data = array(
 				'required' => true,
 				
 			),
-			array(
+			/* array(
 				'title' => 'Miejsce urodzenia - województwo',
+				'required' => true,
+				
+			), */
+			array(
+				'title' => 'Miejsce urodzenia - miejscowość',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - miejscowość',
+				'title' => 'Narodowość',
 				'required' => true,
 				
 			),
@@ -101,8 +106,53 @@ $data = array(
 				
 			),
 			array(
+				'title' => 'Obywatelstwo',
+				'required' => true,
+				
+			),
+			array(
+				'title' => 'Rodzaj paszportu',
+				'required' => true,
+				'field_type' => 'select',
+				'opts' => array(
+					array(
+						'title' => 'zwykły',
+						'selected' => true,
+					),
+					array(
+						'title' => 'służbowy',
+					),
+					array(
+						'title' => 'dyplomatyczny',
+					),
+					
+				),
+				
+			),
+			array(
+				'title' => 'Numer paszportu',
+				'required' => true,
+				'atts' => array(
+					'pattern' => '^[a-zA-Z]{2}\s?\d{7}$',
+					'title' => 'Dwie litery (tzw seria) i 7 cyfr',
+					
+				),
+				
+			),
+			/* array(
 				'title' => 'Data wydania paszportu',
 				'type' => 'date',
+				'required' => true,
+				
+			), */
+			array(
+				'title' => 'Data ważności paszportu',
+				'type' => 'date',
+				'required' => true,
+				
+			),
+			array(
+				'title' => 'Miejsce wydania paszportu',
 				'required' => true,
 				
 			),
@@ -111,7 +161,7 @@ $data = array(
 		
 	),
 	array(
-		'title' => 'Zameldowanie oraz dane kontaktowe',
+		'title' => 'Dane dotyczące zameldowania/zamieszkania',
 		'fields' => array(
 			array(
 				'title' => 'Kraj',
@@ -219,6 +269,11 @@ $data = array(
 				),
 				
 			),
+			array(
+				'title' => 'Stanowisko',
+				'required' => true,
+				
+			),
 			
 		),
 		
@@ -251,6 +306,13 @@ $data = array(
 				),
 				
 			),
+			array(
+				'title' => 'Dane dzieci poniżej 16 roku życia podróżujące razem',
+				'name' => 'dzieci',
+				'hint' => 'jeśli są trzeba podać ich wszystkie dane personalne- narodowość, nazwisko, imię, data urodzenia, związek z podróżującym',
+				'field_type' => 'textarea',
+				
+			),
 			
 		),
 		
@@ -260,20 +322,31 @@ $data = array(
 		'fields' => array(
 			array(
 				'title' => 'Ilość wjazdów',
-				'hint' => 'Podać planowaną ilość wjazdów w przypadku wybrania wizy wielokrotnej',
-				'type' => 'number',
-				'atts' => array(
-					'min' => 1,
-					'step' => 1,
+				'field_type' => 'select',
+				'opts' => array(
+					array(
+						'title' => 'pojedynczy',
+						'selected' => true,
+					),
+					array(
+						'title' => 'podwójny',
+					),
+					array(
+						'title' => 'potrójny',
+					),
+					array(
+						'title' => 'wielokrotny',
+					),
 					
 				),
+				
 			),
 			
 		),
 		
 	),
 	array(
-		'title' => 'Plan podróży',
+		'title' => 'Dane dotyczące podróży',
 		'fields' => array(
 			array(
 				'title' => 'Data wjazdu',
@@ -289,14 +362,141 @@ $data = array(
 			),
 			array(
 				'title' => 'Cel wizyty',
+				'field_type' => 'select',
+				'required' => true,
+				'opts' => array(
+					array(
+						'title' => 'turystyczny',
+						'selected' => true,
+					),
+					array(
+						'title' => 'biznesowy',	
+					),
+					array(
+						'title' => 'studia',
+					),
+					array(
+						'title' => 'praca',
+					),
+					array(
+						'title' => 'odwiedziny u rodziny',
+					),
+					array(
+						'title' => 'tranzyt',
+					),
+					array(
+						'title' => 'prywatny',
+					),
+					array(
+						'title' => 'inny',
+					),
+					
+				),
+				
+			),
+			array(
+				'title' => 'Nazwa hotelu',
+				
+			),
+			array(
+				'title' => 'Adres pobytu w Mongolii',
 				'required' => true,
 				
 			),
 			array(
+				'title' => 'Czy posiada Pan(i) bilet lotniczy',
+				'name' => 'bilet',
+				'field_type' => 'select',
+				'opts' => array(
+					array(
+						'title' => 'nie',
+						'selected' => true,
+					),
+					array(
+						'title' => 'tak',
+					),
+					
+				),
+				
+			),
+			/* array(
 				'title' => 'Planowane miejsca odwiedzin',
 				'name' => 'Trasa podróży',
 				'field_type' => 'textarea',
 				'required' => true,
+				
+			), */
+			
+		),
+		
+	),
+	array(
+		'title' => 'Dane dotyczące organu zapraszającego',
+		'fields' => array(
+			array(
+				'title' => 'Organ zapraszający',
+				'hint' => 'Nazwa organu zapraszającego, adres',
+				'required' => true,
+				'field_type' => 'textarea',
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Dane dotyczące poprzednich wizyt',
+		'fields' => array(
+			array(
+				'title' => 'Czy kiedolwiek odmówiono w misji dyplomatycznej w Mongolii',
+				'name' => 'odmowa',
+				'hint' => "Odp. nie/tak,<br>
+				jeśli tak należy wskazać okoliczności",
+				'required' => true,
+				'field_type' => 'textarea',
+			),
+			array(
+				'title' => 'Czy kiedolwiek ubiegano się o wizę do Mongolii pod innym imieniem/nazwiskiem?',
+				'name' => 'inne nazwisko',
+				'hint' => "Odp. nie/tak,<br>– jeśli tak wskazać okoliczności",
+				'required' => true,
+				'field_type' => 'textarea',
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Pozostałe dane',
+		'fields' => array(
+			array(
+				'title' => 'Czy wniosek był wypełniany przez inną osobę',
+				'name' => 'inna osoba',
+				'hint' => "odp. nie/tak,<br>
+				– jeśli tak wskazać ta osobę- imię, nazwisko, związek z osoba wypełniająca",
+				'required' => true,
+				'field_type' => 'textarea',
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Dane dotyczące ubezpieczenia',
+		'fields' => array(
+			array(
+				'title' => 'Ubezpieczenie',
+				'required' => true,
+				'field_type' => 'select',
+				'opts' => array(
+					array(
+						'title' => 'nie, chcę kupić',
+						'selected' => true,
+					),
+					array(
+						'title' => 'tak',
+					),
+					
+				),
 				
 			),
 			

@@ -8,10 +8,12 @@ Imię/imiona: %s
 Nazwisko: %s
 Inne nazwiska: %s
 Płeć: %s
-Urodzony(a): %s, %s, %s, %s
+Urodzony(a): %s, %s, %s
 PESEL: %s
+Narodowość: %s
 Stan cywilny: %s
 Status zatrudnienia: %s
+Stanowisko: %s
 
 Dane kontaktowe
 -----------------------------
@@ -22,26 +24,38 @@ Email: %s
 
 Paszport
 -----------------------------
-Data wydania: %s
+Rodzaj: %s
+Numer: %s
+Data ważności: %s
+Miejsce wydania: %s
 
 Wiza - wybrane opcje
 -----------------------------
 Pośrednictwo wizowe: tryb %s
 Opłata konsularna: tryb %s
 Polisa: %s
+Odmówiono wizy: %s
 
 Podróż
 -----------------------------
+Cel wizyty: %s
 Data wjazdu: %s
 Data wyjazdu: %s
-Plan podróży:
+Dzieci:
 %s
+Ubiegałem(am) się o wizę w Mongolii pod innym imieniem: %s
+ubezpieczenie: %s
 
 Dodatkowe informacje
 -----------------------------
+Nazwa hotelu: %s
+Adres pobytu w Mongolii: %s
 Ilość wjazdów: %s
+Organ zapraszający: %s
+Wniosek został wypełniony przez inną osobę: %s
 Transport dokumentów: %s
 Transport dokumentów - tryb: %s
+Opłata bankowa: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -53,11 +67,12 @@ Mail wygenerowany automatycznie na stronie %s',
 	$formularz['Płeć'],
 	$formularz['Data_urodzenia'],
 	$formularz['Miejsce_urodzenia_-_miejscowość'],
-	$formularz['Miejsce_urodzenia_-_województwo'],
 	$formularz['Miejsce_urodzenia_-_kraj'],
 	$formularz['PESEL'],
+	$formularz['Obywatelstwo'],
 	$formularz['Stan_cywilny'],
 	$formularz['Status_zatrudnienia'],
+	$formularz['Stanowisko'],
 	
 	$formularz['Zameldowanie_-_ulica'],
 	implode( "/", array( $formularz['Zameldowanie_-_budynek'], $formularz['Zameldowanie_-_lokal'] ) ),
@@ -68,19 +83,31 @@ Mail wygenerowany automatycznie na stronie %s',
 	$formularz['Kontakt_-_telefon'],
 	$formularz['Kontakt_-_email'],
 	
-	$formularz['Data_wydania_paszportu'],
+	$formularz['Rodzaj_paszportu'],
+	$formularz['Numer_paszportu'],
+	$formularz['Data_ważności_paszportu'],
+	$formularz['Miejsce_wydania_paszportu'],
 	
 	$formularz['pośrednictwo_tryb'],
 	$formularz['Opłata_konsularna_tryb'],
 	$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
+	$formularz['odmowa'],
 	
+	$formularz['Cel_wizyty'],
 	$formularz['Data_wjazdu'],
 	$formularz['Data_wyjazdu'],
-	$formularz['Trasa_podróży'],
+	$formularz['dzieci'],
+	$formularz['inne_nazwisko'],
+	$formularz['Ubezpieczenie'],
 	
+	$formularz['Nazwa_hotelu'],
+	$formularz['Adres_pobytu_w_Mongolii'],
 	$formularz['Ilość_wjazdów'],
+	$formularz['Organ_zapraszający'],
+	$formularz['inna_osoba'],
 	$formularz['dokumenty_kierunek'],
 	$formularz['dokumenty_tryb'],
+	$formularz['Opłata_bankowa-opts'],
 	
 	home_url()
 	
