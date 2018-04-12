@@ -22,6 +22,8 @@
 	]
 */
 
+$usd = 3.39445617;
+
 $data = array(
 	array(
 		'title' => 'Opłata konsularna za wydanie wizy',
@@ -32,28 +34,51 @@ $data = array(
 		'required' => true,
 		'opts' => array(
 			array(
-				'title' => 'turystyczna',
-				'hint' => 'czas oczekiwania około 10 dni',
-				'price' => 192,
-				'selected' => true,
+				'title' => 'turystyczna jednokrotna',
+				'hint' => "dokumenty niezbędne do ubiegania się o wizę:<br>
+				- 2 wypełnione kopie formularzy z oryginalnymi podpisami, 4 fotografie paszportowe, paszport ważny przynajmniej 3 miesiące od daty planowanego powrotu,<br>
+				- czas na jaki wiza jest wydawana: wiza jest ważna przez 3 miesiące, w tym na terytorium Pakistanu można być maksymalnie 30 dni,<br>
+				- Wizy turystyczne obecnie wydawane są bardzo niechętnie lub wręcz nie są wydawane!",
+				'price' => round( $usd * 40, 2 ),
+				// 'selected' => true,
 				
 			),
 			array(
-				'title' => 'biznesowa',
-				'hint' => 'czas oczekiwania około 10 dni',
-				'price' => 675,
+				'title' => 'turystyczna wielokrotna',
+				'hint' => "dokumenty niezbędne do ubiegania się o wizę:<br>
+				- 2 wypełnione kopie formularzy z oryginalnymi podpisami, 4 fotografie paszportowe, paszport ważny przynajmniej 3 miesiące od daty planowanego powrotu,<br>
+				- czas na jaki wiza jest wydawana: 1 rok (w tym czasie możemy na teren Pakistanu wjechać maksymalnie 6 razy),<br>
+Wizy turystyczne obecnie wydawane są bardzo niechętnie lub wręcz nie są wydawane!",
+				'price' => round( $usd * 75, 2 ),
+				// 'selected' => true,
 				
 			),
 			array(
-				'title' => 'tranzytowa',
-				'hint' => 'czas oczekiwania około 10 dni',
-				'price' => 92,
+				'title' => 'tranzytowa jednorazowa',
+				'hint' => "dokumenty niezbędne do ubiegania się o wizę:<br>
+				- 2 wypełnione kopie formularzy z oryginalnymi podpisami, 4 fotografie paszportowe, paszport ważny przynajmniej 3 miesiące od daty planowanego powrotu, wymagana jest również wiza (wizy) kraju docelowego,<br>
+				- czas na jaki wiza jest wydawana: wiza jest ważna przez 3 miesiące, w tym na terytorium Pakistanu można być maksymalnie 15 dni,<br>
+				czas oczekiwania na wizę: około 3 tygodnie",
+				'price' => round( $usd * 15, 2 ),
 				
 			),
 			array(
-				'title' => 'studencka',
-				'hint' => 'czas oczekiwania około 10 dni',
-				'price' => 353,
+				'title' => 'tranzytowa dwukrotna (tam i z powrotem)',
+				'hint' => "dokumenty niezbędne do ubiegania się o wizę:<br>
+				- 2 wypełnione kopie formularzy z oryginalnymi podpisami, 4 fotografie paszportowe, paszport ważny przynajmniej 3 miesiące od daty planowanego powrotu, wymagana jest również wiza (wizy) kraju docelowego,<br>
+				- czas na jaki wiza jest wydawana: wiza jest ważna przez 3 miesiące, w tym na terytorium Pakistanu można być maksymalnie 30 dni,<br>
+				czas oczekiwania na wizę: około 3 tygodnie<br>
+				Wizę tę można przedłużyć na miejscu w oddziale MSZ, nie powinno być z tym problemu.",
+				'price' => round( $usd * 30, 2 ),
+				
+			),
+			array(
+				'title' => 'biznesowa jednorazowa',
+				'hint' => "dokumenty niezbędne do ubiegania się o wizę:<br>
+				- 2 wypełnione kopie formularzy z oryginalnymi podpisami, 4 fotografie paszportowe, paszport ważny przynajmniej 3 miesiące od daty planowanego powrotu, list polecający z firmy do której się jedzie, list delegujący z firmy polskiej, adres oraz nr telefonu osoby delegowanej, rezerwacja biletu lotniczego<br>
+				- czas na jaki wiza jest wydawana: 30 dni z możliwością przedłużenia do 60 dni (na jej wykorzystanie mamy 3 miesiące),<br>
+				czas oczekiwania na wizę: około 3 tygodnie",
+				'price' => 252,
 				
 			),
 			

@@ -29,15 +29,49 @@ $data = array(
 		'title' => 'Opłata konsularna za wydanie wizy',
 		'name' => 'opłata konsularna',
 		'value' => 'tak',
-		'opts_name' => 'Opłata konsularna tryb',
+		'opts_name' => 'rodzaj wizy',
 		'required' => true,
 		'opts' => array(
 			array(
-				'title' => 'tryb normalny',
-				'value' => 'normalny',
+				'title' => 'entry jednokrotna',
 				'hint' => '',
 				'price' => 60 * $euro,
 				'selected' => true,
+				
+			),
+			array(
+				'title' => 'entry dwukrotna',
+				'hint' => '',
+				'price' => 70 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'transit jednokrotna',
+				'hint' => '',
+				'price' => 40 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'transit dwukrotna',
+				'hint' => '',
+				'price' => 50 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'multiple do 6 m-cy',
+				'hint' => '',
+				'price' => 100 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'multiple od 6 m-cy do 1 roku',
+				'hint' => '',
+				'price' => 150 * $euro,
+				// 'selected' => true,
 				
 			),
 			

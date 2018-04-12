@@ -277,11 +277,11 @@ $data = array(
 				'required' => true,
 				'opts' => array(
 					array(
-						'title' => 'posiadam',
+						'title' => 'nie posiadam, chcę zakupić',
 						
 					),
 					array(
-						'title' => 'nie posiadam, chcę zakupić',
+						'title' => 'posiadam',
 						
 					),
 					
@@ -295,7 +295,7 @@ $data = array(
 	array(
 		'title' => 'Dane dotyczące wizy',
 		'fields' => array(
-			array(
+			/* array(
 				'title' => 'Rodzaj wizy',
 				'field_type' => 'select',
 				'required' => true,
@@ -340,7 +340,7 @@ $data = array(
 					
 				),
 				
-			),
+			), */
 			array(
 				'title' => 'Ilość wjazdów',
 				'field_type' => 'select',
@@ -506,6 +506,10 @@ $data = array(
 	array(
 		'title' => 'Dane dotyczące organu zapraszającego',
 		'fields' => array(
+			array(
+				'title' => 'organ zapraszający',
+				'field_type' => 'textarea',
+			),
 			
 		),
 		
@@ -526,6 +530,11 @@ $data = array(
 				'hint' => 'Liczba dotychczasowych wizyt na Białorusi w bieżącym roku',
 				'required' => true,
 				'type' => 'number',
+				'atts' => array(
+					'min' => 0,
+					'step' => 1,
+					
+				),
 				
 			),
 			array(

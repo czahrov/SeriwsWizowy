@@ -89,7 +89,7 @@ Mail wygenerowany automatycznie na stronie %s',
 	$formularz['Miejsce_wydania_paszportu'],
 	
 	$formularz['pośrednictwo_tryb'],
-	$formularz['Opłata_konsularna_tryb'],
+	$formularz['rodzaj_wizy'],
 	$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
 	$formularz['odmowa'],
 	

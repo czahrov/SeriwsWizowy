@@ -26,39 +26,218 @@ $euro = 4.2027475;
 
 $data = array(
 	array(
-		'title' => 'Opłata konsularna za wydanie wizy',
-		'name' => 'opłata konsularna',
-		'value' => 'tak',
-		'opts_name' => 'Opłata konsularna tryb',
-		'required' => true,
+		'title' => 'Opłata konsularna za wydanie wizy tranzytowej pojedynczej',
+		'name' => 'opłata konsularna - termin',
+		'value' => 'tranzytowa, jednoosobowa',
+		'type' => 'radio',
+		'opts_name' => 'Opłata konsularna - tryb',
+		// 'required' => true,
+		// 'selected' => true,
 		'opts' => array(
 			array(
-				'title' => 'tryb normalny, wiza jednokrotna',
-				'value' => 'normalny, jednokrotna',
-				'hint' => 'czas oczekiwania: 5-9 dni',
+				'title' => 'jednokrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
+				'price' => round( 10 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'jednokrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 20 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'dwukrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
+				'price' => round( 15 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'dwukrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 30 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'wielokrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
+				'price' => round( 35 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'wielokrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 70 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy tranzytowej grupowej',
+		'name' => 'opłata konsularna - termin',
+		'value' => 'tranzytowa, grupowa',
+		'type' => 'radio',
+		'opts_name' => 'Opłata konsularna - tryb',
+		// 'required' => true,
+		// 'selected' => true,
+		'opts' => array(
+			array(
+				'title' => 'jednokrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
+				'price' => round( 10 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'jednokrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 20 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'dwukrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
+				'price' => round( 15 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'dwukrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 30 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy krótkoterminowej pojedynczej',
+		'name' => 'opłata konsularna - termin',
+		'value' => 'krótkoterminowa, jednoosobowa',
+		'type' => 'radio',
+		'opts_name' => 'Opłata konsularna - tryb',
+		// 'required' => true,
+		'selected' => true,
+		'opts' => array(
+			array(
+				'title' => 'jednokrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
 				'price' => round( 25 * $euro, 2 ),
 				'selected' => true,
 				
 			),
 			array(
-				'title' => 'tryb normalny, wiza dwukrotna',
-				'value' => 'normalny, dwukrotna',
-				'hint' => 'czas oczekiwania: 5-9 dni',
-				'price' => round( 35 * $euro, 2 ),
-				
-			),
-			array(
-				'title' => 'tryb ekpresowy, wiza jednokrotna',
-				'value' => 'ekspresowy, jednokrotna',
-				'hint' => 'czas oczekiwania: 2-4 dni',
+				'title' => 'jednokrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
 				'price' => round( 50 * $euro, 2 ),
+				// 'selected' => true,
 				
 			),
 			array(
-				'title' => 'tryb ekpresowy, wiza dwukrotna',
-				'value' => 'ekspresowy, dwukrotna',
-				'hint' => 'czas oczekiwania: 2-4 dni',
+				'title' => 'dwukrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
+				'price' => round( 35 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'dwukrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 70 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'wielokrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
 				'price' => round( 60 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'wielokrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 120 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy krótkoterminowej grupowej',
+		'name' => 'opłata konsularna - termin',
+		'value' => 'krótkoterminowa, grupowa',
+		'type' => 'radio',
+		'opts_name' => 'Opłata konsularna - tryb',
+		// 'required' => true,
+		// 'selected' => true,
+		'opts' => array(
+			array(
+				'title' => 'jednokrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
+				'price' => round( 10 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'jednokrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 20 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'dwukrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
+				'price' => round( 18 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'dwukrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 36 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy długoterminowej pojedynczej',
+		'name' => 'opłata konsularna - termin',
+		'value' => 'długoterminowa, jednoosobowa',
+		'type' => 'radio',
+		'opts_name' => 'Opłata konsularna - tryb',
+		// 'required' => true,
+		// 'selected' => true,
+		'opts' => array(
+			array(
+				'title' => 'wielokrotna, tryb normalny',
+				'hint' => 'czas oczekiwania: 5 dni',
+				'price' => round( 60 * $euro, 2 ),
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'wielokrotna, tryb ekspresowy',
+				'hint' => 'czas oczekiwania: 48 godzin',
+				'price' => round( 120 * $euro, 2 ),
+				// 'selected' => true,
 				
 			),
 			

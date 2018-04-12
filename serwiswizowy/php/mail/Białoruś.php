@@ -22,15 +22,15 @@ Email: %s
 
 Wiza - wybrane opcje
 -----------------------------
-Rodzaj: %s
-Kategoria wizy: %s
+Opłata konsularna krotność wizy i tryb: %s, %s
 Pośrednictwo wizowe: tryb %s
-Opłata konsularna tryb i krotność wizy: %s
 Polisa: %s
 
 Podróż
 -----------------------------
 Rodzaj paszportu: %s
+Organ zapraszający:
+%s
 Cel podróży: %s
 Data wjazdu: %s
 Data wyjazdu: %s
@@ -79,13 +79,13 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Kontakt_-_telefon'],
 			$formularz['Kontakt_-_email'],
 			
-			$formularz['Rodzaj_wizy'],
-			$formularz['Kategoria_wizy'],
+			$formularz['opłata_konsularna_-_termin'],
+			$formularz['Opłata_konsularna_-_tryb'],
 			$formularz['pośrednictwo_tryb'],
-			$formularz['Opłata_konsularna_tryb'],
 			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
 			
 			$formularz['Rodzaj_paszportu'],
+			$formularz['organ_zapraszający'],
 			$formularz['Cel_podróży'],
 			$formularz['Data_wjazdu'],
 			$formularz['Data_wyjazdu'],
