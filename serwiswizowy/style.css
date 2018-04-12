@@ -1662,6 +1662,9 @@ span.alph {
   width: 2px;
   background-color: #8b425f;
 }
+.wiza.wniosek .main .side .box-wiza .mid {
+  background-color: #fff;
+}
 .wiza.wniosek .main .side .box-wiza .mid .wiersz {
   min-height: 60px;
   border: solid #f3f3f3;
