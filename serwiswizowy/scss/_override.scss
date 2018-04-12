@@ -513,3 +513,21 @@ header{
 	
 }
 
+.informacje{
+	
+	@media(max-width: 767px){
+		
+		& > .container{
+			padding: 0;
+			max-width: initial;
+			
+			& > .page-title{
+				padding: 50px 15px;
+				
+			}
+			
+		}
+		
+	}
+	
+}

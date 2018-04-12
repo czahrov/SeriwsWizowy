@@ -82,7 +82,7 @@
 					Uwaga!
 				</h4>
 				<div class='text'>
-					<?php echo $uwaga; ?>
+					<?php echo apply_filters( 'the_content', $uwaga ); ?>
 				</div>
 				
 			</div>

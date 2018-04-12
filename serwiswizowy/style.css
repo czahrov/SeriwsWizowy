@@ -2693,4 +2693,14 @@ header.breadcrumb h3:not(:first-child)::before {
   font-size: 15px;
 }
 
+@media (max-width: 767px) {
+  .informacje > .container {
+    padding: 0;
+    max-width: initial;
+  }
+  .informacje > .container > .page-title {
+    padding: 50px 15px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
