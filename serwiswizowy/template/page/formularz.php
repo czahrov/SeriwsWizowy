@@ -9,6 +9,7 @@
 	
 	$informacja = get_post_meta( get_post()->ID, 'informacja', true );
 	$opis = get_post_meta( get_post()->ID, 'opis', true );
+	$uwaga = get_post_meta( get_post()->ID, 'uwaga', true );
 	
 ?>
 <?php printBreadcrumb(); ?>
@@ -79,15 +80,17 @@
 			
 		</form>
 		
+		<?php if( !empty( $uwaga ) ): ?>	
 		<div class="opis">
 			<h4 class="">
 				Uwaga!
 			</h4>
 			<div class="text">
-				W przypadku znalezienia błędów w przesłanym do biura papierowym wniosku i konieczności poprawienia w celu skutecznego złożenia w Konsulacie wykonania poprawki koszt usługi poprawienia lub przepisania wniosku w poprawnej formie wynosi 20,00 PLN (brutto).
+				<?php echo apply_filters( 'the_content', $uwaga ); ?>
 			</div>
 			
 		</div>
+		<?php endif; ?>
 		
 		<?php if( !empty( $informacja ) ): ?>
 		<div class="opis">
