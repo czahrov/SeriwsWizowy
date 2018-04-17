@@ -2602,6 +2602,87 @@ header.breadcrumb h3:not(:first-child)::before {
   background-color: transparent;
 }
 
+.navbar-toggler {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  border: none;
+}
+.navbar-toggler > .box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
+}
+.navbar-toggler > .box > .bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #000;
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
+}
+.navbar-toggler > .box > .bar:nth-child(1) {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  top: 0;
+}
+.navbar-toggler > .box > .bar:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+}
+.navbar-toggler > .box > .bar:nth-child(3) {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  bottom: 0;
+}
+.navbar-toggler > .box, .navbar-toggler > .box * {
+  cursor: pointer;
+}
+.navbar-toggler.collapsed > .box {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.navbar-toggler.collapsed > .box > .bar:nth-child(1) {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  top: 0;
+}
+.navbar-toggler.collapsed > .box > .bar:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+.navbar-toggler.collapsed > .box > .bar:nth-child(3) {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  bottom: 0;
+}
+
+.navbar-collapse .nav-item .nav-link {
+  -webkit-transition-property: background, font;
+  transition-property: background, font;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+@media (max-width: 1200px) {
+  .navbar-collapse .nav-item:hover .nav-link {
+    background-color: silver;
+  }
+}
+
 /* ========== STRONY ========== */
 .home .expert > .bg-zoom {
   background-image: url(media/expert.jpg);
