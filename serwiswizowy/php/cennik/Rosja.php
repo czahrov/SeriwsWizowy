@@ -34,7 +34,7 @@ $data = array(
 				'title' => 'tryb normalny',
 				'value' => 'normalny',
 				'hint' => '7 - 9 dni',
-				'price' => 145,
+				'price' => 147,
 				'selected' => true,
 				
 			),
@@ -58,7 +58,7 @@ $data = array(
 			array(
 				'title' => '',
 				'value' => 'tak',
-				'price' => 108,
+				'price' => 110,
 				'selected' => true,
 				
 			),
@@ -92,18 +92,16 @@ $data = array(
 	array(
 		'title' => 'Voucher do Rosji',
 		'value' => 'tak',
-		'opts_name' => 'voucher na',
+		'opts_name' => 'voucher',
 		'opts' => array(
 			array(
-				'title' => 'zamawiany do wizy na 14 dni pobytu',
-				'value' => '14 dni',
+				'title' => 'mam',
 				'price' => 0,
 				
 			),
 			array(
-				'title' => 'zamawiany do wizy na 30 dni pobytu',
-				'value' => '30 dni',
-				'price' => 0,
+				'title' => 'nie mam, zamawiam',
+				'price' => 85,
 				
 			),
 			
@@ -151,7 +149,7 @@ $data = array(
 				'title' => 'turystyczna',
 				'hint' => 'cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 30 dni od daty wydania',
 				'type' => 'radio',
-				'price' => 90,
+				'price' => 0,
 				'selected' => true,
 				
 			),
@@ -377,7 +375,6 @@ $data = array(
 				'hint' => '',
 				'price' => 42,
 				'type' => 'radio',
-				'selected' => true,
 				
 			),
 			array(
@@ -385,6 +382,7 @@ $data = array(
 				'hint' => 'List polecony z potwierdzeniem odbioru',
 				'price' => 22,
 				'type' => 'radio',
+				'selected' => true,
 				
 			),
 			

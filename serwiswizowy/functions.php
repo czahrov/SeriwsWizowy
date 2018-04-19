@@ -364,18 +364,26 @@ function genWizaOpts(){
 }
 
 // formularz z danymi do wizy
-function genWizaDane(){
-	$country = $_POST[ 'kraj' ];
-	$base = __DIR__ . "/php/formularz";
-	if( file_exists( $base . "/{$country}.php" ) ){
-		include $base . "/{$country}.php";
+function genWizaDane( $path = null ){
+	
+	if( $path === null ){
+		$country = $_POST[ 'kraj' ];
+		$base = __DIR__ . "/php/formularz";
+		if( file_exists( $base . "/{$country}.php" ) ){
+			include $base . "/{$country}.php";
+			
+		}
+		elseif( file_exists( $base . "/std.php" ) ){
+			include $base . "/std.php";
+			
+		}
+		else return false;
 		
 	}
-	elseif( file_exists( $base . "/std.php" ) ){
-		include $base . "/std.php";
+	else{
+		require $path;
 		
 	}
-	else return false;
 		
 	// SEGMENT
 	foreach( $data as $seg_num => $segment ){

@@ -26,190 +26,79 @@ $euro = 4.2027475;
 
 $data = array(
 	array(
-		'title' => 'Opłata konsularna za wydanie wizy tranzytowej pojedynczej',
-		'name' => 'opłata konsularna - termin',
-		'value' => 'tranzytowa, jednoosobowa',
+		'title' => 'Opłata konsularna za wydanie wizy jednokrotnej',
+		'name' => 'krotność wizy',
+		'value' => 'jednokrotna',
 		'type' => 'radio',
-		'opts_name' => 'Opłata konsularna - tryb',
-		// 'required' => true,
-		// 'selected' => true,
-		'opts' => array(
-			array(
-				'title' => 'jednokrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 10 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'jednokrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 20 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'dwukrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 15 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'dwukrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 30 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'wielokrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 35 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'wielokrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 70 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Opłata konsularna za wydanie wizy tranzytowej grupowej',
-		'name' => 'opłata konsularna - termin',
-		'value' => 'tranzytowa, grupowa',
-		'type' => 'radio',
-		'opts_name' => 'Opłata konsularna - tryb',
-		// 'required' => true,
-		// 'selected' => true,
-		'opts' => array(
-			array(
-				'title' => 'jednokrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 10 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'jednokrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 20 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'dwukrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 15 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'dwukrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 30 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Opłata konsularna za wydanie wizy krótkoterminowej pojedynczej',
-		'name' => 'opłata konsularna - termin',
-		'value' => 'krótkoterminowa, jednoosobowa',
-		'type' => 'radio',
-		'opts_name' => 'Opłata konsularna - tryb',
+		'opts_name' => 'rodzaj wizy',
 		// 'required' => true,
 		'selected' => true,
 		'opts' => array(
 			array(
-				'title' => 'jednokrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 25 * $euro, 2 ),
+				'title' => 'biznesowa 30-dniowa',
+				'hint' => 'Opis:<br>
+				- biznes, wizyty na targach, rozmowy handlowe.<br>
+				Ważność wiz: - wg. dat podanych na wniosku,<br>
+				- do 30 dni pobytu.',
+				'price' => 110,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'prywatna 30-dniowa',
+					'hint' => nl2br( "Opis:
+					- wyjazdy prywatne, odwiedziny; krewnych / znajomych, grobów bliskich.
+					
+					Ważność wiz:
+					- wg. dat podanych na wniosku,
+					- do 30 dni pobytu." ),
+				'price' => 110,
 				'selected' => true,
 				
 			),
 			array(
-				'title' => 'jednokrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 50 * $euro, 2 ),
+				'title' => 'turystyczna 14-dniowa',
+					'hint' => nl2br( "Opis:
+					- turystyka.
+					
+					Ważność wiz:
+					- wg. dat podanych na wniosku,
+					
+					- do 14 dni pobytu." ),
+				'price' => 110,
 				// 'selected' => true,
 				
 			),
 			array(
-				'title' => 'dwukrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 35 * $euro, 2 ),
+				'title' => 'tranzytowa 2-dniowa',
+					'hint' => nl2br( "Opis:
+					- tranzyt.
+					
+					Ważność wiz:
+					- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu." ),
+				'price' => 110,
 				// 'selected' => true,
 				
 			),
 			array(
-				'title' => 'dwukrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 70 * $euro, 2 ),
+				'title' => 'przepustka do puszczy Białowieskiej 3-dniowa',
+					'hint' => nl2br( "Opis:
+					- wizyta w Puszczy Białowieskiej
+					
+					Ważność wiz:
+					- 3 dni" ),
+				'price' => 110,
 				// 'selected' => true,
 				
 			),
 			array(
-				'title' => 'wielokrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 60 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'wielokrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 120 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Opłata konsularna za wydanie wizy krótkoterminowej grupowej',
-		'name' => 'opłata konsularna - termin',
-		'value' => 'krótkoterminowa, grupowa',
-		'type' => 'radio',
-		'opts_name' => 'Opłata konsularna - tryb',
-		// 'required' => true,
-		// 'selected' => true,
-		'opts' => array(
-			array(
-				'title' => 'jednokrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 10 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'jednokrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 20 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'dwukrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 18 * $euro, 2 ),
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'dwukrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 36 * $euro, 2 ),
+				'title' => 'przepustka do Grodna i Kanał Augustowski 5-dniowa',
+					'hint' => nl2br( "Opis:
+					- wizyta w Grodnie i przeprawa Kanałem Augustowskim
+					
+					Ważność wiz:
+					- 5 dni" ),
+				'price' => 110,
 				// 'selected' => true,
 				
 			),
@@ -218,25 +107,109 @@ $data = array(
 		
 	),
 	array(
-		'title' => 'Opłata konsularna za wydanie wizy długoterminowej pojedynczej',
-		'name' => 'opłata konsularna - termin',
-		'value' => 'długoterminowa, jednoosobowa',
+		'title' => 'Opłata konsularna za wydanie wizy dwukrotnej',
+		'name' => 'krotność wizy',
+		'value' => 'dwukrotna',
 		'type' => 'radio',
-		'opts_name' => 'Opłata konsularna - tryb',
+		'opts_name' => 'rodzaj wizy',
 		// 'required' => true,
 		// 'selected' => true,
 		'opts' => array(
 			array(
-				'title' => 'wielokrotna, tryb normalny',
-				'hint' => 'czas oczekiwania: 5 dni',
-				'price' => round( 60 * $euro, 2 ),
+				'title' => 'biznesowa 30-dniowa',
+				'hint' => nl2br( "Opis:
+				- biznes, wizyty na targach, rozmowy handlowe.
+
+				Ważność wiz:
+				- wg. dat podanych na wniosku,
+				- do 30 dni pobytu(ŁACZNIE DWA WJAZDY)" ),
+				'price' => 150,
 				// 'selected' => true,
 				
 			),
 			array(
-				'title' => 'wielokrotna, tryb ekspresowy',
-				'hint' => 'czas oczekiwania: 48 godzin',
-				'price' => round( 120 * $euro, 2 ),
+				'title' => 'prywatna 30-dniowa',
+				'hint' => nl2br( "Opis:
+				- wyjazdy prywatne, odwiedziny: krewnych / znajomych, grobów bliskich.
+
+				Ważność wiz:
+				- wg. dat podanych na wniosku,
+				- do 30 dni pobytu." ),
+				'price' => 150,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'tranzytowa 2-dniowa',
+				'hint' => nl2br( "Opis: 
+				- tranzyt.
+
+				Ważność wiz: 
+				- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu,
+				- 2-krotna" ),
+				'price' => 150,
+				// 'selected' => true,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy wielokrotnej',
+		'name' => 'krotność wizy',
+		'value' => 'wielokrotna',
+		'type' => 'radio',
+		'opts_name' => 'rodzaj wizy',
+		// 'required' => true,
+		// 'selected' => true,
+		'opts' => array(
+			array(
+				'title' => 'biznesowa 90-dniowa',
+				'hint' => nl2br( "Opis:
+				- biznes, wizyty na targach, rozmowy handlowe.
+
+				Ważność wiz:
+				- wg. dat podanych na wniosku,
+				- do 90 dni pobytu(ŁACZNIE Wszystkie WJAZDY)" ),
+				'price' => 260,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'biznesowa 365-dniowa',
+				'hint' => nl2br( "Opis:
+				- biznes, wizyty na targach, rozmowy handlowe.
+
+				Ważność wiz:
+				- wg. dat podanych na wniosku,max 365 dni" ),
+				'price' => 260,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'tranzytowa 2-dniowa',
+				'hint' => nl2br( "Opis: 
+				- tranzyt.
+
+				Ważność wiz: 
+				- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu,
+				- wielokrotna,
+				- każdy pobyt maks. 2 dni." ),
+				'price' => 260,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'tranzytowa dla kierowców 2-dniowa',
+				'hint' => nl2br( "Opis: 
+				- tranzyt dla kierowców.
+
+				Ważność wiz: 
+				- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu,
+				- wielokrotna,
+				- każdy pobyt maks. 2 dni." ),
+				'price' => 260,
 				// 'selected' => true,
 				
 			),

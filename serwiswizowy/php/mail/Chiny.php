@@ -28,8 +28,9 @@ Rodzaj paszportu: %s
 
 Wiza - wybrane opcje
 -----------------------------
+Krotność wizy: %s
+Rodzaj wizy: %s
 Pośrednictwo wizowe: tryb %s
-Opłata konsularna: tryb %s
 Polisa: %s
 
 Podróż
@@ -89,8 +90,9 @@ Mail wygenerowany automatycznie na stronie %s',
 			
 			$formularz['Rodzaj_paszportu'],
 			
+			$formularz['krotność_wizy'],
+			$formularz['rodzaj_wizy'],
 			$formularz['pośrednictwo_tryb'],
-			$formularz['Opłata_konsularna_tryb'],
 			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
 			
 			$formularz['najdłuższy_pobyt'],

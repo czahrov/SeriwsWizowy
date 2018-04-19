@@ -275,7 +275,7 @@ $data = array(
 		),
 		
 	), */
-	array(
+	/* array(
 		'title' => 'Dane dotyczące wizy',
 		'fields' => array(
 			array(
@@ -306,7 +306,7 @@ $data = array(
 		),
 		
 	),
-	array(
+	array( */
 		'title' => 'Dane dotyczące podróży',
 		'fields' => array(
 			array(

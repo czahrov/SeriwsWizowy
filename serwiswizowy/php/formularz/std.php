@@ -159,8 +159,8 @@ $data = array(
 				'type' => 'tel',
 				'required' => true,
 				'atts' => array(
-					'pattern' => '^(\d+\s?)+$',
-					'title' => 'Dozwolone znaki: cyfry oraz spacja',
+					'pattern' => '^(\d+[\s\-]*)+$',
+					'title' => 'Dozwolone znaki: cyfry, myślniki oraz spacja',
 					
 				),
 				

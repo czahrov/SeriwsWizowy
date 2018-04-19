@@ -357,23 +357,6 @@ $data = array(
 		
 	),
 	array(
-		'title' => 'Dane dotyczące wizy',
-		'fields' => array(
-			array(
-				'title' => 'Ilość wjazdów',
-				'hint' => 'Podać planowaną ilość wjazdów w przypadku wybrania wizy wielokrotnej',
-				'type' => 'number',
-				'atts' => array(
-					'min' => 1,
-					'step' => 1,
-					
-				),
-			),
-			
-		),
-		
-	),
-	array(
 		'title' => 'Plan podróży',
 		'fields' => array(
 			array(

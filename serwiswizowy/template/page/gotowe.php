@@ -28,10 +28,13 @@
 		$mail->setFrom( "noreply@{$_SERVER['HTTP_HOST']}", 'serwiswizowy.pl' );
 		if( DMODE ){
 			$mail->addAddress( 'sprytne@scepter.pl' );
+			// $mail->addAddress( $formularz['Kontakt_-_email'] );
+			
 		}
 		else{
 			$mail->addAddress( $formularz['Kontakt_-_email'] );
 			// $mail->addAddress( 'biuro@serwiswizowy.com' );
+			
 		}
 		$mail->Subject = sprintf(
 			'%s %s złożył(a) wniosek o wizę do: %s',

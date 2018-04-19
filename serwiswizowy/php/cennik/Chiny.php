@@ -24,25 +24,188 @@
 
 $data = array(
 	array(
-		'title' => 'Opłata konsularna za wydanie wizy',
-		'name' => 'opłata konsularna',
-		'value' => 'tak',
-		'opts_name' => 'Opłata konsularna tryb',
+		'title' => 'Opłata konsularna za wydanie wizy jednokrotnej',
+		// 'name' => 'opłata konsularna',
+		'name' => 'krotność wizy',
+		'value' => 'jednokrotna',
+		// 'opts_name' => 'Opłata konsularna tryb',
+		'opts_name' => 'rodzaj wizy',
 		'required' => true,
 		'opts' => array(
 			array(
-				'title' => 'tryb normalny',
-				'value' => 'normalny',
-				'hint' => 'czas oczekiwania: 6-9 dni',
+				'title' => 'turystyczna 30-dniowa normalna',
+				'hint' => nl2br( 'Opis: 
+				- turystyka 
+				- udział w targach jako zwiedzający
+				Ważność wiz: 
+				- 90 dni od momentu wydania,
+				- do 30 dni pobytu.' ),
 				'price' => 260,
 				'selected' => true,
 				
 			),
 			array(
-				'title' => 'tryb ekspresowy',
-				'value' => 'ekpresowy',
-				'hint' => 'czas oczekiwania: 4 dni',
+				'title' => 'turystyczna 30-dniowa ekspresowa',
+				'hint' => nl2br( 'Opis: 
+				- turystyka 
+				- udział w targach jako zwiedzający
+				Ważność wiz: 
+				- 90 dni od momentu wydania,
+				- do 30 dni pobytu.' ),
 				'price' => 370,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'biznesowa normalna',
+				'hint' => nl2br( 'Opis: 
+				- spotkania biznesowe, handlowe 
+				- udział w targach jako wystawca
+				
+				Ważność wiz:
+				- 90 dni od momentu wydania,
+				- do 30 dni pobytu.' ),
+				'price' => 260,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'biznesowa ekspresowa',
+				'hint' => nl2br( 'Opis: 
+				- spotkania biznesowe, handlowe 
+				- udział w targach jako wystawca
+				
+				Ważność wiz:
+				- 90 dni od momentu wydania,
+				- do 30 dni pobytu.' ),
+				'price' => 370,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'naukowa 30-dniowa normalna',
+				'hint' => nl2br( 'Opis: 
+				- wyjazd na konferencję, resarch, 
+				- badania naukowe bez pobierania wynagrodzenia
+
+				Ważność wiz: - 90 dni od momentu wydania,
+				- do 30 dni pobytu.' ),
+				'price' => 260,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'naukowa 30-dniowa ekspresowa',
+				'hint' => nl2br( 'Opis: 
+				- wyjazd na konferencję, resarch, 
+				- badania naukowe bez pobierania wynagrodzenia
+
+				Ważność wiz: - 90 dni od momentu wydania,
+				- do 30 dni pobytu.' ),
+				'price' => 370,
+				// 'selected' => true,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy dwukrotnej',
+		// 'name' => 'opłata konsularna',
+		'name' => 'krotność wizy',
+		'value' => 'dwukrotna',
+		// 'opts_name' => 'Opłata konsularna tryb',
+		'opts_name' => 'rodzaj wizy',
+		'required' => true,
+		'opts' => array(
+			array(
+				'title' => 'turystyczna 30-dniowa normalna',
+				'hint' => nl2br( 'Opis: 
+				- turystyka 
+				- udział w targach jako zwiedzający
+				Ważność wiz: 
+				- 90 dni od momentu wydania,
+				- do 30 dni pobytu.' ),
+				'price' => 260,
+				'selected' => true,
+				
+			),
+			array(
+				'title' => 'turystyczna 30-dniowa ekspresowa',
+				'hint' => nl2br( 'Opis: 
+				- turystyka 
+				- udział w targach jako zwiedzający
+				Ważność wiz: 
+				- 90 dni od momentu wydania,
+				- do 30 dni pobytu.' ),
+				'price' => 370,
+				'selected' => true,
+				
+			),
+			array(
+				'title' => 'biznesowa 30-dniowa normalna',
+				'hint' => nl2br( 'Opis: 
+				- spotkania biznesowe, handlowe, 
+				- udział w targach jako wystawca
+
+				Ważność wiz: 
+				- 180 dni od momentu wydania,
+				- do 30 dni pobytu' ),
+				'price' => 260,
+				'selected' => true,
+				
+			),
+			array(
+				'title' => 'turystyczna 30-dniowa ekspresowa',
+				'hint' => nl2br( 'Opis: 
+				- spotkania biznesowe, handlowe, 
+				- udział w targach jako wystawca
+
+				Ważność wiz: 
+				- 180 dni od momentu wydania,
+				- do 30 dni pobytu' ),
+				'price' => 370,
+				'selected' => true,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy wielokrotnej',
+		// 'name' => 'opłata konsularna',
+		'name' => 'krotność wizy',
+		'value' => 'wielokrotna',
+		// 'opts_name' => 'Opłata konsularna tryb',
+		'opts_name' => 'rodzaj wizy',
+		'required' => true,
+		'opts' => array(
+			array(
+				'title' => 'biznesowa 365-dniowa normalna',
+				'hint' => nl2br( 'Opis: 
+				- spotkania biznesowe, handlowe, 
+				- udział w targach jako wystawca
+				
+				Ważność wiz: 
+				- 365 dni od momentu wydania,
+				- każdy pobyt do 30 dni' ),
+				'price' => 260,
+				'selected' => true,
+				
+			),
+			array(
+				'title' => 'biznesowa 365-dniowa ekspresowa',
+				'hint' => nl2br( 'Opis: 
+				- spotkania biznesowe, handlowe, 
+				- udział w targach jako wystawca
+				
+				Ważność wiz: 
+				- 365 dni od momentu wydania,
+				- każdy pobyt do 30 dni' ),
+				'price' => 370,
+				'selected' => true,
 				
 			),
 			

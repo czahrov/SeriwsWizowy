@@ -45,7 +45,8 @@ $mail->Body = sprintf(
 	
 	Wiza - wybrane opcje
 	-----------------------------
-	Rodzaj wizy: %s
+	Krotność: 
+	Rodzaj wizy: 
 	Pośrednictwo wizowe: tryb %s
 	Wiza do Inii:
 	%s
@@ -63,7 +64,6 @@ $mail->Body = sprintf(
 	
 	Dodatkowe informacje
 	-----------------------------
-	Ilość wjazdów: %s
 	Odmowa wjazdu: %s
 	Kraje odwiedzone w ciągu ostatnich 10 lat:
 	%s
@@ -116,6 +116,7 @@ $mail->Body = sprintf(
 	$formularz['Data_ważności_paszportu'],
 	$formularz['Miejsce_wydania_paszportu'],
 
+	$formularz['krotność_wizy'],
 	$formularz['rodzaj_wizy'],
 	$formularz['pośrednictwo_tryb'],
 	$formularz['Wiza_do_Indii'],

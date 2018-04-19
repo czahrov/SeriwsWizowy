@@ -25,6 +25,8 @@ Miejsce wydania: %s
 
 Wiza - wybrane opcje
 -----------------------------
+Krotność: 
+Rodzaj: 
 Pośrednictwo wizowe: tryb %s
 Promesa: tryb %s
 Polisa: %s
@@ -38,7 +40,6 @@ Data wyjazdu: %s
 
 Dodatkowe informacje
 -----------------------------
-Ilość wjazdów: %s
 Posiadam ubezpieczenie: %s
 Transport dokumentów: %s
 Transport dokumentów - tryb: %s
@@ -69,6 +70,8 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Numer_paszportu'],
 			$formularz['Miejsce_wydania_paszportu'],
 			
+			$formularz['krotność_wizy'],
+			$formularz['typ_wizy'],
 			$formularz['pośrednictwo_tryb'],
 			$formularz['Promesa_tryb'],
 			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
@@ -78,7 +81,6 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Data_wjazdu'],
 			$formularz['Data_wyjazdu'],
 			
-			$formularz['Ilość_wjazdów'],
 			$formularz['Posiadam_ubezpieczenie'],
 			$formularz['dokumenty_kierunek'],
 			$formularz['dokumenty_tryb'],

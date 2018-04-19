@@ -50,8 +50,176 @@ $data = array(
 			array(
 				'title' => 'tryb normalny',
 				'value' => 'normalny',
-				'price' => 50,
+				'price' => 55,
 				'selected' => true,
+				
+			),
+			array(
+				'title' => 'tryb ekspresowy',
+				'value' => 'ekspres',
+				'price' => 70,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Wiza jednokrotna',
+		'name' => 'krotność wizy',
+		'value' => 'jednokrotna',
+		'type' => 'radio',
+		'opts_name' => 'typ wizy',
+		'selected' => true,
+		'opts' => array(
+			array(
+				'title' => 'turystyczna/biznesowa ( promesa ) normalna 30-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna 30 dni od daty podanej na wniosku wizowym',
+				'price' => 45,
+				'selected' => true,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( promesa ) ekspressowa 30-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna 30 dni od daty podanej na wniosku wizowym',
+				'price' => 95,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( promesa ) normalna 85-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna 30 dni od daty podanej na wniosku wizowym',
+				'price' => 75,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( promesa ) ekspresowa 85-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna 30 dni od daty podanej na wniosku wizowym',
+				'price' => 135,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( wklejana w konsulacie ) normalna 85-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna wg dat zaznaczonych we wniosku',
+				'price' => 250,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( wklejana w konsulacie ) ekspresowa 85-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna wg dat zaznaczonych we wniosku',
+				'price' => 300,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Wiza wielokrotna',
+		'name' => 'krotność wizy',
+		'value' => 'wielokrotna',
+		'type' => 'radio',
+		'opts_name' => 'typ wizy',
+		'opts' => array(
+			array(
+				'title' => 'turystyczna/biznesowa ( promesa ) normalna 30-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna 30 dni od daty podanej na wniosku wizowym',
+				'price' => 60,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( promesa ) ekspres 30-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna 30 dni od daty podanej na wniosku wizowym',
+				'price' => 115,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( promesa ) normalna 85-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna 30 dni od daty podanej na wniosku wizowym',
+				'price' => 185,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( promesa ) ekspres 85-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna 30 dni od daty podanej na wniosku wizowym',
+				'price' => 235,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( wklejana w konsulacie ) normalna 85-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna wg dat zaznaczonych we wniosku',
+				'price' => 300,
+				
+			),
+			array(
+				'title' => 'turystyczna/biznesowa ( wklejana w konsulacie ) ekspres 85-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- turystyka, zwiedzanie, biznes,<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna wg dat zaznaczonych we wniosku',
+				'price' => 350,
+				
+			),
+			array(
+				'title' => 'biznesowa ( wklejana w konsulacie ) normalna 90-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna wg dat zaznaczonych we wniosku',
+				'price' => 300,
+				
+			),
+			array(
+				'title' => 'biznesowa ( wklejana w konsulacie ) ekspres 85-dniowa',
+				'hint' => 'Promesa --> wiza wklejana na lotnisku<br>
+				- wizyty na targach, u rodziny / znajomych,<br>
+				- sprawy prywatne.<br>
+				Wiza ważna wg dat zaznaczonych we wniosku',
+				'price' => 350,
 				
 			),
 			

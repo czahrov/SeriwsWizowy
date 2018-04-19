@@ -126,7 +126,7 @@ $data = array(
 				'hint' => 'Numer paszportu składa się z dwóch liter (tzw seria) oraz siedmiu cyfr.<br>Przykład: AA 1234567',
 				'required' => true,
 				'atts' => array(
-					'pattern' => '[A-Z]{2} \d{7}',
+					'pattern' => '[a-zA-Z]{2}\s*\d{7}',
 					
 				),
 				
@@ -208,6 +208,11 @@ $data = array(
 				'name' => 'Kontakt - telefon',
 				'type' => 'tel',
 				'required' => true,
+				'atts' => array(
+					'pattern' => '^\d[\d \-]+$',
+					'title' => 'dozwolone znaki: cyfry, myślniki i spacje'
+					
+				),
 				
 			),
 			array(
@@ -215,6 +220,11 @@ $data = array(
 				'name' => 'Kontakt - email',
 				'type' => 'mail',
 				'required' => true,
+				'atts' => array(
+					'pattern' => '^[^@]+@.+\..+$',
+					'title' => '[login]@[domena] np: jan@kowalski.pl',
+					
+				),
 				
 			),
 			
@@ -254,18 +264,23 @@ $data = array(
 			),
 			array(
 				'title' => 'Nazwa zakładu pracy',
-				'required' => true,
+				// 'required' => true,
 				
 			),
 			array(
 				'title' => 'Adres zakładu pracy',
-				'required' => true,
+				// 'required' => true,
 				
 			),
 			array(
 				'title' => 'Telefon do zakładu pracy',
 				'type' => 'tel',
-				'required' => true,
+				// 'required' => true,
+				'atts' => array(
+					'pattern' => '^\d[\d \-]+$',
+					'title' => 'dozwolone znaki: cyfry, myślniki i spacje'
+					
+				),
 				
 			),
 			array(
@@ -276,6 +291,11 @@ $data = array(
 			array(
 				'title' => 'E-mail zakładu pracy',
 				'type' => 'mail',
+				'atts' => array(
+					'pattern' => '^[^@]+@.+\..+$',
+					'title' => '[login]@[domena] np: jan@kowalski.pl',
+					
+				),
 				
 			),
 			
@@ -356,7 +376,6 @@ $data = array(
 				'required' => true,
 				'atts' => array(
 					'min' => 1,
-					'max' => 999,
 					'step' => 1,
 					
 				),
@@ -365,7 +384,8 @@ $data = array(
 			array(
 				'title' => 'Trasa podróży',
 				'field_type' => 'textarea',
-				'hint' => 'Maksymalnie 5 miejscowości',
+				'hint' => nl2br( 'Miejscowości które planujesz odwiedzić.
+				Maksymalnie 5' ),
 				'required' => true,
 				
 			),
@@ -379,9 +399,9 @@ $data = array(
 			array(
 				'title' => 'Do jakiej instytucji Pan/Pani się wybiera',
 				'name' => 'Odwiedzana instytucja',
-				'hint' => '- W przypadku wyjazdu turystycznego prosimy o podanie nazwy oraz numeru indeksowego przyjmującej firmy turystycznej. <br>
-				- W przypadku wyjazdu w celu biznesowym prosimy o podanie nazwy przyjmującej organizacji lub firmy oraz miasta. <br>
-				- W przypadku wyjazdu w celu prywatnym prosimy o podanie nazwiska, imienia oraz adresu zamieszkania osoby zapraszającej',
+				'hint' => nl2br( '- jeśli posiadasz już Voucher - wpisz dane z Vouchera -  podanie nazwę oraz numer indeksowy przyjmującej firmy turystycznej, jeśli zakupujesz Voucher u nas pozostaw puste pole - wypełnimy je za Ciebie.
+				- w przypadku wyjazdu w celu biznesowym prosimy o podanie nazwy przyjmującej organizacji lub firmy oraz miasta.
+				- w przypadku wyjazdu w celu prywatnym prosimy o podanie nazwiska, imienia oraz adresu zamieszkania osoby zapraszającej.' ),
 				
 			),
 			

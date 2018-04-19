@@ -22,7 +22,8 @@ Email: %s
 
 Wiza - wybrane opcje
 -----------------------------
-Opłata konsularna krotność wizy i tryb: %s, %s
+Krotność wizy: %s
+Rodzaj wizy: %s
 Pośrednictwo wizowe: tryb %s
 Polisa: %s
 
@@ -79,8 +80,8 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Kontakt_-_telefon'],
 			$formularz['Kontakt_-_email'],
 			
-			$formularz['opłata_konsularna_-_termin'],
-			$formularz['Opłata_konsularna_-_tryb'],
+			$formularz['krotność_wizy'],
+			$formularz['rodzaj_wizy'],
 			$formularz['pośrednictwo_tryb'],
 			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
 			
