@@ -236,24 +236,18 @@ $data = array(
 	),
 	array(
 		'title' => 'Polisa ubezpieczeniowa',
-		'value' => 'tak',
-		'opts_name' => 'Polisa na dni',
+		// 'value' => 'tak',
+		// 'opts_name' => 'Polisa na dni',
+		'required' => true,
 		'opts' => array(
 			array(
-				'title' => 'Polisa do 7 dni',
-				'value' => '7',
+				'title' => 'nie',
 				'price' => 0,
+				'selected' => true,
 				
 			),
 			array(
-				'title' => 'Polisa do 14 dni',
-				'value' => '14',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'Polisa do 30 dni',
-				'value' => '30',
+				'title' => 'tak',
 				'price' => 0,
 				
 			),
@@ -264,41 +258,23 @@ $data = array(
 	array(
 		'title' => 'Transport dokumentów',
 		'name' => 'dokumenty kierunek',
-		'opts_name' => 'dokumenty kierunek',
+		'opts_name' => 'dokumenty-transport[]',
 		'hint' => '',
 		'required' => true,
 		'opts' => array(
 			array(
 				'title' => 'Jedna strona',
 				'hint' => 'Odesłanie gotowej wizy wraz z dokumentami',
+				'type' => 'checkbox',
 				'price' => 26,
-				'type' => 'radio',
 				'selected' => true,
 				
 			),
 			array(
 				'title' => 'Obie strony',
 				'hint' => 'Kurier po dokumenty oraz odesłanie gotowej wizy z dokumentami',
+				'type' => 'checkbox',
 				'price' => 47,
-				'type' => 'radio',
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Transport dokumentów - tryb',
-		'name' => 'dokumenty tryb',
-		'opts_name' => 'dokumenty tryb',
-		'hint' => '',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'Ekspress do 10',
-				'hint' => '',
-				'price' => 75,
-				'type' => 'radio',
 				
 			),
 			array(
@@ -316,6 +292,7 @@ $data = array(
 				'selected' => true,
 				
 			),
+			
 			
 		),
 		

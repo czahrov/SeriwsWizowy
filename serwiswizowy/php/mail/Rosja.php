@@ -49,7 +49,6 @@ Plan podróży:
 Dodatkowe informacje
 -----------------------------
 Transport dokumentów: %s
-Transport dokumentów - tryb: %s
 Ilość wjazdów: %s
 Ilość odbytych wizyt: %s
 Obywatelstwo Rosji: %s
@@ -93,13 +92,12 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['pośrednictwo_tryb'],
 			$formularz['Opłata_serwisowa'],
 			$formularz['Opłata_konsularna_tryb'],
-			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
+			$formularz['Polisa_ubezpieczeniowa-opts'],
 			$formularz['voucher'],
 			$formularz['Data_wjazdu'],
 			$formularz['Data_wyjazdu'],
 			$formularz['Trasa_podróży'],
-			$formularz['dokumenty_kierunek'],
-			$formularz['dokumenty_tryb'],
+			implode( ", ", $formularz['dokumenty-transport'] ),
 			$formularz['Ilość_wjazdów'],
 			$formularz['Dane_dotyczące_poprzednich_wizyt'],
 			$formularz['Obywatelstwo_Rosji'],
@@ -107,6 +105,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Posiada_rodzinę_w_Rosji'],
 			$formularz['Posiada_Rosyjskie_ubezpiecznie'],
 			$formularz['Dzieci'],
+			
 			home_url()
 			
 		);

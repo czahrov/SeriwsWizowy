@@ -59,7 +59,6 @@ Odmówiono mi wizy do Chin: %s
 Posiadam ważne ubezpieczenie: %s
 Posiadam bilet lotniczy: %s
 Transport dokumentów: %s
-Transport dokumentów - tryb: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -93,7 +92,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['krotność_wizy'],
 			$formularz['rodzaj_wizy'],
 			$formularz['pośrednictwo_tryb'],
-			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
+			$formularz['Polisa_ubezpieczeniowa-opts'],
 			
 			$formularz['najdłuższy_pobyt'],
 			$formularz['Data_wjazdu'],
@@ -111,8 +110,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['odmowa'],
 			$formularz['ubezpieczenie'],
 			$formularz['Bilet_lotniczy'],
-			$formularz['dokumenty_kierunek'],
-			$formularz['dokumenty_tryb'],
+			implode( ", ", $formularz['dokumenty-transport'] ),
 			
 			home_url()
 			

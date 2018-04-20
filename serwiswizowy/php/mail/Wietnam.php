@@ -42,7 +42,6 @@ Dodatkowe informacje
 -----------------------------
 Posiadam ubezpieczenie: %s
 Transport dokumentów: %s
-Transport dokumentów - tryb: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -74,7 +73,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['typ_wizy'],
 			$formularz['pośrednictwo_tryb'],
 			$formularz['Promesa_tryb'],
-			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
+			$formularz['Polisa_ubezpieczeniowa-opts']),
 			
 			$formularz['Cel_wizyty'],
 			$formularz['Miejsce_wjazdu_do_Wietnamu_-_lotnisko'],
@@ -82,8 +81,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Data_wyjazdu'],
 			
 			$formularz['Posiadam_ubezpieczenie'],
-			$formularz['dokumenty_kierunek'],
-			$formularz['dokumenty_tryb'],
+			implode( ", ", $formularz['dokumenty-transport'] ),
 			
 			home_url()
 			

@@ -54,7 +54,6 @@ Ilość wjazdów: %s
 Organ zapraszający: %s
 Wniosek został wypełniony przez inną osobę: %s
 Transport dokumentów: %s
-Transport dokumentów - tryb: %s
 Opłata bankowa: %s
 
 ---
@@ -90,7 +89,7 @@ Mail wygenerowany automatycznie na stronie %s',
 	
 	$formularz['pośrednictwo_tryb'],
 	$formularz['rodzaj_wizy'],
-	$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
+	$formularz['Polisa_ubezpieczeniowa-opts'],
 	$formularz['odmowa'],
 	
 	$formularz['Cel_wizyty'],
@@ -105,8 +104,7 @@ Mail wygenerowany automatycznie na stronie %s',
 	$formularz['Ilość_wjazdów'],
 	$formularz['Organ_zapraszający'],
 	$formularz['inna_osoba'],
-	$formularz['dokumenty_kierunek'],
-	$formularz['dokumenty_tryb'],
+	implode( ", ", $formularz['dokumenty-transport'] ),
 	$formularz['Opłata_bankowa-opts'],
 	
 	home_url()

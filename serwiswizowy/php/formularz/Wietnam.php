@@ -58,11 +58,11 @@ $data = array(
 				'required' => true,
 				'opts' => array(
 					array(
-						'title' => 'Mężczyzna'
+						'title' => 'Mężczyzna',
 						
 					),
 					array(
-						'title' => 'Kobieta'
+						'title' => 'Kobieta',
 						
 					),
 					
@@ -305,8 +305,8 @@ $data = array(
 			
 		),
 		
-	),
-	array( */
+	),*/
+	array(
 		'title' => 'Dane dotyczące podróży',
 		'fields' => array(
 			array(
@@ -415,7 +415,6 @@ $data = array(
 		),
 		
 	),
-	
 	
 );
 

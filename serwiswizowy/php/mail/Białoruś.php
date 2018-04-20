@@ -53,7 +53,6 @@ Dotychczasowe wizyty: %s
 Odmowa wizy: %s
 Posiada bilet lotniczy: %s
 Transport dokumentów: %s
-Transport dokumentów - tryb: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -83,7 +82,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['krotność_wizy'],
 			$formularz['rodzaj_wizy'],
 			$formularz['pośrednictwo_tryb'],
-			$formularz['Polisa_ubezpieczeniowa'] === 'tak'?( "na {$formularz['Polisa_na_dni']} dni" ):( $formularz['Polisa_ubezpieczeniowa'] ),
+			$formularz['Polisa_ubezpieczeniowa-opts'],
 			
 			$formularz['Rodzaj_paszportu'],
 			$formularz['organ_zapraszający'],
@@ -104,8 +103,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Dotychczasowe_wizyty'],
 			$formularz['Odmowa_wizy'],
 			$formularz['Bilet_lotniczy'],
-			$formularz['dokumenty_kierunek'],
-			$formularz['dokumenty_tryb'],
+			implode( ",", $formularz['dokumenty-transport'] ),
 			
 			
 			home_url()
