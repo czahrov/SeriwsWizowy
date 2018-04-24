@@ -271,7 +271,6 @@ $data = array(
 			),
 			array(
 				'title' => 'Stanowisko',
-				'required' => true,
 				
 			),
 			

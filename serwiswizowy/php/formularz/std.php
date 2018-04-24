@@ -28,7 +28,7 @@
 
 $data = array(
 	array(
-		'title' => 'Twoje dane',
+		'title' => 'Dane personalne',
 		'fields' => array(
 			array(
 				'title' => 'Imię',

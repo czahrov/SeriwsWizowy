@@ -40,7 +40,7 @@ $data = array(
 				- czas na jaki wiza jest wydawana: wiza jest ważna przez 3 miesiące, w tym na terytorium Pakistanu można być maksymalnie 30 dni,<br>
 				- Wizy turystyczne obecnie wydawane są bardzo niechętnie lub wręcz nie są wydawane!",
 				'price' => 168,
-				// 'selected' => true,
+				'selected' => true,
 				
 			),
 			array(

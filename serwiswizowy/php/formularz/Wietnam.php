@@ -179,7 +179,7 @@ $data = array(
 				'type' => 'tel',
 				'required' => true,
 				'atts' => array(
-					'pattern' => '^(\d+\s?)$',
+					'pattern' => '^(\d+\s?)+$',
 					'title' => 'Dozwolone znaki: cyfry oraz spacja',
 					
 				),

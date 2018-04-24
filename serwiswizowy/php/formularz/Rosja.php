@@ -127,6 +127,7 @@ $data = array(
 				'required' => true,
 				'atts' => array(
 					'pattern' => '[a-zA-Z]{2}\s*\d{7}',
+					'title' => '2 litery i 7 cyfr',
 					
 				),
 				
@@ -416,8 +417,7 @@ $data = array(
 				'type' => 'number',
 				'hint' => 'Chodzi tutaj o liczbę wizyt w Rosji, od 1 do 10 i więcej',
 				'atts' => array(
-					'min' => 1,
-					'max' => 999,
+					'min' => 0,
 					'step' => 1,
 				),
 				

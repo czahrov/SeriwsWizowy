@@ -34,7 +34,7 @@
 	<div class="container">
 		<div class="d-flex justify-content-between flex-column flex-md-row align-items-center">
 			<div class="p-4">
-				<p>Copyright 2018 Serwiswizowy.com</p>
+				<p>Copyright &copy; 2018 Serwiswizowy.com</p>
 			</div>
 			<div class="p-4">
 				<p>Projekt i wykonanie:  <Span><a title="Scepter Agencja interaktywna" href="http://www.scepter.pl">Scepter Agencja interaktywna</a></Span></p>

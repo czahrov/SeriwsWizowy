@@ -57,12 +57,54 @@
 		
 		if( DMODE ) echo "<!--<div>{$mail->Body}</div>-->";
 		
+		/* XML */
+		
+		// ładowanie tekstu XML z szablonu
+		// generowanie pliku XML
+		// zapisywanie do tymczasowego pliku
+		// załączanie pliku do maila
+		// wysyłka maila
+		// kasowanie pliku XML
+		
+		$base = get_template_directory() . "/php/xml/";
+		if( file_exists( $base . "{$formularz['kraj']}.php" ) ){
+			require $base . "{$formularz['kraj']}.php";
+			
+		}
+		elseif( $base . "std.php" ){
+			require $base . "std.php";
+			
+		}
+		
+		// $xml = new SimpleXMLElement( $xml_note );
+		$file_dir = sprintf( '%s/tmp/', __DIR__ );
+		$file_name = sprintf( 'tmp_%s.xml', time() );
+		$file_path = sprintf( '%s%s', $file_dir, $file_name );
+		
+		if( !file_exists( $file_dir ) ) mkdir( $file_dir, 755, true );
+		
+		$file = fopen( $file_path, 'w' );
+		fwrite( $file, $xml->asXML() );
+		fclose( $file );
+		$mail->addAttachment( $file_path, 'formularz.xml' );
+		
+		/* /XML */
+		
 		if( DMODE ){
-			// $mail->send();
+			printf(
+				'<!--
+				%s
+				-->',
+				file_get_contents( $file_path )
+				
+			);
+			
+			$mail->send();
 			
 		}
 		else{
 			$mail->send();
+			unlink( $file_name );
 			
 		}
 		

@@ -73,7 +73,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['typ_wizy'],
 			$formularz['pośrednictwo_tryb'],
 			$formularz['Promesa_tryb'],
-			$formularz['Polisa_ubezpieczeniowa-opts']),
+			$formularz['Polisa_ubezpieczeniowa-opts'],
 			
 			$formularz['Cel_wizyty'],
 			$formularz['Miejsce_wjazdu_do_Wietnamu_-_lotnisko'],

@@ -8,6 +8,7 @@
 	if( DMODE ){
 		echo "<!--";
 		print_r( $_POST );
+		print_r( $_FILES );
 		echo "-->";
 		
 	}
@@ -41,6 +42,11 @@
 			require get_template_directory() . "/php/mail/voucher_rosja.php";
 			
 			if( DMODE ) echo "<!--<div>{$mail->Body}</div>-->";
+			
+			if( $_FILES['Potwierdzenie']['size'] > 0 ){
+				$mail->addAttachment( $_FILES["Potwierdzenie"]["tmp_name"], $_FILES["Potwierdzenie"]['name'] );
+				
+			}
 			
 			if( DMODE ){
 				// $mail->send();
@@ -88,7 +94,7 @@
 		<div class="col-md-4 d-none d-md-block fp_pin_rail">
 			<div class="box-single-page fp_pin_dragger">
 				<h3><?php echo $post->post_title; ?></h3>
-				<a class='btn_prev'>
+				<a class='' href='<?php echo home_url( 'uslugi' ); ?>'>
 					<i class="fa fa-angle-left fa-1x arrow-prev" aria-hidden="true"></i>
 				</a>
 			</div>
@@ -97,10 +103,13 @@
 			<?php if( isset( $mail_status ) ): ?>
 				<?php echo "<div>{$mail_status}</div>"; ?>
 			<?php else: ?>
+			<div>
+				<?php echo apply_filters( 'the_content', $post->post_content ); ?>
+			</div>
 			<div class=''>
 				UWAGA WAZNA INFORMACJA:  Po otrzymaniu wniosku voucherowego droga elektroniczną bez pośrednictwa wizowego przez Serwiswizowy.com należy zaaplikować o wizę w ciągu najbliższych 5 dni.
 			</div>
-			<form method='post'>
+			<form method='post' enctype="multipart/form-data">
 				<?php 
 					genWizaDane( get_template_directory() . "/php/formularz/voucher_rosja.php" );
 				?>

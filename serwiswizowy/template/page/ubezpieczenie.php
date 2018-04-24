@@ -97,6 +97,9 @@
 			<?php if( isset( $mail_status ) ): ?>
 				<?php echo "<div>{$mail_status}</div>"; ?>
 			<?php else: ?>
+			<div>
+				<?php echo apply_filters( 'the_content', get_post()->post_content ); ?>
+			</div>
 			<form method='post'>
 				<?php 
 					genWizaDane( get_template_directory() . "/php/formularz/ubezpieczenie.php" );
@@ -106,10 +109,13 @@
 					<p class="msg-btn">
 						Wyślij wniosek
 					</p>
-					<i class="fa fa-angle-right fa-1x arrow-send"></i>
+					<i class="fa fa-angle-right fa-1x arrow-send d-flex align-items-center justify-content-center"></i>
 				</button>
 				
 			</form>
+			<div>
+				<?php echo apply_filters( 'the_content', get_post_meta( get_post()->ID, 'pod_formularzem', true ) ); ?>
+			</div>
 			<?php endif; ?>
 			
 		</div>

@@ -17,7 +17,10 @@ Data wjazdu do Rosji: %s
 Data wyjazdu z Rosji: %s
 Plan podróży:
 %s
-Hotel: %s
+Rezerwacja w hotelu: %s
+Dane hotelu:
+%s
+Potwierdzenie: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -32,7 +35,9 @@ Mail wygenerowany automatycznie na stronie %s',
 	$_POST['Data_wjazdu_do_Rosji'],
 	$_POST['Data_wyjazdu_z_Rosji'],
 	$_POST['Miasto/a'],
-	$_POST['hotel'],
+	$_POST['Rezerwacja_w_hotelu'],
+	$_POST['Dane_hotelu'],
+	isset( $_FILES['Potwierdzenie'] )?( 'w załączniku' ):( 'brak' ),
 	
 	home_url()
 	

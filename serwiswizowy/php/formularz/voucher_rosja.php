@@ -105,10 +105,41 @@ $data = array(
 				'required' => true,
 				
 			),
-			array(
+			/* array(
 				'title' => 'hotel',
 				'hint' => 'Jeżeli posiadają Państwo rezerwację prosimy o wpisanie pełnego adresu i nazwy hotelu, wraz z numerem telefonu i załączenie potwierdzenia jego rezerwacji',
 				// 'required' => true,
+				
+			), */
+			array(
+				'title' => 'Rezerwacja w hotelu',
+				'hint' => '',
+				'field_type' => 'select',
+				'required' => true,
+				'opts' => array(
+					array(
+						'title' => 'nie mam',
+						'value' => 'nie',
+						
+					),
+					array(
+						'title' => 'mam już rezerwację w hotelu w Rosji',
+						'value' => 'tak',
+						
+					),
+					
+				),
+				
+			),
+			array(
+				'title' => 'Dane hotelu',
+				'hint' => 'Wypełnić jeśli posiadasz rezerwację hotelową',
+				
+			),
+			array(
+				'title' => 'Potwierdzenie',
+				'hint' => 'Potwierdzenie rezerwacji hotelowej w Rosji',
+				'type' => 'file',
 				
 			),
 			

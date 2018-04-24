@@ -538,6 +538,7 @@ $data = array(
 				'name' => 'karany',
 				'hint' => 'nie/tak – jeśli tak podac kiedy, kraj, zarzut, wyrok',
 				'required' => true,
+				'field_type' => 'textarea',
 				
 			),
 			
