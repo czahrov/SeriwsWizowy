@@ -37,7 +37,7 @@ Pośrednictwo wizowe: tryb %s
 Opłata serwisowa: %s
 Opłata konsularna: tryb %s
 Polisa: %s
-Voucher do Rosji: %s
+Voucher/zaproszenie do Rosji: %s
 
 Podróż
 -----------------------------

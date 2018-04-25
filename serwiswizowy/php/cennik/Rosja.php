@@ -90,18 +90,26 @@ $data = array(
 		
 	),
 	array(
-		'title' => 'Voucher do Rosji',
-		'value' => 'tak',
+		'title' => 'Voucher do Rosji i zaproszenie biznesowe',
+		// 'value' => 'tak',
 		'opts_name' => 'voucher',
 		'opts' => array(
 			array(
-				'title' => 'mam',
-				'price' => 0,
+				'title' => 'voucher turystyczny do 14 dni',
+				'hint' => 'Dokument niezbędny do uzyskania <b>wizy turystycznej</b>',
+				'price' => 95,
 				
 			),
 			array(
-				'title' => 'nie mam, zamawiam',
-				'price' => 85,
+				'title' => 'voucher turystyczny do 30 dni',
+				'hint' => 'Dokument niezbędny do uzyskania <b>wizy turystycznej</b>',
+				'price' => 145,
+				
+			),
+			array(
+				'title' => 'zaproszenie biznesowe',
+				'hint' => 'Dokument niezbędny do uzyskania <b>wizy biznesowej</b>',
+				'price' => 0,
 				
 			),
 			
@@ -140,7 +148,7 @@ $data = array(
 		'opts' => array(
 			array(
 				'title' => 'turystyczna',
-				'hint' => 'cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 30 dni od daty wydania',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 30 dni od daty wydania' ),
 				'type' => 'radio',
 				'price' => 0,
 				'selected' => true,
@@ -148,7 +156,7 @@ $data = array(
 			),
 			array(
 				'title' => 'biznesowa',
-				'hint' => 'cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 90 dni od daty wydania',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 90 dni od daty wydania' ),
 				'type' => 'radio',
 				'price' => 90,
 				
@@ -210,14 +218,14 @@ $data = array(
 		'opts' => array(
 			array(
 				'title' => 'turystyczna',
-				'hint' => 'cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 395 dni od daty wydania',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 395 dni od daty wydania' ),
 				'type' => 'radio',
 				'price' => 95,
 				
 			),
 			array(
 				'title' => 'biznesowa',
-				'hint' => 'cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 995 dni od daty wydania',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 995 dni od daty wydania' ),
 				'type' => 'radio',
 				'price' => 95,
 				
@@ -265,14 +273,14 @@ $data = array(
 		'opts' => array(
 			array(
 				'title' => 'turystyczna',
-				'hint' => 'cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 3120 dni od daty wydania',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 3120 dni od daty wydania' ),
 				'type' => 'radio',
 				'price' => 120,
 				
 			),
 			array(
 				'title' => 'biznesowa',
-				'hint' => 'cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 9120 dni od daty wydania',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 9120 dni od daty wydania' ),
 				'type' => 'radio',
 				'price' => 120,
 				
