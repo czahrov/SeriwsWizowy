@@ -1299,6 +1299,7 @@ header.breadcrumb h3 {
   margin: 0 0 30px 0;
   font-weight: 400;
   font-size: 15px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -2048,6 +2049,7 @@ span.alph {
 }
 
 label {
+  min-height: 40px;
   font-weight: 600;
   font-size: 13px;
   text-transform: uppercase;
@@ -2532,6 +2534,10 @@ body {
   .o-firmie-single .single-page-content {
     padding: 0;
   }
+}
+.o-firmie-single form {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 body.adminbar {

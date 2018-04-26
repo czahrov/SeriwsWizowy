@@ -41,6 +41,7 @@ Dodatkowe informacje
 -----------------------------
 Ilość wjazdów: %s
 Transport dokumentów: %s
+Transport dokumentów - tryb: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -78,7 +79,8 @@ Mail wygenerowany automatycznie na stronie %s',
 	$formularz['Trasa_podróży'],
 	
 	$formularz['Ilość_wjazdów'],
-	implode( ",", $formularz['dokumenty_transport'] ),
+	$formularz['dokumenty_kierunek'],
+	$formularz['dokumenty_tryb'],
 	
 	home_url()
 	

@@ -78,17 +78,20 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - kraj',
+				'title' => 'Kraj urodzenia',
+				'name' => 'Miejsce urodzenia - kraj',
 				'required' => true,
 				
 			),
 			/* array(
-				'title' => 'Miejsce urodzenia - województwo',
+				'title' => 'Województwo urodzenia',
+				'name' => 'Miejsce urodzenia - województwo',
 				'required' => true,
 				
 			), */
 			array(
-				'title' => 'Miejsce urodzenia - miejscowość',
+				'title' => 'Miejscowość urodzenia',
+				'name' => 'Miejsce urodzenia - miejscowość',
 				'required' => true,
 				
 			),
@@ -118,12 +121,14 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia ojca - kraj',
+				'title' => 'Kraj urodzenia ojca',
+				'name' => 'Miejsce urodzenia ojca - kraj',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia ojca - miejscowość',
+				'title' => 'Miejscowość urodzenia ojca',
+				'name' => 'Miejsce urodzenia ojca - miejscowość',
 				'required' => true,
 				
 			),
@@ -138,12 +143,14 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia matki - kraj',
+				'title' => 'Kraj urodzenia matki',
+				'name' => 'Miejsce urodzenia matki - kraj',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia matki - miejscowość',
+				'title' => 'Miejscowość matki',
+				'name' => 'Miejsce urodzenia matki - miejscowość',
 				'required' => true,
 				
 			),
@@ -448,9 +455,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Czy pozwolenie na wizę lub przedłużenie pobytu zostało kiedykolwiek odmówione',
+				'title' => 'Odmowa wizy',
 				'name' => 'odmowa',
-				'hint' => 'nie/tak, – jeśli tak wskazać, kiedy nasępiła odmowa, kto odmówił wizyty/przedłużenia pobytu/ wskazać należy nr kontroli',
+				'hint' => 'Czy pozwolenie na wizę lub przedłużenie pobytu zostało kiedykolwiek odmówione<br>nie/tak, – jeśli tak wskazać, kiedy nasępiła odmowa, kto odmówił wizyty/przedłużenia pobytu/ wskazać należy nr kontroli',
 				'required' => true,
 				'field_type' => 'textarea',
 				
@@ -463,16 +470,17 @@ $data = array(
 		'title' => 'Pozostałe dane',
 		'fields' => array(
 			array(
-				'title' => 'Kraje odwiedzone w ciągu ostatnich 10 lat',
-				'hint' => 'wskazać maksymalnie 4 kraje',
+				'title' => 'Pobyt za granicą',
+				'name' => 'Kraje odwiedzone w ciągu ostatnich 10 lat',
+				'hint' => 'Kraje odwiedzone w ciągu ostatnich 10 lat<br>wskazać maksymalnie 4 kraje',
 				'required' => true,
 				'field_type' => 'textarea',
 				
 			),
 			array(
-				'title' => 'Czy odwiedzane były kraje SAARC w ciągu ostatni 3 lat',
+				'title' => 'SAARC',
 				'name' => 'SAARC',
-				'hint' => 'nie/tak, – jeśli taka wskazać, jaki kraj, w którym roku, ile razy<br>
+				'hint' => 'Czy odwiedzane były kraje SAARC w ciągu ostatni 3 lat<br>nie/tak, – jeśli taka wskazać, jaki kraj, w którym roku, ile razy<br>
 				Kraje SAARC: Pakistan, Bangladesz, Sri Lankę, Nepal, Malediwy, Bhutan, Afganistan',
 				'required' => true,
 				'field_type' => 'textarea',

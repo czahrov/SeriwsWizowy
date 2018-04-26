@@ -307,8 +307,9 @@ $data = array(
 		'title' => 'Rodzina',
 		'fields' => array(
 			array(
-				'title' => 'Czy starający się o wizę posiada rodzinę w Rosji',
+				'title' => 'Rodzina w Rosji',
 				'name' => 'Posiada rodzinę w Rosji',
+				'hint' => 'Czy starający się o wizę posiada rodzinę w Rosji',
 				'field_type' => 'select',
 				'required' => true,
 				'opts' => array(
@@ -332,9 +333,9 @@ $data = array(
 		'title' => 'Ubezpieczenie',
 		'fields' => array(
 			array(
-				'title' => 'Czy starający się o wizę posiada ważne w Rosji ubezpieczenie',
+				'title' => 'Ubezpieczenie w Rosji',
 				'name' => 'Posiada Rosyjskie ubezpiecznie',
-				'hint' => 'Do Rosji wymagane jest ubezpieczenie ważne w Rosji (koszty leczenia min. 30 000 euro)',
+				'hint' => 'Czy starający się o wizę posiada ważne w Rosji ubezpieczenie?<br>Do Rosji wymagane jest ubezpieczenie ważne w Rosji (koszty leczenia min. 30 000 euro)',
 				'required' => true,
 				'field_type' => 'select',
 				'opts' => array(
@@ -398,7 +399,7 @@ $data = array(
 		'title' => 'Instytuacja',
 		'fields' => array(
 			array(
-				'title' => 'Do jakiej instytucji Pan/Pani się wybiera',
+				'title' => 'Odwiedzana instytucja',
 				'name' => 'Odwiedzana instytucja',
 				'hint' => nl2br( '- jeśli posiadasz już Voucher - wpisz dane z Vouchera -  podanie nazwę oraz numer indeksowy przyjmującej firmy turystycznej, jeśli zakupujesz Voucher u nas pozostaw puste pole - wypełnimy je za Ciebie.
 				- w przypadku wyjazdu w celu biznesowym prosimy o podanie nazwy przyjmującej organizacji lub firmy oraz miasta.
@@ -413,11 +414,12 @@ $data = array(
 		'title' => 'Poprzednie wizyty',
 		'fields' => array(
 			array(
+				'title' => 'Poprzednie wizyty',
 				'title' => 'Dane dotyczące poprzednich wizyt',
 				'type' => 'number',
 				'hint' => 'Chodzi tutaj o liczbę wizyt w Rosji, od 1 do 10 i więcej',
 				'atts' => array(
-					'min' => 0,
+					'min' => 1,
 					'step' => 1,
 				),
 				
@@ -430,10 +432,10 @@ $data = array(
 		'title' => 'Dzieci',
 		'fields' => array(
 			array(
-				'title' => 'Dzieci do lat 16 podróżujące razem do Rosji',
+				'title' => 'Dzieci',
 				'name' => 'Dzieci',
 				'field_type' => 'textarea',
-				'hint' => 'Jeśli tak, należy podać dane personalne i adres',
+				'hint' => 'Dzieci do lat 16 podróżujące razem do Rosji<br>Jeśli tak, należy podać dane personalne i adres',
 				
 			),
 			

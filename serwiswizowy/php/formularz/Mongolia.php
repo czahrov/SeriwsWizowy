@@ -76,17 +76,20 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - kraj',
+				'title' => 'Kraj urodzenia',
+				'name' => 'Miejsce urodzenia - kraj',
 				'required' => true,
 				
 			),
 			/* array(
-				'title' => 'Miejsce urodzenia - województwo',
+				'title' => 'Województwo urodzenia',
+				'name' => 'Miejsce urodzenia - województwo',
 				'required' => true,
 				
 			), */
 			array(
-				'title' => 'Miejsce urodzenia - miejscowość',
+				'title' => 'Miejscowość urodzenia',
+				'name' => 'Miejsce urodzenia - miejscowość',
 				'required' => true,
 				
 			),
@@ -306,9 +309,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Dane dzieci poniżej 16 roku życia podróżujące razem',
+				'title' => 'Dzieci',
 				'name' => 'dzieci',
-				'hint' => 'jeśli są trzeba podać ich wszystkie dane personalne- narodowość, nazwisko, imię, data urodzenia, związek z podróżującym',
+				'hint' => 'Dane dzieci poniżej 16 roku życia podróżujące razem.<br>Jeśli są trzeba podać ich wszystkie dane personalne- narodowość, nazwisko, imię, data urodzenia, związek z podróżującym',
 				'field_type' => 'textarea',
 				
 			),
@@ -398,13 +401,15 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Adres pobytu w Mongolii',
+				'title' => 'Adres pobytu',
+				'name' => 'Adres pobytu w Mongolii',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Czy posiada Pan(i) bilet lotniczy',
+				'title' => 'Bilet',
 				'name' => 'bilet',
+				'hint' => 'Czy posiada Pan(i) bilet lotniczy',
 				'field_type' => 'select',
 				'opts' => array(
 					array(
@@ -446,17 +451,17 @@ $data = array(
 		'title' => 'Dane dotyczące poprzednich wizyt',
 		'fields' => array(
 			array(
-				'title' => 'Czy kiedolwiek odmówiono w misji dyplomatycznej w Mongolii',
+				'title' => 'Odmowa wizy',
 				'name' => 'odmowa',
-				'hint' => "Odp. nie/tak,<br>
+				'hint' => "Czy kiedolwiek odmówiono w misji dyplomatycznej w Mongolii?<br>Odp. nie/tak,<br>
 				jeśli tak należy wskazać okoliczności",
 				'required' => true,
 				'field_type' => 'textarea',
 			),
 			array(
-				'title' => 'Czy kiedolwiek ubiegano się o wizę do Mongolii pod innym imieniem/nazwiskiem?',
+				'title' => 'Inne personalia',
 				'name' => 'inne nazwisko',
-				'hint' => "Odp. nie/tak,<br>– jeśli tak wskazać okoliczności",
+				'hint' => "Czy kiedolwiek ubiegano się o wizę do Mongolii pod innym imieniem/nazwiskiem?<br>Odp. nie/tak<br>– jeśli tak wskazać okoliczności",
 				'required' => true,
 				'field_type' => 'textarea',
 			),
@@ -468,10 +473,10 @@ $data = array(
 		'title' => 'Pozostałe dane',
 		'fields' => array(
 			array(
-				'title' => 'Czy wniosek był wypełniany przez inną osobę',
+				'title' => 'Wniosek na zlecenie',
 				'name' => 'inna osoba',
-				'hint' => "odp. nie/tak,<br>
-				– jeśli tak wskazać ta osobę- imię, nazwisko, związek z osoba wypełniająca",
+				'hint' => "Czy wniosek był wypełniany przez inną osobę<br>Odp. nie/tak,<br>
+				– jeśli tak wskazać ta osobę:<br>- imię, nazwisko, związek z osoba wypełniająca",
 				'required' => true,
 				'field_type' => 'textarea',
 			),

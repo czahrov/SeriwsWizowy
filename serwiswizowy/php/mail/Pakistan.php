@@ -76,6 +76,7 @@ Dodatkowe informacje
 -----------------------------
 Ilość wjazdów: %s
 Transport dokumentów: %s
+Transport dokumentów - tryb: %s
 Sponsorem wyjazdu jest: %s
 Posiadam bilet lotniczy: %s
 W ciągu minionych 5 lat byłem(am) w Pakistanie: %s
@@ -147,7 +148,8 @@ Mail wygenerowany automatycznie na stronie %s',
 	$formularz['Środek_transportu'],
 	
 	$formularz['Ilość_wjazdów'],
-	implode( ", ", $formularz['dokumenty-transport'] ),
+	$formularz['dokumenty_kierunek'],
+	$formularz['dokumenty_tryb'],
 	$formularz['sponsor'],
 	$formularz['Posiadam_bilet_lotniczy'],
 	$formularz['pakistan_5_lat'],

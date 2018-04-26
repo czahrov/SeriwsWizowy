@@ -54,6 +54,7 @@ Ilość wjazdów: %s
 Organ zapraszający: %s
 Wniosek został wypełniony przez inną osobę: %s
 Transport dokumentów: %s
+Transport dokumentów - tryb: %s
 Opłata bankowa: %s
 
 ---
@@ -104,7 +105,8 @@ Mail wygenerowany automatycznie na stronie %s',
 	$formularz['Ilość_wjazdów'],
 	$formularz['Organ_zapraszający'],
 	$formularz['inna_osoba'],
-	implode( ", ", $formularz['dokumenty-transport'] ),
+	$formularz['dokumenty_kierunek'],
+	$formularz['dokumenty_tryb'],
 	$formularz['Opłata_bankowa-opts'],
 	
 	home_url()

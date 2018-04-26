@@ -100,7 +100,7 @@
 		<div class="visa-section1 d-flex no-gutters flex-wrap">
 			<div class="ask-expert d-flex col-12 col-md-6 col-xl-3 large">
 				<div class="cell col-12 expert">
-					<a href="kontakt.php" class="hit-box"></a>
+					<a href="<?php echo home_url('zapytaj-eksperta'); ?>" class="hit-box"></a>
 					<div class="banner-text">
 						<h3>Zapytaj <br><span>eksperta</span></h3>
 						<p> Masz pytania?  Skontaktuj się z naszym 
@@ -162,9 +162,7 @@
 				</div>
 				<div class='why-us-text col-12 col-xl-6 text-center text-xl-left'>
 					<h3>Dlaczego my?</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-						ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-						ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					<p>Od lat zajmujemy się profesjonalnym doradztwem wizowym dla klientów indywidualnych oraz biznesowych. Korzystając z naszego serwisu otrzymacie Państwo 100% gwarancji na otrzymanie wizy w możliwie najkrótszym czasie oraz niską cenę za pośrednictwo. Wypełnij wniosek online już teraz.
 					</p>
 					<p class="icon-list d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-xl-start"><img src="<?php echo get_template_directory_uri(); ?>/media/ikony/icon-list-1.png">100% gwarancji otrzymania wizy</p>
 					<p class="icon-list d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-xl-start"><img src="<?php echo get_template_directory_uri(); ?>/media/ikony/icon-list-2.png">Bez wychodzenia z domu</p>

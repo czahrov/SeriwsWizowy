@@ -23,7 +23,6 @@
 			$mail->setFrom( "noreply@{$_SERVER['HTTP_HOST']}", 'serwiswizowy.pl' );
 			if( DMODE ){
 				$mail->addAddress( 'sprytne@scepter.pl' );
-				// $mail->addAddress( $_POST['Adres_e-mail'] );
 				
 			}
 			else{
@@ -97,7 +96,7 @@
 			<?php if( isset( $mail_status ) ): ?>
 				<?php echo "<div>{$mail_status}</div>"; ?>
 			<?php else: ?>
-			<div>
+			<div class='container'>
 				<?php echo apply_filters( 'the_content', get_post()->post_content ); ?>
 			</div>
 			<form method='post'>
@@ -113,7 +112,7 @@
 				</button>
 				
 			</form>
-			<div>
+			<div class='container'>
 				<?php echo apply_filters( 'the_content', get_post_meta( get_post()->ID, 'pod_formularzem', true ) ); ?>
 			</div>
 			<?php endif; ?>

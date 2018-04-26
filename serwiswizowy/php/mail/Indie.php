@@ -71,6 +71,7 @@ $mail->Body = sprintf(
 	%s
 	Posiadam bilet lotniczy: %s
 	Transport dokumentów: %s
+	Transport dokumentów - tryb: %s
 	Opłata podawcza tryb: %s
 	
 	---
@@ -133,7 +134,8 @@ $mail->Body = sprintf(
 	$formularz['Kraje_odwiedzone_w_ciągu_ostatnich_10_lat'],
 	$formularz['SAARC'],
 	$formularz['Posiadam_bilet_lotniczy'],
-	implode( ", ", $formularz['dokumenty-transport'] ),
+	$formularz['dokumenty_kierunek'],
+	$formularz['dokumenty_tryb'],
 	$formularz['opłata_podawcza'],
 
 	home_url()

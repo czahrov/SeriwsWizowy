@@ -76,17 +76,20 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - kraj',
+				'title' => 'Kraj urodzenia',
+				'name' => 'Miejsce urodzenia - kraj',
 				'required' => true,
 				
 			),
 			/* array(
-				'title' => 'Miejsce urodzenia - województwo',
+				'title' => 'Województwo urodzenia',
+				'name' => 'Miejsce urodzenia - województwo',
 				'required' => true,
 				
 			), */
 			array(
-				'title' => 'Miejsce urodzenia - miejscowość',
+				'title' => 'Miejscowość urodzenia',
+				'name' => 'Miejsce urodzenia - miejscowość',
 				'required' => true,
 				
 			),
@@ -343,7 +346,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce wjazdu do Wietnamu - lotnisko',
+				'title' => 'Miejsce przylotu',
+				'name' => 'Miejsce wjazdu do Wietnamu - lotnisko',
+				'hint' => 'Miejsce wjazdu do Wietnamu - lotnisko',
 				'required' => true,
 				'field_type' => 'select',
 				'opts' => array(

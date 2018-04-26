@@ -76,12 +76,20 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - kraj',
+				'title' => 'Kraj urodzenia',
+				'name' => 'Miejsce urodzenia - kraj',
 				'required' => true,
 				
 			),
+			/* array(
+				'title' => 'Województwo urodzenia',
+				'name' => 'Miejsce urodzenia - województwo',
+				'required' => true,
+				
+			), */
 			array(
-				'title' => 'Miejsce urodzenia - miejscowość',
+				'title' => 'Miejscowość urodzenia',
+				'name' => 'Miejsce urodzenia - miejscowość',
 				'required' => true,
 				
 			),
@@ -89,7 +97,7 @@ $data = array(
 				'title' => 'PESEL',
 				'required' => true,
 				'atts' => array(
-					'pattern' => '\d{11}',
+					'pattern' => '^\d{11}$',
 					'title' => 'Numer PESEL składa sie z 11 cyfr',
 					
 				),
@@ -257,6 +265,7 @@ $data = array(
 			),
 			
 		),
+		
 	),
 	array(
 		'title' => 'Zatrudnienie',
@@ -266,36 +275,41 @@ $data = array(
 				'required' => true,
 			),
 			array(
-				'title' => 'Od kiedy wykonywany jest podany zawód',
+				'title' => 'Początek zatrudnienia',
+				'name' => 'Od kiedy wykonywany jest podany zawód',
+				'hint' => 'Od kiedy wykonywany jest podany zawód',
 				'type' => 'date',
-				'required' => true,
+				// 'required' => true,
 			),
 			array(
 				'title' => 'Nazwa i adres firmy',
-				'required' => true,
+				// 'required' => true,
 				'field_type' => 'textarea',
 			),
 			array(
-				'title' => 'Data rozpoczęcia poprzedniego zatrudnienia',
+				'title' => 'Początek poprzedniego zatrudnienia',
+				'name' => 'Data rozpoczęcia poprzedniego zatrudnienia',
 				'type' => 'date',
-				'required' => true,
+				// 'required' => true,
 			),
 			array(
-				'title' => 'Data zakończenia poprzedniego zatrudnienia',
+				'title' => 'Koniec poprzedniego zatrudnienia',
+				'name' => 'Data zakończenia poprzedniego zatrudnienia',
 				'type' => 'date',
-				'required' => true,
+				// 'required' => true,
 			),
 			array(
-				'title' => 'Nazwa poprzedniego zakładu pracy',
-				'required' => true,
+				'title' => 'Poprzedni zakład pracy',
+				'name' => 'Nazwa poprzedniego zakładu pracy',
+				// 'required' => true,
 			),
 			array(
 				'title' => 'Poprzednie zajęcie/zatrudnienie',
-				'required' => true,
+				// 'required' => true,
 			),
 			array(
 				'title' => 'Obowiązki w poprzedniej firmie',
-				'required' => true,
+				// 'required' => true,
 			),
 			
 		),
@@ -330,8 +344,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Dzieci poniżej 18 roku życia',
-				'hint' => 'Nie/Tak - wymienić jeśli tak',
+				'title' => 'Dzieci',
+				'name' => 'Dzieci poniżej 18 roku życia',
+				'hint' => 'Dzieci poniżej 18 roku życia<br>Nie/Tak - wymienić jeśli tak',
 				'field_type' => 'textarea',
 				
 			),
@@ -428,8 +443,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Czy podróż pokryta jest ze środków własnych?',
-				'hint' => 'Nie/Tak - jeśli tak, wskazać imię i nazwisko/nazwę organizacji płacącej za wyjazd',
+				'title' => 'Źródło środków',
+				'name' => 'Czy podróż pokryta jest ze środków własnych?',
+				'hint' => 'Czy podróż pokryta jest ze środków własnych?<br>Nie/Tak - jeśli tak, wskazać imię i nazwisko/nazwę organizacji płacącej za wyjazd',
 				'name' => 'sponsor',
 				'field_type' => 'textarea',
 				'required' => true,
@@ -458,11 +474,13 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce przylotu do Pakistanu',
+				'title' => 'Miejsce przylotu',
+				'name' => 'Miejsce przylotu do Pakistanu',
 				'required' => true,
 			),
 			array(
-				'title' => 'Miejsce wyjazdu/odlotu do Pakistanu',
+				'title' => 'Miejsce wyjazdu/odlotu',
+				'name' => 'Miejsce wyjazdu/odlotu do Pakistanu',
 				'required' => true,
 			),
 			array(
@@ -489,41 +507,41 @@ $data = array(
 		'title' => 'Dane dotyczące poprzednich wizyt',
 		'fields' => array(
 			array(
-				'title' => 'czy byłeś w Pakistanie w przeciągu ostatnich 5-ciu lat',
+				'title' => 'Ostatni pobyt',
 				'name' => 'pakistan 5 lat',
-				'hint' => 'odp nie/tak- jeśli tak wskazać datę od/do, miejsce , cel date wydania wizy, nr wizy, miejsce wydania(kraj, miasto',
+				'hint' => 'Czy byłeś w Pakistanie w przeciągu ostatnich 5-ciu lat<br>Odp nie/tak- jeśli tak wskazać datę od/do, miejsce , cel date wydania wizy, nr wizy, miejsce wydania(kraj, miasto',
 				'required' => true,
 				'field_type' => 'textarea',
 				
 			),
 			array(
-				'title' => 'podróże do innych krajów w ciągu 2 lat',
+				'title' => 'Pobyt za granicą',
 				'name' => 'inne kraje 2 lata',
-				'hint' => 'odp nnie/tak – jeśli tak wskazać kraj, date początku wizyty i datze zakończenia)',
+				'hint' => 'podróże do innych krajów w ciągu 2 lat<br>Odp nie/tak – jeśli tak wskazać kraj, date początku wizyty i datę zakończenia',
 				'required' => true,
 				'field_type' => 'textarea',
 				
 			),
 			array(
-				'title' => 'Czy kiedykowiek odmówiono wydania  wizy do Pakistanu lub wiza została anulowana',
+				'title' => 'Odmowa wizy',
 				'name' => 'odmowa',
-				'hint' => 'odp nie/tak – jeśli tak wyjaśnić',
+				'hint' => 'Czy kiedykowiek odmówiono wydania  wizy do Pakistanu lub wiza została anulowana<br>Odp nie/tak – jeśli tak wyjaśnić',
 				'required' => true,
 				'field_type' => 'textarea',
 				
 			),
 			array(
-				'title' => 'Czy był Pan(i) zmuszony do opuszczenia lub deportowany z Pakistanu lub innego kraju',
+				'title' => 'Deportacja',
 				'name' => 'deportacja',
-				'hint' => 'odp nie/tak – data deortacji, kraj deportacji,powod deportacji, nr referencyjny',
+				'hint' => 'Czy był Pan(i) zmuszony do opuszczenia lub deportowany z Pakistanu lub innego kraju<br>Odp nie/tak – data deortacji, kraj deportacji,powod deportacji, nr referencyjny',
 				'required' => true,
 				'field_type' => 'textarea',
 				
 			),
 			array(
-				'title' => 'czy posiada pan konto bankowe w Pakistanie',
+				'title' => 'Konto bakowe',
 				'name' => 'bank',
-				'hint' => 'jeśli tak podać',
+				'hint' => 'Czy posiada Pan(i) konto bankowe w Pakistanie?<br>Jeśli tak podać',
 				
 			),
 			
@@ -534,9 +552,9 @@ $data = array(
 		'title' => 'Pozostałe dane',
 		'fields' => array(
 			array(
-				'title' => 'Czy był(a) Pan(i) kiedykolwiek aresztowany(a), karany(a) za popełnienie przestępstwa, nawet jeśli potem uległ(a) Pan(i), zwolnieniu lub innym legalnym działaniom',
+				'title' => 'Popełnione przestępstwa',
 				'name' => 'karany',
-				'hint' => 'nie/tak – jeśli tak podac kiedy, kraj, zarzut, wyrok',
+				'hint' => 'Czy był(a) Pan(i) kiedykolwiek aresztowany(a), karany(a) za popełnienie przestępstwa, nawet jeśli potem uległ(a) Pan(i), zwolnieniu lub innym legalnym działaniom<br>Odp nie/tak – jeśli tak podac kiedy, kraj, zarzut, wyrok',
 				'required' => true,
 				'field_type' => 'textarea',
 				
@@ -549,8 +567,9 @@ $data = array(
 		'title' => 'Dane dotyczące ubezpieczenia',
 		'fields' => array(
 			array(
-				'title' => 'Posiadam ubezpieczenie w Pakistanie',
+				'title' => 'Ubezpieczeine',
 				'name' => 'ubezpieczenie',
+				'hint' => 'Czy posiada Pan(i) ubezpieczenie w Pakistanie',
 				'field_type' => 'select',
 				'required' => true,
 				'opts' => array(

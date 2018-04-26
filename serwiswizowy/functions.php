@@ -535,3 +535,15 @@ function genWizaDane( $path = null ){
 	}
 	
 }
+
+// generuje tytuł strony
+function printTitle(){
+	
+	printf(
+		'%s | %s',
+		get_post()->post_title,
+		get_bloginfo( 'name' )
+		
+	);
+	
+}

@@ -77,17 +77,20 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - kraj',
+				'title' => 'Kraj urodzenia',
+				'name' => 'Miejsce urodzenia - kraj',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - województwo',
+				'title' => 'Województwo urodzenia',
+				'name' => 'Miejsce urodzenia - województwo',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - miejscowość',
+				'title' => 'Miejscowość urodzenia',
+				'name' => 'Miejsce urodzenia - miejscowość',
 				'required' => true,
 				
 			),
@@ -311,9 +314,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Najdłuższy z planowanych pobytów w Chinach',
+				'title' => 'Najdłuższy pobyt',
 				'name' => 'najdłuższy pobyt',
-				'hint' => 'ambasada zaokrągla do 10 dni<br>– może być 10,20,30, 180 ( dotyczy tylko wizy studenckiej )',
+				'hint' => 'Najdłuższy z planowanych pobytów w Chinach,<br>Ambasada zaokrągla do 10 dni<br>– może być 10,20,30, 180 ( dotyczy tylko wizy studenckiej )',
 				'required' => true,
 				'field_type' => 'select',
 				'opts' => array(
@@ -430,7 +433,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Kto pokrywa koszty podróży',
+				'title' => 'Płacący',
+				'name' => 'Kto pokrywa koszty podróży',
+				'hint' => 'Kto pokrywa koszty podróży',
 				'field_type' => 'select',
 				'required' => true,
 				'opts' => array(
@@ -451,8 +456,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Czy posiada Pan(i) bilet lotniczy',
+				'title' => 'Bilet lotniczy',
 				'name' => 'Bilet lotniczy',
+				'hont' => 'Czy posiada Pan(i) bilet lotniczy',
 				'field_type' => 'select',
 				'required' => true,
 				'opts' => array(
@@ -487,7 +493,7 @@ $data = array(
 		'fields' => array(
 			array(
 				'title' => 'Ostatnia wiza do Chin',
-				'hint' => 'jeśli była już wydana w przyszłości wiza do Chin i jest ona w paszporcie trzeba wskazać datę, kraj I miejsce wydania ostatniej wizy',
+				'hint' => 'jeśli była już wydana w przyszłości wiza do Chin i jest ona w paszporcie trzeba wskazać datę, kraj i miejsce wydania ostatniej wizy',
 				'required' => true,
 				'field_type' => 'textarea',
 				
@@ -500,26 +506,26 @@ $data = array(
 		'title' => 'Pozostałe dane',
 		'fields' => array(
 			array(
-				'title' => 'Ile razy w ciągu ostatnich 12 miesięcy był(a) Pan(i) za granicą, nie licząc wjazdów do Chin',
+				'title' => 'Wyjazdy za granicę',
 				'name' => 'Ilość wyjazdów',
-				'hint' => 'podać liczę i wymienić te kraje',
+				'hint' => 'Ile razy w ciągu ostatnich 12 miesięcy był(a) Pan(i) za granicą, nie licząc wjazdów do Chin<br>Podać liczę i wymienić te kraje',
 				'required' => true,
 				'field_type' => 'textarea',
 				
 			),
 			array(
-				'title' => 'Czy był Pan(i) kiedykolwiek karany(a) za popełnione przestępstwo',
+				'title' => 'Problemy z prawem',
 				'name' => 'karany',
-				'hint' => 'Tak/Nie,<br>
+				'hint' => 'Czy był Pan(i) kiedykolwiek karany(a) za popełnione przestępstwo<br>Tak/Nie,<br>
 				Jeśli tak - podać okoliczności',
 				'required' => true,
 				'field_type' => 'textarea',
 				
 			),
 			array(
-				'title' => 'Czy cierpi Pan(i) na jakąś chorobę',
+				'title' => 'Choroba zakaźna',
 				'name' => 'Choroby',
-				'hint' => 'lista chorób:<br>
+				'hint' => 'Czy cierpi Pan(i) na jakąś chorobę z listy chorób:<br>
 				poważne zaburzenia psychiczne,<br>
 				gruźlica zakaźna,<br>
 				inna choroba zakaźna potencjalnie niebezpieczna dla otoczenia',
@@ -539,8 +545,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Czy przekroczył Pan(i) czas pobytu w Chinach',
+				'title' => 'Przekroczony czas pobytu',
 				'name' => 'przekroczony czas',
+				'hint' => 'Czy przekroczył Pan(i) czas pobytu w Chinach',
 				'required' => true,
 				'field_type' => 'select',
 				'opts' => array(
@@ -557,8 +564,9 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Czy kiedykolwiek odmówiono Panu(i) wizy do Chin lub nie wpuszczono na jego terytorium',
+				'title' => 'Odmowa wizy',
 				'name' => 'odmowa',
+				'hint' => 'Czy kiedykolwiek odmówiono Panu(i) wizy do Chin lub nie wpuszczono na jego terytorium',
 				'required' => true,
 				'field_type' => 'select',
 				'opts' => array(
@@ -582,8 +590,9 @@ $data = array(
 		'title' => 'Dane dotyczące ubezpieczenia',
 		'fields' => array(
 			array(
-				'title' => 'Posiadam ważne ubezpieczenie',
+				'title' => 'Ubezpieczenie',
 				'name' => 'ubezpieczenie',
+				'hint' => 'Czy Posiada Pan(i) ważne ubezpieczenie',
 				'field_type' => 'select',
 				'required' => true,
 				'opts' => array(

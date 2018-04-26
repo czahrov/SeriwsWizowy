@@ -28,7 +28,6 @@
 		$mail->setFrom( "noreply@{$_SERVER['HTTP_HOST']}", 'serwiswizowy.pl' );
 		if( DMODE ){
 			$mail->addAddress( 'sprytne@scepter.pl' );
-			// $mail->addAddress( $formularz['Kontakt_-_email'] );
 			
 		}
 		else{
@@ -104,7 +103,7 @@
 		}
 		else{
 			$mail->send();
-			unlink( $file_name );
+			unlink( $file_path );
 			
 		}
 		

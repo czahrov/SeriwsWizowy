@@ -24,7 +24,6 @@
 			$mail->setFrom( "noreply@{$_SERVER['HTTP_HOST']}", 'serwiswizowy.pl' );
 			if( DMODE ){
 				$mail->addAddress( 'sprytne@scepter.pl' );
-				// $mail->addAddress( $_POST['Adres_e-mail'] );
 				
 			}
 			else{
@@ -103,12 +102,12 @@
 			<?php if( isset( $mail_status ) ): ?>
 				<?php echo "<div>{$mail_status}</div>"; ?>
 			<?php else: ?>
-			<div>
+			<div class='container'>
 				<?php echo apply_filters( 'the_content', $post->post_content ); ?>
 			</div>
-			<div class=''>
+			<h5 class='container'>
 				UWAGA WAZNA INFORMACJA:  Po otrzymaniu wniosku voucherowego droga elektroniczną bez pośrednictwa wizowego przez Serwiswizowy.com należy zaaplikować o wizę w ciągu najbliższych 5 dni.
-			</div>
+			</h5>
 			<form method='post' enctype="multipart/form-data">
 				<?php 
 					genWizaDane( get_template_directory() . "/php/formularz/voucher_rosja.php" );
@@ -118,7 +117,7 @@
 					<p class="msg-btn">
 						Wyślij wniosek
 					</p>
-					<i class="fa fa-angle-right fa-1x arrow-send"></i>
+					<i class="fa fa-angle-right fa-1x arrow-send d-flex align-items-center justify-content-center"></i>
 				</button>
 				
 			</form>

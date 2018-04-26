@@ -76,17 +76,20 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - kraj',
+				'title' => 'Kraj urodzenia',
+				'name' => 'Miejsce urodzenia - kraj',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - województwo',
+				'title' => 'Województwo urodzenia',
+				'name' => 'Miejsce urodzenia - województwo',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - miejscowość',
+				'title' => 'Miejscowość urodzenia',
+				'name' => 'Miejsce urodzenia - miejscowość',
 				'required' => true,
 				
 			),

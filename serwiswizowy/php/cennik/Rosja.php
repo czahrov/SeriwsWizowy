@@ -93,22 +93,25 @@ $data = array(
 		'title' => 'Voucher do Rosji i zaproszenie biznesowe',
 		// 'value' => 'tak',
 		'opts_name' => 'voucher',
+		'required' => true,
 		'opts' => array(
 			array(
-				'title' => 'voucher turystyczny do 14 dni',
-				'hint' => 'Dokument niezbędny do uzyskania <b>wizy turystycznej</b>',
-				'price' => 95,
+				'title' => 'nie posiadam',
+				'value' => 'brak dokumentów',
+				'hint' => '',
+				'price' => 0,
+				'selected' => true,
 				
 			),
 			array(
-				'title' => 'voucher turystyczny do 30 dni',
+				'title' => 'voucher',
 				'hint' => 'Dokument niezbędny do uzyskania <b>wizy turystycznej</b>',
-				'price' => 145,
+				'price' => 90,
 				
 			),
 			array(
 				'title' => 'zaproszenie biznesowe',
-				'hint' => 'Dokument niezbędny do uzyskania <b>wizy biznesowej</b>',
+				'hint' => 'Cena zaproszenie ustalana jest indywidualnie w zależności od potrzeb i wymagań klienta.<hr>Dokument niezbędny do uzyskania <b>wizy biznesowej</b>',
 				'price' => 0,
 				
 			),
@@ -119,6 +122,7 @@ $data = array(
 	array(
 		'title' => 'Polisa ubezpieczeniowa',
 		// 'opts_name' => 'Polisa na dni',
+		'hint' => 'O kosztach polisy ubezpieczeniowej zostaną Państwo poinformowani indywidualnie',
 		'required' => true,
 		'opts' => array(
 			array(
@@ -333,37 +337,56 @@ $data = array(
 	),
 	array(
 		'title' => 'Transport dokumentów',
-		'opts_name' => 'dokumenty-transport[]',
+		'name' => 'dokumenty kierunek',
+		'opts_name' => 'dokumenty kierunek',
 		'hint' => '',
 		'required' => true,
 		'opts' => array(
 			array(
 				'title' => 'Jedna strona',
 				'hint' => 'Odesłanie gotowej wizy wraz z dokumentami',
-				'type' => 'checkbox',
 				'price' => 26,
+				'type' => 'radio',
 				'selected' => true,
 				
 			),
 			array(
 				'title' => 'Obie strony',
 				'hint' => 'Kurier po dokumenty oraz odesłanie gotowej wizy z dokumentami',
-				'type' => 'checkbox',
 				'price' => 47,
+				'type' => 'radio',
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Transport dokumentów - tryb',
+		'name' => 'dokumenty tryb',
+		'opts_name' => 'dokumenty tryb',
+		'hint' => '',
+		'required' => true,
+		'opts' => array(
+			array(
+				'title' => 'Ekspress do 10',
+				'hint' => '',
+				'price' => 75,
+				'type' => 'radio',
 				
 			),
 			array(
 				'title' => 'Ekspress do 12',
 				'hint' => '',
-				'type' => 'checkbox',
 				'price' => 42,
+				'type' => 'radio',
 				
 			),
 			array(
 				'title' => 'List polecony',
 				'hint' => 'List polecony z potwierdzeniem odbioru',
-				'type' => 'checkbox',
 				'price' => 22,
+				'type' => 'radio',
 				'selected' => true,
 				
 			),

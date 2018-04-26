@@ -76,17 +76,18 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - kraj',
+				'title' => 'Kraj urodzenia',
+				'name' => 'Miejsce urodzenia - kraj',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - województwo',
+				'title' => 'Województwo urodzenia',
 				'required' => true,
 				
 			),
 			array(
-				'title' => 'Miejsce urodzenia - miejscowość',
+				'title' => 'Miejscowość urodzenia',
 				'required' => true,
 				
 			),
@@ -420,12 +421,15 @@ $data = array(
 				
 			),
 			array(
-				'title' => 'Adres tymczasowego pobytu',
+				'title' => 'Adres pobytu',
+				'name' => 'Adres tymczasowego pobytu',
 				'hint' => 'przy wizach turystycznych i biznesowych należy podać adres pobytu, jeśli jest to hotel – adres hotelu',
 				
 			),
 			array(
-				'title' => 'Źródło środków na wizytę w Białorusi',
+				'title' => 'Środki na pobyt',
+				'name' => 'Źródło środków na wizytę w Białorusi',
+				'hint' => 'Źródło środków na wizytę w Białorusi',
 				'field_type' => 'select',
 				'required' => true,
 				'opts' => array(
@@ -508,7 +512,6 @@ $data = array(
 		'fields' => array(
 			array(
 				'title' => 'organ zapraszający',
-				'field_type' => 'textarea',
 			),
 			
 		),
@@ -529,12 +532,6 @@ $data = array(
 				'title' => 'Dotychczasowe wizyty',
 				'hint' => 'Liczba dotychczasowych wizyt na Białorusi w bieżącym roku',
 				'required' => true,
-				'type' => 'number',
-				'atts' => array(
-					'min' => 0,
-					'step' => 1,
-					
-				),
 				
 			),
 			array(
@@ -553,17 +550,18 @@ $data = array(
 		'title' => 'Pozostałe dane',
 		'fields' => array(
 			array(
-				'title' => 'Czy kiedykolwiek odpowiadałeś za nieprzestrzeganie prawa na Białorusi',
+				'title' => 'Nieprzestrzeganie prawa',
 				'name' => 'Nieprzestrzeganie prawa',
-				'hint' => 'odp. Nie/tak<br>
+				'hint' => 'Czy kiedykolwiek odpowiadałeś za nieprzestrzeganie prawa na Białorusi<br>odp. Nie/tak<br>
 				jeśli tak wskazać należy, kiedy i gdzie',
 				'required' => true,
 				'field_type' => 'textarea',
 				
 			),
 			array(
-				'title' => 'Czy byłeś deportowany z innego kraju',
-				'hint' => 'odp. Nie/tak<br>
+				'title' => 'Deportacja',
+				'name' => 'Czy byłeś deportowany z innego kraju',
+				'hint' => 'Czy byłeś deportowany z innego kraju<br>odp. Nie/tak<br>
 				jeśli tak wskazać należy, kiedy i z jakiego kraju',
 				'required' => true,
 				'field_type' => 'textarea',
