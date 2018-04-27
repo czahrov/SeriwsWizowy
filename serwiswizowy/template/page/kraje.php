@@ -40,11 +40,11 @@
 	<div class="country-single fp_slidein">
 		<a href="<?php the_permalink( $kraj->ID ); ?>" class="hit-box-grey"></a>
 		<div class="box d-flex justify-content-between flex-wrap country-single-content">
-			<div class="title col-12 col-md-3 offer-title ">
+			<div class="title offer-title ">
 				<h3><?php echo $kraj->post_title; ?></h3>
 			</div>
-			<div class="content col-12 col-md-7"></div>
-			<div class="arrow col-12 col-md align-items-top justify-content-end justify-content-md-center d-flex">
+			<!--<div class="content col-12 col-md-7"></div>-->
+			<div class="arrow col col-md-2 align-items-top justify-content-end justify-content-md-center d-flex">
 				<i class="fa fa-angle-right fa-1x arrow-offer d-flex align-items-center justify-content-center" aria-hidden="true"></i>
 			</div>
 		</div>
