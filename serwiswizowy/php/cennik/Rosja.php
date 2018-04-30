@@ -93,11 +93,10 @@ $data = array(
 		'title' => 'Voucher do Rosji i zaproszenie biznesowe',
 		// 'value' => 'tak',
 		'opts_name' => 'voucher',
-		'required' => true,
+		// 'required' => true,
 		'opts' => array(
 			array(
-				'title' => 'nie posiadam',
-				'value' => 'brak dokumentów',
+				'title' => 'posiadam',
 				'hint' => '',
 				'price' => 0,
 				'selected' => true,
@@ -154,7 +153,7 @@ $data = array(
 				'title' => 'turystyczna',
 				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 30 dni od daty wydania' ),
 				'type' => 'radio',
-				'price' => 0,
+				'price' => 90,
 				'selected' => true,
 				
 			),
