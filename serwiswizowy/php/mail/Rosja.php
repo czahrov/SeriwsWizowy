@@ -49,7 +49,6 @@ Plan podróży:
 Dodatkowe informacje
 -----------------------------
 Transport dokumentów: %s
-Transport dokumentów - tryb: %s
 Ilość wjazdów: %s
 Ilość odbytych wizyt: %s
 Obywatelstwo Rosji: %s
@@ -98,8 +97,8 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Data_wjazdu'],
 			$formularz['Data_wyjazdu'],
 			$formularz['Trasa_podróży'],
-			$formularz['dokumenty_kierunek'],
-			$formularz['dokumenty_tryb'],
+			
+			$formularz['dokumenty-transport'],
 			$formularz['Ilość_wjazdów'],
 			$formularz['Dane_dotyczące_poprzednich_wizyt'],
 			$formularz['Obywatelstwo_Rosji'],

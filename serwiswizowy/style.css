@@ -893,7 +893,7 @@ i.arrow-comment-slider-right {
   position: absolute;
 }
 
-.testymonial-single p {
+.testymonial-single * {
   font-size: 15px;
   color: #3b3b3b;
   font-weight: 300;
@@ -1823,7 +1823,7 @@ span.alph {
   padding: 30px 15px;
   background-color: #f6f6f6;
   border: solid 1px #dedede;
-  font-size: 15px;
+  /* font-size: 15px; */
 }
 @media (min-width: 768px) {
   .wiza.wniosek .main .box .uwaga .text {

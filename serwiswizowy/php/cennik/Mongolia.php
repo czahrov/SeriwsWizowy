@@ -137,7 +137,7 @@ $data = array(
 	array(
 		'title' => 'Transport dokumentów',
 		'name' => 'dokumenty kierunek',
-		'opts_name' => 'dokumenty kierunek',
+		'opts_name' => 'dokumenty-transport',
 		'hint' => '',
 		'required' => true,
 		'opts' => array(
@@ -146,38 +146,12 @@ $data = array(
 				'hint' => 'Odesłanie gotowej wizy wraz z dokumentami',
 				'price' => 26,
 				'type' => 'radio',
-				'selected' => true,
 				
 			),
 			array(
 				'title' => 'Obie strony',
 				'hint' => 'Kurier po dokumenty oraz odesłanie gotowej wizy z dokumentami',
 				'price' => 47,
-				'type' => 'radio',
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Transport dokumentów - tryb',
-		'name' => 'dokumenty tryb',
-		'opts_name' => 'dokumenty tryb',
-		'hint' => '',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'Ekspress do 10',
-				'hint' => '',
-				'price' => 75,
-				'type' => 'radio',
-				
-			),
-			array(
-				'title' => 'Ekspress do 12',
-				'hint' => '',
-				'price' => 42,
 				'type' => 'radio',
 				
 			),

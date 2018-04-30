@@ -42,7 +42,6 @@ Dodatkowe informacje
 -----------------------------
 Posiadam ubezpieczenie: %s
 Transport dokumentów: %s
-Transport dokumentów - tryb: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -82,8 +81,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Data_wyjazdu'],
 			
 			$formularz['Posiadam_ubezpieczenie'],
-			$formularz['dokumenty_kierunek'],
-			$formularz['dokumenty_tryb'],
+			$formularz['dokumenty-transport'],
 			
 			home_url()
 			

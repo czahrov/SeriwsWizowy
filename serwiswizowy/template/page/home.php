@@ -185,12 +185,9 @@
 					) );
 					foreach( $items as $item ):
 				?>
-				<div class='fpslider_slide testymonial-single col-12 col-lg-6'>
-					<p>
-						<?php echo $item->post_content; ?>
-						<br>
-						<span><?php echo get_post_meta( $item->ID, 'osoba', true ); ?></span>
-					</p>
+				<div class='fpslider_slide testymonial-single col-12 col-lg-6 d-flex flex-column justify-content-around'>
+					<?php echo $item->post_content; ?>
+					<span><?php echo get_post_meta( $item->ID, 'osoba', true ); ?></span>
 				</div>
 				<?php endforeach; ?>
 				

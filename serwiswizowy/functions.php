@@ -243,7 +243,7 @@ function genWizaOpts(){
 	}
 	
 	// OPCJA
-	foreach( $data as $seg_num => $segment ){
+	if( !empty( $data ) ) foreach( $data as $seg_num => $segment ){
 		$seg_data = array_merge(
 			array(
 				'name' => $segment[ 'title' ],

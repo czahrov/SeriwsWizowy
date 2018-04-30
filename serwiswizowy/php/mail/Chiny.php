@@ -59,7 +59,6 @@ Odmówiono mi wizy do Chin: %s
 Posiadam ważne ubezpieczenie: %s
 Posiadam bilet lotniczy: %s
 Transport dokumentów: %s
-Transport dokumentów - tryb: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -111,8 +110,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['odmowa'],
 			$formularz['ubezpieczenie'],
 			$formularz['Bilet_lotniczy'],
-			$formularz['dokumenty_kierunek'],
-			$formularz['dokumenty_tryb'],
+			$formularz['dokumenty-transport'],
 			
 			home_url()
 			

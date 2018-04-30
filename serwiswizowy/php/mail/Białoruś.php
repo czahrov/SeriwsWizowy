@@ -103,7 +103,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Dotychczasowe_wizyty'],
 			$formularz['Odmowa_wizy'],
 			$formularz['Bilet_lotniczy'],
-			implode( ",", array( $formularz['dokumenty_kierunek'], $formularz['dokumenty_tryb'] ) ),
+			$formularz['dokumenty-transport'],
 			
 			
 			home_url()
