@@ -70,6 +70,25 @@
 		</div>
 		<form method='post' action='<?php echo home_url( 'gotowe' ); ?>'>
 			<?php genWizaDane(); ?>
+			<div class="belka d-none d-md-flex align-items-center">
+				<div class="name"></div>
+				<div class="sep"></div>
+				<div class="numb"></div>
+				
+			</div>
+			<div class="main d-flex flex-wrap align-items-start">
+				<h4 class="head d-md-none col-12"></h4>
+				<div class="cell regulamin col-12 col-lg-6 d-flex align-items-center">
+					<input type="checkbox" name="regulamin" required="" id='regulamin'>
+					<label class="d-flex align-items-center" for='regulamin'>
+						<div>
+							Oświadczam, że zapoznałem/am się z <a href="<?php echo home_url('regulamin'); ?>">regulaminem</a> korzystania z usług portalu serwiswizowy.com  i w całości go akceptuję. Wrażam zgodę na przetwarzanie moich danych osobowych, zgodnie z Ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych ( Dz.U. z 2015r., poz. 2135 z późn. zm.). Przetwarzanie danych jest konieczne do uzyskania wizy.
+						</div>
+						
+					</label>
+					
+				</div>
+			</div>
 			<button type='submit' class="msg-button ml-auto d-flex align-items-center">
 				<a class="hit-box"></a>
 				<p class="msg-btn">

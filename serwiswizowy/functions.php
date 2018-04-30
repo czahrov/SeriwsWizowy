@@ -385,25 +385,6 @@ function genWizaDane( $path = null ){
 		
 	}
 	
-	$data[] = array(
-		'title' => '',
-		'fields' => array(
-			array(
-				'title' => sprintf(
-					'Oświadczam, że zapoznałem/am się z <a href="%s">regulaminem</a> korzystania z usług portalu serwiswizowy.com  i w całości go akceptuję. Wrażam zgodę na przetwarzanie moich danych osobowych, zgodnie z Ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych ( Dz.U. z 2015r., poz. 2135 z późn. zm.). Przetwarzanie danych jest konieczne do uzyskania wizy.',
-					home_url( 'regulamin' )
-				),
-				'name' => 'regulamin',
-				'value' => 'tak',
-				'type' => 'checkbox',
-				'required' => true,
-				
-			),
-			
-		),
-		
-	);
-	
 	// SEGMENT
 	foreach( $data as $seg_num => $segment ){
 		

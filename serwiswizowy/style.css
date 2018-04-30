@@ -2708,6 +2708,9 @@ header.breadcrumb h3:not(:first-child)::before {
   color: #8b425f;
   font-weight: 600;
 }
+.wiza.formularz #regulamin {
+  height: 20px;
+}
 .wiza.wniosek {
   margin-bottom: 30px;
 }
