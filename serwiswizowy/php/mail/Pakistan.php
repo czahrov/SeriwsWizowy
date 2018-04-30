@@ -85,6 +85,7 @@ Byłem(am) deportowana: %s
 Posiadam swój bank: %s
 W przeszłości byłem(aM) karany: %s
 Posiadam ubezpieczenie: %s
+Zapoznałem(am) się z regulaminem i akceptuję jego warunki: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -157,6 +158,8 @@ Mail wygenerowany automatycznie na stronie %s',
 	$formularz['bank'],
 	$formularz['karany'],
 	$formularz['ubezpieczenie'],
+	
+	$formularz['regulamin'] === 'on'?( 'tak' ):( 'nie' ),
 	
 	home_url()
 	

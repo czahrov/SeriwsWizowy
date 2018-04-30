@@ -72,6 +72,7 @@ $mail->Body = sprintf(
 	Posiadam bilet lotniczy: %s
 	Transport dokumentów: %s
 	Opłata podawcza tryb: %s
+	Zapoznałem(am) się z regulaminem i akceptuję jego warunki: %s
 	
 	---
 	Mail wygenerowany automatycznie na stronie %s',
@@ -135,7 +136,9 @@ $mail->Body = sprintf(
 	$formularz['Posiadam_bilet_lotniczy'],
 	$formularz['dokumenty-transport'],
 	$formularz['opłata_podawcza'],
-
+	
+	$formularz['regulamin'] === 'on'?( 'tak' ):( 'nie' ),
+	
 	home_url()
 
 );

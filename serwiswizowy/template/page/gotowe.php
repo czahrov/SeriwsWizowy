@@ -25,16 +25,16 @@
 		$mail->Encoding = 'base64';
 		$mail->setLanguage( 'pl', get_template_directory() . "/php/PHPMailer/" );
 		
-		$mail->setFrom( "noreply@{$_SERVER['HTTP_HOST']}", 'serwiswizowy.pl' );
+		// mail z danymi
+		$mail->setFrom( "noreply@{$_SERVER['HTTP_HOST']}", 'serwiswizowy.com' );
 		if( DMODE ){
 			$mail->addAddress( 'sprytne@scepter.pl' );
-			
 		}
 		else{
-			$mail->addAddress( $formularz['Kontakt_-_email'] );
-			// $mail->addAddress( 'biuro@serwiswizowy.com' );
-			
+			// $mail->addAddress( $formularz['Kontakt_-_email'] );
+			$mail->addAddress( 'biuro@serwiswizowy.com' );	
 		}
+		
 		$mail->Subject = sprintf(
 			'%s %s złożył(a) wniosek o wizę do: %s',
 			$formularz['Imię'],
@@ -99,6 +99,7 @@
 			);
 			
 			$mail->send();
+			unlink( $file_path );
 			
 		}
 		else{
@@ -114,6 +115,64 @@
 			$formularz['Kontakt_-_email']
 			
 		);
+		
+		
+		
+		// mail zwrotny do klienta
+		$mail->clearAddresses();
+		$mail->clearAttachments();
+		
+		if( DMODE ){
+			$mail->addAddress( 'sprytne@scepter.pl' );
+			
+		}
+		else{
+			$mail->addAddress( $formularz['Kontakt_-_email'] );
+			
+		}
+		
+		$mail->Subject = sprintf(
+			'Potwierdzenie przyjęcia wniosku o wizę do: %s',
+			$formularz['kraj']
+		);
+		
+		$mail->Body = sprintf(
+'Szanowny Kliencie, dziękujemy za skorzystanie z usług z serwiswizowy.com
+Twoje zgłoszenie zostało zarejestrowane.
+
+W celu realizacji zgłoszenia prosimy o uregulowanie płatności:
+
+%s
+
+Numer rachunku bankowego: %s,
+Tytuł przelewu: %s %s/%s
+
+Po zaksięgowaniu opłaty otrzymasz od nas drogą elektroniczną wniosek wizowy, który należy przeczytać i podpisać, przygotować dokumenty oraz przesłać je do nas ( w zależności od wybranej formy dostarczenia ).
+
+Jeśli masz jakiekolwiek pytania prosimy o kontakt telefoniczny lub mailowy:
+
+%s
+
+---
+Mail wygenerowany automatycznie na %s',
+			implode( "\r\n", $formularz['koszt'] ),
+			get_post_meta( 14, 'konto_bankowe', true ),
+			$formularz['Imię'],
+			$formularz['Nazwisko'],
+			$formularz['kraj'],
+			strip_tags( get_post_meta( 14, 'kontakt', true ) ),
+			home_url()
+			
+		);
+		
+		if( DMODE ){
+			$mail->send();
+			
+		}
+		else{
+			$mail->send();
+			
+		}
 		
 	}
 	catch( Exception $e ){

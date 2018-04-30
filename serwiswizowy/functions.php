@@ -394,6 +394,7 @@ function genWizaDane( $path = null ){
 					home_url( 'regulamin' )
 				),
 				'name' => 'regulamin',
+				'value' => 'tak',
 				'type' => 'checkbox',
 				'required' => true,
 				

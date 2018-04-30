@@ -55,6 +55,7 @@ Organ zapraszający: %s
 Wniosek został wypełniony przez inną osobę: %s
 Transport dokumentów: %s
 Opłata bankowa: %s
+Zapoznałem(am) się z regulaminem i akceptuję jego warunki: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -106,6 +107,8 @@ Mail wygenerowany automatycznie na stronie %s',
 	$formularz['inna_osoba'],
 	$formularz['dokumenty-transport'],
 	$formularz['Opłata_bankowa-opts'],
+	
+	$formularz['regulamin'] === 'on'?( 'tak' ):( 'nie' ),
 	
 	home_url()
 	

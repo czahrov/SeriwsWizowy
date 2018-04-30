@@ -53,6 +53,7 @@ Dotychczasowe wizyty: %s
 Odmowa wizy: %s
 Posiada bilet lotniczy: %s
 Transport dokumentów: %s
+Zapoznałem(am) się z regulaminem i akceptuję jego warunki: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -105,6 +106,7 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Bilet_lotniczy'],
 			$formularz['dokumenty-transport'],
 			
+			$formularz['regulamin'] === 'on'?( 'tak' ):( 'nie' ),
 			
 			home_url()
 			

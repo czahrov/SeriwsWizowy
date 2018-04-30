@@ -57,6 +57,7 @@ Rodzina w Rosji: %s
 Posiada ubezpieczenie: %s
 Dzieci:
 %s
+Zapoznałem(am) się z regulaminem i akceptuję jego warunki: %s
 
 ---
 Mail wygenerowany automatycznie na stronie %s',
@@ -106,6 +107,8 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Posiada_rodzinę_w_Rosji'],
 			$formularz['Posiada_Rosyjskie_ubezpiecznie'],
 			$formularz['Dzieci'],
+			
+			$formularz['regulamin'] === 'on'?( 'tak' ):( 'nie' ),
 			
 			home_url()
 			
