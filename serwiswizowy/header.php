@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if( isset( $_GET[ 'sprytne' ] ) or isset( $_COOKIE[ 'sprytne' ] ) ){
+	/* if( isset( $_GET[ 'sprytne' ] ) or isset( $_COOKIE[ 'sprytne' ] ) ){
 		$_SESSION[ 'sprytne' ]  = true;
 		
 	}
@@ -9,7 +9,7 @@
 		include "wbudowie.php";
 		exit;
 		
-	}
+	} */
 	
 ?>
 <!DOCTYPE html>
