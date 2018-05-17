@@ -12,3 +12,26 @@ $font:(
 	bold: "'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif",
 	
 );
+
+@mixin fontRegular(){
+	font-family: 'Mukta Mahee', 'Times New Roman', serif !important;
+	
+	*:not(.fa){
+		font-family: inherit !important;
+		
+	}
+	
+	
+}
+
+@mixin fontBold(){
+	font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	
+	*:not(.fa){
+		font-family: inherit !important;
+		
+	}
+	
+	
+}
+

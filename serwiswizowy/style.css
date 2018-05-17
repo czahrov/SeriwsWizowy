@@ -15,7 +15,10 @@ body {
   font-size: 20px;
   color: #212529;
   background: #f3f3f3;
-  font-family: 'Mukta Mahee', 'Times New Roman', serif;
+  font-family: 'Mukta Mahee', 'Times New Roman', serif !important;
+}
+body *:not(.fa) {
+  font-family: inherit !important;
 }
 
 p {
@@ -34,7 +37,15 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+h1 *:not(.fa),
+h2 *:not(.fa),
+h3 *:not(.fa),
+h4 *:not(.fa),
+h5 *:not(.fa),
+h6 *:not(.fa) {
+  font-family: inherit !important;
 }
 
 a {
@@ -101,7 +112,10 @@ img::-moz-selection {
   /* position: absolute; */
   /* border-bottom: 1px solid #e9ecef; */
   background-color: white;
-  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+#mainNav *:not(.fa) {
+  font-family: inherit !important;
 }
 
 #mainNav .navbar-brand {
@@ -341,7 +355,11 @@ header.masthead .site-heading .subheading {
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
-  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+header.masthead .page-heading .subheading *:not(.fa),
+header.masthead .site-heading .subheading *:not(.fa) {
+  font-family: inherit !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -364,7 +382,10 @@ header.masthead .post-heading .subheading {
   font-size: 24px;
   font-weight: 600;
   margin: 10px 0 30px;
-  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+header.masthead .post-heading .subheading *:not(.fa) {
+  font-family: inherit !important;
 }
 
 header.masthead .post-heading .meta {
@@ -514,7 +535,10 @@ footer .copyright {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+.btn *:not(.fa) {
+  font-family: inherit !important;
 }
 
 .btn-primary {
@@ -1688,8 +1712,11 @@ span.alph {
 .wiza.wniosek .main .side .box-wiza .mid .wiersz.total .name {
   color: #8b425f;
   font-size: 21px;
-  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Mukta Mahee', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   font-weight: bold;
+}
+.wiza.wniosek .main .side .box-wiza .mid .wiersz.total .name *:not(.fa) {
+  font-family: inherit !important;
 }
 .wiza.wniosek .main .side .box-wiza .mid .wiersz.total .cost {
   color: #fff;

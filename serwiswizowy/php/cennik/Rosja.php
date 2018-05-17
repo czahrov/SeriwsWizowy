@@ -58,7 +58,7 @@ $data = array(
 			array(
 				'title' => '',
 				'value' => 'tak',
-				'price' => 110,
+				'price' => 115,
 				'selected' => true,
 				
 			),
@@ -75,14 +75,14 @@ $data = array(
 			array(
 				'title' => 'tryb normalny',
 				'value' => 'normalny',
-				'price' => 90,
+				'price' => 120,
 				'selected' => true,
 				
 			),
 			array(
 				'title' => 'tryb ekspresowy',
 				'value' => 'ekspresowy',
-				'price' => 140,
+				'price' => 160,
 				
 			),
 			
@@ -153,7 +153,7 @@ $data = array(
 				'title' => 'turystyczna',
 				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 30 dni od daty wydania' ),
 				'type' => 'radio',
-				'price' => 90,
+				'price' => 0,
 				'selected' => true,
 				
 			),
@@ -161,49 +161,49 @@ $data = array(
 				'title' => 'biznesowa',
 				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 90 dni od daty wydania' ),
 				'type' => 'radio',
-				'price' => 90,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'prywatna',
 				'hint' => 'cel wizyta u rodziny lub zanajomych, sprawy prywatne, ważność według dat określonych na wniosku wizowym, max. 90 dni od daty wydania',
 				'type' => 'radio',
-				'price' => 90,
+				'price' => 224,
 				
 			),
 			array(
 				'title' => 'humanitarna',
 				'hint' => 'wydawana jest osobom biorącym udział w działaniach naukowych, kulturalnych i artystycznych, w tym programach uniwersyteckich i innych programach wymiany, ważność według dat określonych na wniosku wizowym, max. 90 dni',
 				'type' => 'radio',
-				'price' => 90,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'pracownicza',
 				'hint' => '- cel praca , ważność wg dat określonych we wniosku wizowym,<br>- do 90 dni z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjnej',
 				'type' => 'radio',
-				'price' => 90,
+				'price' => 153,
 				
 			),
 			array(
 				'title' => 'tranzytowa',
 				'hint' => 'cel tranzyt - jeśli Rosja jest krajem przejazdowym, ważność 3 dni w jedną stronę drogą lotniczą, do 10 dni w jedną stronę drogą lądową',
 				'type' => 'radio',
-				'price' => 90,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'studencka',
 				'hint' => 'cel podjęcie studiów, stażu, kursów, ważność wizy wg dat określonych we wniosku wizowym,  do 90 dni od daty wydania z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjne',
 				'type' => 'radio',
-				'price' => 90,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'dziennikarska',
 				'hint' => 'dla dziennikarzy i pracowników technicznych jadących wykonywać zadania dziennikarskie, ważność wizy wg dat określonych we wniosku wizowym potwierdzonych przez list z redakcji lub agencji prasowej',
 				'type' => 'radio',
-				'price' => 90,
+				'price' => 0,
 				
 			),
 			
@@ -223,42 +223,42 @@ $data = array(
 				'title' => 'turystyczna',
 				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 395 dni od daty wydania' ),
 				'type' => 'radio',
-				'price' => 95,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'biznesowa',
 				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 995 dni od daty wydania' ),
 				'type' => 'radio',
-				'price' => 95,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'prywatna',
 				'hint' => 'cel wizyta u rodziny lub zanajomych, sprawy prywatne, ważność według dat określonych na wniosku wizowym, max. 995 dni od daty wydania',
 				'type' => 'radio',
-				'price' => 95,
+				'price' => 445,
 				
 			),
 			array(
 				'title' => 'humanitarna',
 				'hint' => 'wydawana jest osobom biorącym udział w działaniach naukowych, kulturalnych i artystycznych, w tym programach uniwersyteckich i innych programach wymiany, ważność według dat określonych na wniosku wizowym, max. 995 dni',
 				'type' => 'radio',
-				'price' => 95,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'tranzytowa',
 				'hint' => 'cel tranzyt - jeśli Rosja jest krajem przejazdowym, ważność 3 dni w jedną stronę drogą lotniczą, do 195 dni w jedną stronę drogą lądową',
 				'type' => 'radio',
-				'price' => 95,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'studencka',
 				'hint' => 'cel podjęcie studiów, stażu, kursów, ważność wizy wg dat określonych we wniosku wizowym,  do 995 dni od daty wydania z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjne',
 				'type' => 'radio',
-				'price' => 95,
+				'price' => 0,
 				
 			),
 			
@@ -275,59 +275,38 @@ $data = array(
 		Ekspres do 3-4 dni roboczych ',
 		'opts' => array(
 			array(
-				'title' => 'turystyczna',
-				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 3120 dni od daty wydania' ),
-				'type' => 'radio',
-				'price' => 120,
-				
-			),
-			array(
 				'title' => 'biznesowa',
-				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 9120 dni od daty wydania' ),
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 90 dni od daty wydania' ),
 				'type' => 'radio',
-				'price' => 120,
-				
-			),
-			array(
-				'title' => 'prywatna',
-				'hint' => 'cel wizyta u rodziny lub zanajomych, sprawy prywatne, ważność według dat określonych na wniosku wizowym, max. 9120 dni od daty wydania',
-				'type' => 'radio',
-				'price' => 120,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'humanitarna',
-				'hint' => 'wydawana jest osobom biorącym udział w działaniach naukowych, kulturalnych i artystycznych, w tym programach uniwersyteckich i innych programach wymiany, ważność według dat określonych na wniosku wizowym, max. 9120 dni',
+				'hint' => 'wydawana jest osobom biorącym udział w działaniach naukowych, kulturalnych i artystycznych, w tym programach uniwersyteckich i innych programach wymiany, ważność według dat określonych na wniosku wizowym, max. 90 dni',
 				'type' => 'radio',
-				'price' => 120,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'pracownicza',
-				'hint' => '- cel praca , ważność wg dat określonych we wniosku wizowym,<br>- do 9120 dni z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjnej',
+				'hint' => '- cel praca , ważność wg dat określonych we wniosku wizowym,<br>- do 90 dni z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjnej',
 				'type' => 'radio',
-				'price' => 120,
-				
-			),
-			array(
-				'title' => 'tranzytowa',
-				'hint' => 'cel tranzyt - jeśli Rosja jest krajem przejazdowym, ważność 3 dni w jedną stronę drogą lotniczą, do 1120 dni w jedną stronę drogą lądową',
-				'type' => 'radio',
-				'price' => 120,
+				'price' => 753,
 				
 			),
 			array(
 				'title' => 'studencka',
-				'hint' => 'cel podjęcie studiów, stażu, kursów, ważność wizy wg dat określonych we wniosku wizowym,  do 9120 dni od daty wydania z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjne',
+				'hint' => 'cel podjęcie studiów, stażu, kursów, ważność wizy wg dat określonych we wniosku wizowym,  do 90 dni od daty wydania z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjne',
 				'type' => 'radio',
-				'price' => 120,
+				'price' => 0,
 				
 			),
 			array(
 				'title' => 'dziennikarska',
 				'hint' => 'dla dziennikarzy i pracowników technicznych jadących wykonywać zadania dziennikarskie, ważność wizy wg dat określonych we wniosku wizowym potwierdzonych przez list z redakcji lub agencji prasowej',
 				'type' => 'radio',
-				'price' => 120,
+				'price' => 0,
 				
 			),
 			
