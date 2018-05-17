@@ -18,8 +18,8 @@
 				$mail->addAddress( 'sprytne@scepter.pl' );
 			}
 			else{
-				$mail->addAddress( $formularz['Kontakt_-_email'] );
-				// $mail->addAddress( 'biuro@serwiswizowy.com' );
+				// $mail->addAddress( $formularz['Kontakt_-_email'] );
+				$mail->addAddress( 'biuro@serwiswizowy.com' );
 			}
 			$mail->AddReplyTo( $_POST['mail'], "{$_POST['imie']} {$_POST['nazwisko']}" );
 			$mail->Subject = sprintf(

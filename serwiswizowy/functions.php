@@ -1,6 +1,7 @@
 <?php
 
 define( 'DMODE', isset( $_COOKIE[ 'sprytne' ] ) );
+define( 'DEVELOP', false );
 
 // add_theme_support( 'post-thumbnails' );
 // add_theme_support( 'widgets' );

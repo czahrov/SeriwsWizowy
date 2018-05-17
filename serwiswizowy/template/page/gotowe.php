@@ -124,11 +124,9 @@
 		
 		if( DMODE ){
 			$mail->addAddress( 'sprytne@scepter.pl' );
-			
 		}
 		else{
 			$mail->addAddress( $formularz['Kontakt_-_email'] );
-			
 		}
 		
 		$mail->Subject = sprintf(
@@ -145,13 +143,16 @@ W celu realizacji zgłoszenia prosimy o uregulowanie płatności:
 %s
 
 Numer rachunku bankowego: %s,
+Dane do przelewu: Filmar sp zoo, ul. Człuchowska 74/15, 01-360 Warszawa 
 Tytuł przelewu: %s %s/%s
 
 Po zaksięgowaniu opłaty otrzymasz od nas drogą elektroniczną wniosek wizowy, który należy przeczytać i podpisać, przygotować dokumenty oraz przesłać je do nas ( w zależności od wybranej formy dostarczenia ).
 
 Jeśli masz jakiekolwiek pytania prosimy o kontakt telefoniczny lub mailowy:
-
 %s
+
+Pozdrawiamy serdecznie,
+zespół serwiswizowy.com
 
 ---
 Mail wygenerowany automatycznie na %s',

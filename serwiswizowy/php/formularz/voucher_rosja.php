@@ -31,9 +31,15 @@ $data = array(
 		'title' => 'Dane osobowe',
 		'fields' => array(
 			array(
-				'title' => 'Imiona',
+				'title' => 'Imię',
 				'hint' => '',
 				'required' => true,
+				
+			),
+			array(
+				'title' => 'Drugie imię',
+				'hint' => '',
+				// 'required' => true,
 				
 			),
 			array(
@@ -84,6 +90,24 @@ $data = array(
 	array(
 		'title' => 'Informacje o podróży',
 		'fields' => array(
+			array(
+				'title' => 'Ważność vouchera',
+				'hint' => 'Voucher turystyczny zamawiany do wizy na wskazaną liczbę dni pobytu',
+				'required' => true,
+				'field_type' => 'select',
+				'opts' => array(
+					array(
+						'title' => '14 dni',
+						
+					),
+					array(
+						'title' => '30 dni',
+						
+					),
+					
+				),
+				
+			),
 			array(
 				'title' => 'Data wjazdu do Rosji',
 				'hint' => '',
