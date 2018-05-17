@@ -22,27 +22,161 @@
 	]
 */
 
+$euro = 4.6;
+
 $data = array(
 	array(
-		'title' => 'Opłata konsularna za wydanie wizy',
+		'title' => 'Opłata konsularna za wydanie wizy jednokrotnej',
 		'name' => 'opłata konsularna',
-		'value' => 'tak',
-		'opts_name' => 'Opłata konsularna tryb',
-		'required' => true,
+		'type' => 'radio',
+		'selected' => true,
+		'opts_name' => 'rodzaj wizy',
 		'opts' => array(
 			array(
-				'title' => 'tryb normalny',
-				'value' => 'normalny',
-				'hint' => '7 - 9 dni',
+				'title' => 'turystyczna',
+				'value' => 'turystyczna, jednokrotna',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 30 dni od daty wydania' ),
+				'type' => 'radio',
 				'price' => 147,
 				'selected' => true,
 				
 			),
 			array(
-				'title' => 'tryb ekspresowy',
-				'value' => 'ekpresowy',
-				'hint' => '3 dni<br>Tylko dla wiz biznesowych oraz turystycznych',
+				'title' => 'biznesowa',
+				 'value' => 'biznesowa, jednokrotna',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 90 dni od daty wydania' ),
+				'type' => 'radio',
+				'price' => 147,
+				
+			),
+			array(
+				'title' => 'tranzytowa',
+				'value' => 'tranzytowa, jednokrotna',
+				'hint' => 'cel tranzyt - jeśli Rosja jest krajem przejazdowym, ważność 3 dni w jedną stronę drogą lotniczą, do 10 dni w jedną stronę drogą lądową',
+				'type' => 'radio',
+				'price' => 147,
+				
+			),
+			array(
+				'title' => 'dziennikarska',
+				'value' => 'dziennikarska, jednokrotna',
+				'hint' => 'dla dziennikarzy i pracowników technicznych jadących wykonywać zadania dziennikarskie, ważność wizy wg dat określonych we wniosku wizowym potwierdzonych przez list z redakcji lub agencji prasowej',
+				'type' => 'radio',
+				'price' => 147,
+				
+			),
+			array(
+				'title' => 'studencka',
+				'value' => 'studencka, jednokrotna',
+				'hint' => 'cel podjęcie studiów, stażu, kursów, ważność wizy wg dat określonych we wniosku wizowym,  do 90 dni od daty wydania z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjne',
+				'type' => 'radio',
+				'price' => 0,
+				
+			),
+			array(
+				'title' => 'humanitarna',
+				'value' => 'humanitarna, jednokrotna',
+				'hint' => 'wydawana jest osobom biorącym udział w działaniach naukowych, kulturalnych i artystycznych, w tym programach uniwersyteckich i innych programach wymiany, ważność według dat określonych na wniosku wizowym, max. 90 dni',
+				'type' => 'radio',
+				'price' => 0,
+				
+			),
+			array(
+				'title' => 'prywatna',
+				'value' => 'prywatna, jednokrotna',
+				'hint' => 'cel wizyta u rodziny lub zanajomych, sprawy prywatne, ważność według dat określonych na wniosku wizowym, max. 90 dni od daty wydania',
+				'type' => 'radio',
+				'price' => 369,
+				
+			),
+			array(
+				'title' => 'pracownicza',
+				'value' => 'pracownicza, jednokrotna',
+				'hint' => '- cel praca , ważność wg dat określonych we wniosku wizowym,<br>- do 90 dni z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjnej',
+				'type' => 'radio',
+				'price' => 300,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy jednokrotnej ekspresowej',
+		'name' => 'opłata konsularna',
+		'type' => 'radio',
+		// 'required' => true,
+		'opts_name' => 'rodzaj wizy',
+		'opts' => array(
+			array(
+				'title' => 'turystyczna',
+				'value' => 'turystyczna, jednokrotna, ekspresowa',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 30 dni od daty wydania' ),
+				'type' => 'radio',
 				'price' => 290,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'biznesowa',
+				 'value' => 'biznesowa, jednokrotna, ekspresowa',
+				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 90 dni od daty wydania' ),
+				'type' => 'radio',
+				'price' => 290,
+				
+			),
+			array(
+				'title' => 'tranzytowa',
+				'value' => 'tranzytowa, jednokrotna, ekspresowa',
+				'hint' => 'cel tranzyt - jeśli Rosja jest krajem przejazdowym, ważność 3 dni w jedną stronę drogą lotniczą, do 10 dni w jedną stronę drogą lądową',
+				'type' => 'radio',
+				'price' => 290,
+				
+			),
+			array(
+				'title' => 'dziennikarska',
+				'value' => 'dziennikarska, jednokrotna, ekspresowa',
+				'hint' => 'dla dziennikarzy i pracowników technicznych jadących wykonywać zadania dziennikarskie, ważność wizy wg dat określonych we wniosku wizowym potwierdzonych przez list z redakcji lub agencji prasowej',
+				'type' => 'radio',
+				'price' => 290,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy dwukrotnej',
+		'name' => 'opłata konsularna',
+		'type' => 'radio',
+		// 'required' => true,
+		'opts_name' => 'rodzaj wizy',
+		'opts' => array(
+			array(
+				'title' => 'prywatna',
+				'value' => 'prywatna, dwukrotna',
+				'hint' => 'cel wizyta u rodziny lub zanajomych, sprawy prywatne, ważność według dat określonych na wniosku wizowym, max. 995 dni od daty wydania',
+				'type' => 'radio',
+				'price' => 590,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy wielokrotnej',
+		'name' => 'opłata konsularna',
+		'type' => 'radio',
+		// 'required' => true,
+		'opts_name' => 'rodzaj wizy',
+		'opts' => array(
+			array(
+				'title' => 'pracownicza',
+				'value' => 'prywatna, wielokrotna',
+				'hint' => 'cel wizyta u rodziny lub zanajomych, sprawy prywatne, ważność według dat określonych na wniosku wizowym, max. 995 dni od daty wydania',
+				'type' => 'radio',
+				'price' => 898,
 				
 			),
 			
@@ -58,7 +192,7 @@ $data = array(
 			array(
 				'title' => '',
 				'value' => 'tak',
-				'price' => 115,
+				'price' => round( 25 * $euro, 2 ),
 				'selected' => true,
 				
 			),
@@ -132,180 +266,6 @@ $data = array(
 			),
 			array(
 				'title' => 'tak',
-				'price' => 0,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Wiza jednokrotna',
-		'name' => 'rodzaj wizy',
-		'opts_name' => 'wiza jednokrotna',
-		'type' => 'radio',
-		'hint' => 'Wizy jednokrotne i dwukrotne czas wyrabiania:<br>
-		Standardowy do 7 dni roboczych<br>
-		Ekspres do 3-4 dni roboczych ',
-		'selected' => true,
-		'opts' => array(
-			array(
-				'title' => 'turystyczna',
-				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 30 dni od daty wydania' ),
-				'type' => 'radio',
-				'price' => 0,
-				'selected' => true,
-				
-			),
-			array(
-				'title' => 'biznesowa',
-				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 90 dni od daty wydania' ),
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'prywatna',
-				'hint' => 'cel wizyta u rodziny lub zanajomych, sprawy prywatne, ważność według dat określonych na wniosku wizowym, max. 90 dni od daty wydania',
-				'type' => 'radio',
-				'price' => 224,
-				
-			),
-			array(
-				'title' => 'humanitarna',
-				'hint' => 'wydawana jest osobom biorącym udział w działaniach naukowych, kulturalnych i artystycznych, w tym programach uniwersyteckich i innych programach wymiany, ważność według dat określonych na wniosku wizowym, max. 90 dni',
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'pracownicza',
-				'hint' => '- cel praca , ważność wg dat określonych we wniosku wizowym,<br>- do 90 dni z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjnej',
-				'type' => 'radio',
-				'price' => 153,
-				
-			),
-			array(
-				'title' => 'tranzytowa',
-				'hint' => 'cel tranzyt - jeśli Rosja jest krajem przejazdowym, ważność 3 dni w jedną stronę drogą lotniczą, do 10 dni w jedną stronę drogą lądową',
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'studencka',
-				'hint' => 'cel podjęcie studiów, stażu, kursów, ważność wizy wg dat określonych we wniosku wizowym,  do 90 dni od daty wydania z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjne',
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'dziennikarska',
-				'hint' => 'dla dziennikarzy i pracowników technicznych jadących wykonywać zadania dziennikarskie, ważność wizy wg dat określonych we wniosku wizowym potwierdzonych przez list z redakcji lub agencji prasowej',
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Wiza dwukrotna',
-		'name' => 'rodzaj wizy',
-		'opts_name' => 'wiza dwukrotna',
-		'type' => 'radio',
-		'hint' => 'Wizy jednokrotne i dwukrotne czas wyrabiania:<br>
-		Standardowy do 7 dni roboczych<br>
-		Ekspres do 3-4 dni roboczych ',
-		'opts' => array(
-			array(
-				'title' => 'turystyczna',
-				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>voucher turystyczny</b><hr>cel zwiedzanie, turystyka, ważność według dat określonych na wniosku wizowym, max. 395 dni od daty wydania' ),
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'biznesowa',
-				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 995 dni od daty wydania' ),
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'prywatna',
-				'hint' => 'cel wizyta u rodziny lub zanajomych, sprawy prywatne, ważność według dat określonych na wniosku wizowym, max. 995 dni od daty wydania',
-				'type' => 'radio',
-				'price' => 445,
-				
-			),
-			array(
-				'title' => 'humanitarna',
-				'hint' => 'wydawana jest osobom biorącym udział w działaniach naukowych, kulturalnych i artystycznych, w tym programach uniwersyteckich i innych programach wymiany, ważność według dat określonych na wniosku wizowym, max. 995 dni',
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'tranzytowa',
-				'hint' => 'cel tranzyt - jeśli Rosja jest krajem przejazdowym, ważność 3 dni w jedną stronę drogą lotniczą, do 195 dni w jedną stronę drogą lądową',
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'studencka',
-				'hint' => 'cel podjęcie studiów, stażu, kursów, ważność wizy wg dat określonych we wniosku wizowym,  do 995 dni od daty wydania z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjne',
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Wiza wielokrotna',
-		'name' => 'rodzaj wizy',
-		'opts_name' => 'wiza wielokrotna',
-		'type' => 'radio',
-		'hint' => 'Wizy wielokrotne i dwukrotne czas wyrabiania:<br>
-		Standardowy do 7 dni roboczych<br>
-		Ekspres do 3-4 dni roboczych ',
-		'opts' => array(
-			array(
-				'title' => 'biznesowa',
-				'hint' => nl2br( 'Dokument niezbędny do uzyskania wizy: <b>zaproszenie biznesowe</b><hr>cel współpraca z rosyjskim partnerem, udział w targach, obsługa serwisowa, udział w spotakniach służbowych, ważność zgodnie z zaproszeniem, max. 90 dni od daty wydania' ),
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'humanitarna',
-				'hint' => 'wydawana jest osobom biorącym udział w działaniach naukowych, kulturalnych i artystycznych, w tym programach uniwersyteckich i innych programach wymiany, ważność według dat określonych na wniosku wizowym, max. 90 dni',
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'pracownicza',
-				'hint' => '- cel praca , ważność wg dat określonych we wniosku wizowym,<br>- do 90 dni z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjnej',
-				'type' => 'radio',
-				'price' => 753,
-				
-			),
-			array(
-				'title' => 'studencka',
-				'hint' => 'cel podjęcie studiów, stażu, kursów, ważność wizy wg dat określonych we wniosku wizowym,  do 90 dni od daty wydania z późniejszym przedłużeniem przez organy Federalnej Służby Migracyjne',
-				'type' => 'radio',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'dziennikarska',
-				'hint' => 'dla dziennikarzy i pracowników technicznych jadących wykonywać zadania dziennikarskie, ważność wizy wg dat określonych we wniosku wizowym potwierdzonych przez list z redakcji lub agencji prasowej',
-				'type' => 'radio',
 				'price' => 0,
 				
 			),

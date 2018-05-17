@@ -32,7 +32,6 @@ Ważny do: %s
 Wiza - wybrane opcje
 -----------------------------
 Rodzaj: %s
-Krotność: %s
 Pośrednictwo wizowe: tryb %s
 Opłata serwisowa: %s
 Opłata konsularna: tryb %s
@@ -77,24 +76,25 @@ Mail wygenerowany automatycznie na stronie %s',
 			$formularz['Kontakt_-_telefon'],
 			$formularz['Kontakt_-_email'],
 			$formularz['Status_zatrudnienia'],
+			
 			$formularz['Nazwa_zakładu_pracy'],
 			$formularz['Adres_zakładu_pracy'],
 			$formularz['Telefon_do_zakładu_pracy'],
 			$formularz['FAX_Zakładu_pracy'],
 			$formularz['E-mail_zakładu_pracy'],
+			
 			$formularz['Miejsce_wydania_paszportu'],
 			$formularz['Numer_paszportu'],
 			$formularz['Data_wydania_paszportu'],
 			$formularz['Data_ważności_paszportu'],
-			strpos( $formularz['rodzaj_wizy'], 'jedno')?( $formularz['wiza_jednokrotna'] ):(
-				strpos( $formularz['rodzaj_wizy'], 'dwu')?( $formularz['wiza_dwukrotna'] ):(  $formularz['wiza_wielokrotna']  )
-			),
+			
 			$formularz['rodzaj_wizy'],
 			$formularz['pośrednictwo_tryb'],
 			$formularz['Opłata_serwisowa'],
 			$formularz['Opłata_konsularna_tryb'],
 			$formularz['Polisa_ubezpieczeniowa-opts'],
 			empty( $formularz['voucher'] )?( 'brak' ):( $formularz['voucher'] ),
+			
 			$formularz['Data_wjazdu'],
 			$formularz['Data_wyjazdu'],
 			$formularz['Trasa_podróży'],

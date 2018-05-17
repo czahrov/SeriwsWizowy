@@ -26,11 +26,10 @@ $xml->record->addChild( "adres_kontaktowy_taki_sam_jak_zameldowania", empty( $fo
 $xml->record->addChild( "adres_kontaktowy", empty( $formularz['Kontakt_-_korenspondencja'] )?( '' ):( $formularz['Kontakt_-_korenspondencja'] ) );
 $xml->record->addChild( "status_zatrudnienia_czy_pracuje", $formularz['Status_zatrudnienia'] == 'Pracuje'?( 'tak' ):( 'nie' ) );
 $xml->record->addChild( "stan_cywilny", '---' );
-$xml->record->addChild( "kategoria_wizy", '---' );
+$xml->record->addChild( "kategoria_wizy", explode( ", ", $formularz['rodzaj_wizy'] )[0] );
 $xml->record->addChild( "ilość_wjazdów", $formularz['Ilość_wjazdów'] );
 $xml->record->addChild( "data_przyjazdu", $formularz['Data_wjazdu'] );
 $xml->record->addChild( "data_powrotu", $formularz['Data_wyjazdu'] );
 $xml->record->addChild( "cel_wizyty", '---' );
 $xml->record->addChild( "planowane_miejsca_odwiedzin", $formularz['Trasa_podróży'] );
 
-?>
