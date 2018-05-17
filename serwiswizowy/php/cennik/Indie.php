@@ -42,7 +42,7 @@ $data = array(
 				- kursy jogi<br>
 				Wiza ważna 34 dni od momentu wydania (czas na przekroczenie granicy z Indiami)<br>
 				- 30 dni od momentu wjazdu do Indii (czas na pobyt w Indiach)',
-				'price' => 225,
+				'price' => 192,
 				'selected' => true,
 				
 			),
@@ -57,7 +57,13 @@ $data = array(
 				- udział w szkoleniu<br>
 				Wiza ważna 34 dni od momentu wydania (czas na przekroczenie granicy z Indiami)<br>
 				- 30 dni od momentu wjazdu do Indii (czas na pobyt w Indiach)',
-				'price' => 225,
+				'price' => 675,
+				
+			),
+			array(
+				'title' => 'studencka',
+				'hint' => '',
+				'price' => 353,
 				
 			),
 			array(
@@ -79,7 +85,7 @@ $data = array(
 				'title' => 'tranzytowa dla marynarzy',
 				'hint' => '- wydawana marynarzom, którzy przesiadają się na statek<br>
 				Ważność wiz: - wg dat na piśmie delegującym',
-				'price' => 170,
+				'price' => 92,
 				
 			),
 			array(
@@ -250,39 +256,6 @@ $data = array(
 			array(
 				'title' => 'tak',
 				'price' => 0,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Transport dokumentów',
-		'name' => 'dokumenty kierunek',
-		'opts_name' => 'dokumenty-transport',
-		'hint' => '',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'Jedna strona',
-				'hint' => 'Odesłanie gotowej wizy wraz z dokumentami',
-				'price' => 26,
-				'type' => 'radio',
-				
-			),
-			array(
-				'title' => 'Obie strony',
-				'hint' => 'Kurier po dokumenty oraz odesłanie gotowej wizy z dokumentami',
-				'price' => 47,
-				'type' => 'radio',
-				
-			),
-			array(
-				'title' => 'List polecony',
-				'hint' => 'List polecony z potwierdzeniem odbioru',
-				'price' => 22,
-				'type' => 'radio',
-				'selected' => true,
 				
 			),
 			

@@ -243,6 +243,40 @@ function genWizaOpts(){
 		
 	}
 	
+	$data[] = array(
+		'title' => 'Transport dokumentów',
+		'name' => 'dokumenty kierunek',
+		'opts_name' => 'dokumenty-transport',
+		'hint' => '',
+		'required' => true,
+		'opts' => array(
+			array(
+				'title' => 'Kurier - jedna strona',
+				'hint' => 'Odesłanie gotowej wizy wraz z dokumentami',
+				'price' => 26,
+				'type' => 'radio',
+				
+			),
+			array(
+				'title' => 'Kurier - Obie strony',
+				'hint' => 'Kurier po dokumenty oraz odesłanie gotowej wizy z dokumentami',
+				'price' => 47,
+				'type' => 'radio',
+				
+			),
+			array(
+				'title' => 'List polecony',
+				'hint' => 'List polecony z potwierdzeniem odbioru',
+				'price' => 22,
+				'type' => 'radio',
+				'selected' => true,
+				
+			),
+			
+		),
+		
+	);
+	
 	// OPCJA
 	if( !empty( $data ) ) foreach( $data as $seg_num => $segment ){
 		$seg_data = array_merge(

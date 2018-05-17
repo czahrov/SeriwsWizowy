@@ -94,39 +94,6 @@ $data = array(
 		),
 		
 	),
-	array(
-		'title' => 'Transport dokumentów',
-		'name' => 'dokumenty kierunek',
-		'opts_name' => 'dokumenty-transport',
-		'hint' => '',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'Jedna strona',
-				'hint' => 'Odesłanie gotowej wizy wraz z dokumentami',
-				'price' => 26,
-				'type' => 'radio',
-				
-			),
-			array(
-				'title' => 'Obie strony',
-				'hint' => 'Kurier po dokumenty oraz odesłanie gotowej wizy z dokumentami',
-				'price' => 47,
-				'type' => 'radio',
-				
-			),
-			array(
-				'title' => 'List polecony',
-				'hint' => 'List polecony z potwierdzeniem odbioru',
-				'price' => 22,
-				'type' => 'radio',
-				'selected' => true,
-				
-			),
-			
-		),
-		
-	),
 	
 );
 

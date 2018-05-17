@@ -22,7 +22,7 @@
 	]
 */
 
-$euro = 4.2027475;
+$euro = 4.6;
 
 $data = array(
 	array(
@@ -40,7 +40,7 @@ $data = array(
 				- biznes, wizyty na targach, rozmowy handlowe.<br>
 				Ważność wiz: - wg. dat podanych na wniosku,<br>
 				- do 30 dni pobytu.',
-				'price' => 110,
+				'price' => 25 * $euro,
 				// 'selected' => true,
 				
 			),
@@ -52,7 +52,7 @@ $data = array(
 					Ważność wiz:
 					- wg. dat podanych na wniosku,
 					- do 30 dni pobytu." ),
-				'price' => 110,
+				'price' => 25 * $euro,
 				'selected' => true,
 				
 			),
@@ -65,7 +65,7 @@ $data = array(
 					- wg. dat podanych na wniosku,
 					
 					- do 14 dni pobytu." ),
-				'price' => 110,
+				'price' => 25 * $euro,
 				// 'selected' => true,
 				
 			),
@@ -76,7 +76,7 @@ $data = array(
 					
 					Ważność wiz:
 					- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu." ),
-				'price' => 110,
+				'price' => 25 * $euro,
 				// 'selected' => true,
 				
 			),
@@ -87,7 +87,7 @@ $data = array(
 					
 					Ważność wiz:
 					- 3 dni" ),
-				'price' => 110,
+				'price' => 25 * $euro,
 				// 'selected' => true,
 				
 			),
@@ -98,7 +98,88 @@ $data = array(
 					
 					Ważność wiz:
 					- 5 dni" ),
-				'price' => 110,
+				'price' => 25 * $euro,
+				// 'selected' => true,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy jednokrotnej ekspresowej',
+		'name' => 'krotność wizy',
+		'value' => 'jednokrotna (ekspres)',
+		'type' => 'radio',
+		'opts_name' => 'rodzaj wizy',
+		// 'required' => true,
+		'selected' => true,
+		'opts' => array(
+			array(
+				'title' => 'biznesowa 30-dniowa',
+				'hint' => 'Opis:<br>
+				- biznes, wizyty na targach, rozmowy handlowe.<br>
+				Ważność wiz: - wg. dat podanych na wniosku,<br>
+				- do 30 dni pobytu.',
+				'price' => 50 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'prywatna 30-dniowa',
+					'hint' => nl2br( "Opis:
+					- wyjazdy prywatne, odwiedziny; krewnych / znajomych, grobów bliskich.
+					
+					Ważność wiz:
+					- wg. dat podanych na wniosku,
+					- do 30 dni pobytu." ),
+				'price' => 50 * $euro,
+				'selected' => true,
+				
+			),
+			array(
+				'title' => 'turystyczna 14-dniowa',
+					'hint' => nl2br( "Opis:
+					- turystyka.
+					
+					Ważność wiz:
+					- wg. dat podanych na wniosku,
+					
+					- do 14 dni pobytu." ),
+				'price' => 50 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'tranzytowa 2-dniowa',
+					'hint' => nl2br( "Opis:
+					- tranzyt.
+					
+					Ważność wiz:
+					- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu." ),
+				'price' => 50 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'przepustka do puszczy Białowieskiej 3-dniowa',
+					'hint' => nl2br( "Opis:
+					- wizyta w Puszczy Białowieskiej
+					
+					Ważność wiz:
+					- 3 dni" ),
+				'price' => 50 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'przepustka do Grodna i Kanał Augustowski 5-dniowa',
+					'hint' => nl2br( "Opis:
+					- wizyta w Grodnie i przeprawa Kanałem Augustowskim
+					
+					Ważność wiz:
+					- 5 dni" ),
+				'price' => 50 * $euro,
 				// 'selected' => true,
 				
 			),
@@ -123,7 +204,7 @@ $data = array(
 				Ważność wiz:
 				- wg. dat podanych na wniosku,
 				- do 30 dni pobytu(ŁACZNIE DWA WJAZDY)" ),
-				'price' => 150,
+				'price' => 35 * $euro,
 				// 'selected' => true,
 				
 			),
@@ -135,7 +216,7 @@ $data = array(
 				Ważność wiz:
 				- wg. dat podanych na wniosku,
 				- do 30 dni pobytu." ),
-				'price' => 150,
+				'price' => 35 * $euro,
 				// 'selected' => true,
 				
 			),
@@ -147,7 +228,56 @@ $data = array(
 				Ważność wiz: 
 				- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu,
 				- 2-krotna" ),
-				'price' => 150,
+				'price' => 35 * $euro,
+				// 'selected' => true,
+				
+			),
+			
+		),
+		
+	),
+	array(
+		'title' => 'Opłata konsularna za wydanie wizy dwukrotnej ekspresowej',
+		'name' => 'krotność wizy',
+		'value' => 'dwukrotna (ekspres)',
+		'type' => 'radio',
+		'opts_name' => 'rodzaj wizy',
+		// 'required' => true,
+		// 'selected' => true,
+		'opts' => array(
+			array(
+				'title' => 'biznesowa 30-dniowa',
+				'hint' => nl2br( "Opis:
+				- biznes, wizyty na targach, rozmowy handlowe.
+
+				Ważność wiz:
+				- wg. dat podanych na wniosku,
+				- do 30 dni pobytu(ŁACZNIE DWA WJAZDY)" ),
+				'price' => 60 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'prywatna 30-dniowa',
+				'hint' => nl2br( "Opis:
+				- wyjazdy prywatne, odwiedziny: krewnych / znajomych, grobów bliskich.
+
+				Ważność wiz:
+				- wg. dat podanych na wniosku,
+				- do 30 dni pobytu." ),
+				'price' => 60 * $euro,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'tranzytowa 2-dniowa',
+				'hint' => nl2br( "Opis: 
+				- tranzyt.
+
+				Ważność wiz: 
+				- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu,
+				- 2-krotna" ),
+				'price' => 60 * $euro,
 				// 'selected' => true,
 				
 			),
@@ -262,39 +392,6 @@ $data = array(
 				'title' => 'Polisa do 30 dni',
 				'value' => '30',
 				'price' => 0,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Transport dokumentów',
-		'name' => 'dokumenty kierunek',
-		'opts_name' => 'dokumenty-transport',
-		'hint' => '',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'Jedna strona',
-				'hint' => 'Odesłanie gotowej wizy wraz z dokumentami',
-				'price' => 26,
-				'type' => 'radio',
-				
-			),
-			array(
-				'title' => 'Obie strony',
-				'hint' => 'Kurier po dokumenty oraz odesłanie gotowej wizy z dokumentami',
-				'price' => 47,
-				'type' => 'radio',
-				
-			),
-			array(
-				'title' => 'List polecony',
-				'hint' => 'List polecony z potwierdzeniem odbioru',
-				'price' => 22,
-				'type' => 'radio',
-				'selected' => true,
 				
 			),
 			

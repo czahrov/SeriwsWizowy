@@ -35,11 +35,18 @@ $data = array(
 		'opts' => array(
 			array(
 				'title' => 'turystyczna jednokrotna',
+				'hint' => "",
+				'price' => 353,
+				// 'selected' => true,
+				
+			),
+			array(
+				'title' => 'turystyczna jednokrotna',
 				'hint' => "dokumenty niezbędne do ubiegania się o wizę:<br>
 				- 2 wypełnione kopie formularzy z oryginalnymi podpisami, 4 fotografie paszportowe, paszport ważny przynajmniej 3 miesiące od daty planowanego powrotu,<br>
 				- czas na jaki wiza jest wydawana: wiza jest ważna przez 3 miesiące, w tym na terytorium Pakistanu można być maksymalnie 30 dni,<br>
 				- Wizy turystyczne obecnie wydawane są bardzo niechętnie lub wręcz nie są wydawane!",
-				'price' => 168,
+				'price' => 192,
 				'selected' => true,
 				
 			),
@@ -59,7 +66,7 @@ Wizy turystyczne obecnie wydawane są bardzo niechętnie lub wręcz nie są wyda
 				- 2 wypełnione kopie formularzy z oryginalnymi podpisami, 4 fotografie paszportowe, paszport ważny przynajmniej 3 miesiące od daty planowanego powrotu, wymagana jest również wiza (wizy) kraju docelowego,<br>
 				- czas na jaki wiza jest wydawana: wiza jest ważna przez 3 miesiące, w tym na terytorium Pakistanu można być maksymalnie 15 dni,<br>
 				czas oczekiwania na wizę: około 3 tygodnie",
-				'price' => round( $usd * 15, 2 ),
+				'price' => 92,
 				
 			),
 			array(
@@ -78,7 +85,7 @@ Wizy turystyczne obecnie wydawane są bardzo niechętnie lub wręcz nie są wyda
 				- 2 wypełnione kopie formularzy z oryginalnymi podpisami, 4 fotografie paszportowe, paszport ważny przynajmniej 3 miesiące od daty planowanego powrotu, list polecający z firmy do której się jedzie, list delegujący z firmy polskiej, adres oraz nr telefonu osoby delegowanej, rezerwacja biletu lotniczego<br>
 				- czas na jaki wiza jest wydawana: 30 dni z możliwością przedłużenia do 60 dni (na jej wykorzystanie mamy 3 miesiące),<br>
 				czas oczekiwania na wizę: około 3 tygodnie",
-				'price' => 252,
+				'price' => 675,
 				
 			),
 			array(
@@ -160,39 +167,6 @@ Wizy turystyczne obecnie wydawane są bardzo niechętnie lub wręcz nie są wyda
 		),
 		
 	),
-	array(
-		'title' => 'Transport dokumentów',
-		'name' => 'dokumenty kierunek',
-		'opts_name' => 'dokumenty-transport',
-		'hint' => '',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'Jedna strona',
-				'hint' => 'Odesłanie gotowej wizy wraz z dokumentami',
-				'price' => 26,
-				'type' => 'radio',
-				
-			),
-			array(
-				'title' => 'Obie strony',
-				'hint' => 'Kurier po dokumenty oraz odesłanie gotowej wizy z dokumentami',
-				'price' => 47,
-				'type' => 'radio',
-				
-			),
-			array(
-				'title' => 'List polecony',
-				'hint' => 'List polecony z potwierdzeniem odbioru',
-				'price' => 22,
-				'type' => 'radio',
-				'selected' => true,
-				
-			),
-			
-		),
 		
-	),
-	
 );
 
