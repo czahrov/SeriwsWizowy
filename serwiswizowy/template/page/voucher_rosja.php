@@ -28,7 +28,7 @@
 			}
 			else{
 				// $mail->addAddress( $_POST['Adres_e-mail'] );
-				$mail->addAddress( 'biuro@serwiswizowy.com' );
+				$mail->addAddress( 'serwiswizowy@serwiswizowy.com' );
 				
 			}
 			$mail->Subject = sprintf(

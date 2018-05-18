@@ -209,14 +209,14 @@ $data = array(
 			array(
 				'title' => 'tryb normalny',
 				'value' => 'normalny',
-				'price' => 120,
+				'price' => 90,
 				'selected' => true,
 				
 			),
 			array(
 				'title' => 'tryb ekspresowy',
 				'value' => 'ekspresowy',
-				'price' => 160,
+				'price' => 140,
 				
 			),
 			
@@ -245,27 +245,6 @@ $data = array(
 			array(
 				'title' => 'zaproszenie biznesowe',
 				'hint' => 'Cena zaproszenie ustalana jest indywidualnie w zależności od potrzeb i wymagań klienta.<hr>Dokument niezbędny do uzyskania <b>wizy biznesowej</b>',
-				'price' => 0,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Polisa ubezpieczeniowa',
-		// 'opts_name' => 'Polisa na dni',
-		'hint' => 'O kosztach polisy ubezpieczeniowej zostaną Państwo poinformowani indywidualnie',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'nie',
-				'price' => 0,
-				'selected' => true
-				
-			),
-			array(
-				'title' => 'tak',
 				'price' => 0,
 				
 			),

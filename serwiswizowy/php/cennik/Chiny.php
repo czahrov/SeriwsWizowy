@@ -235,28 +235,6 @@ $data = array(
 		),
 		
 	),
-	array(
-		'title' => 'Polisa ubezpieczeniowa',
-		// 'value' => 'tak',
-		// 'opts_name' => 'Polisa na dni',
-		'hint' => 'O kosztach polisy ubezpieczeniowej zostaną Państwo poinformowani indywidualnie',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'nie',
-				'price' => 0,
-				'selected' => true,
-				
-			),
-			array(
-				'title' => 'tak',
-				'price' => 0,
-				
-			),
-			
-		),
 		
-	),
-	
 );
 

@@ -74,34 +74,6 @@ $data = array(
 		),
 		
 	),
-	array(
-		'title' => 'Polisa ubezpieczeniowa',
-		'value' => 'tak',
-		'opts_name' => 'Polisa na dni',
-		'hint' => 'O kosztach polisy ubezpieczeniowej zostaną Państwo poinformowani indywidualnie',
-		'opts' => array(
-			array(
-				'title' => 'Polisa do 7 dni',
-				'value' => '7',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'Polisa do 14 dni',
-				'value' => '14',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'Polisa do 30 dni',
-				'value' => '30',
-				'price' => 0,
-				
-			),
-			
-		),
-		
-	),
-		
+	
 );
 

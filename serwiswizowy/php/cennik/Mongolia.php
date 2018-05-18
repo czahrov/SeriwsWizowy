@@ -39,41 +39,6 @@ $data = array(
 				'selected' => true,
 				
 			),
-			array(
-				'title' => 'entry dwukrotna',
-				'hint' => '',
-				'price' => 70 * $euro,
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'transit jednokrotna',
-				'hint' => '',
-				'price' => 40 * $euro,
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'transit dwukrotna',
-				'hint' => '',
-				'price' => 50 * $euro,
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'multiple do 6 m-cy',
-				'hint' => '',
-				'price' => 100 * $euro,
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'multiple od 6 m-cy do 1 roku',
-				'hint' => '',
-				'price' => 150 * $euro,
-				// 'selected' => true,
-				
-			),
 			
 		),
 		
@@ -112,28 +77,6 @@ $data = array(
 		),
 		
 	),
-	array(
-		'title' => 'Polisa ubezpieczeniowa',
-		// 'value' => 'tak',
-		// 'opts_name' => 'Polisa na dni',
-		'hint' => 'O kosztach polisy ubezpieczeniowej zostaną Państwo poinformowani indywidualnie',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'nie',
-				'price' => 0,
-				'selected' => true,
-				
-			),
-			array(
-				'title' => 'tak',
-				'price' => 0,
-				
-			),
-			
-		),
-		
-	),
-		
+	
 );
 

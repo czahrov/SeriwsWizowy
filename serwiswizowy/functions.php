@@ -244,6 +244,35 @@ function genWizaOpts(){
 	}
 	
 	$data[] = array(
+		'title' => 'Ubezpieczenia turystyczne Bezpieczne Podróże Sigal Iduna TU',
+		'name' => 'Polisa ubezpieczeniowa',
+		'value' => 'tak',
+		'hint' => 'O kosztach polisy ubezpieczeniowej zostaną Państwo poinformowani indywidualnie',
+		'opts_name' => 'Polisa na dni',
+		'opts' => array(
+			array(
+				'title' => 'Polisa do 7 dni',
+				'value' => '7',
+				'price' => 0,
+				
+			),
+			array(
+				'title' => 'Polisa do 14 dni',
+				'value' => '14',
+				'price' => 0,
+				
+			),
+			array(
+				'title' => 'Polisa do 30 dni',
+				'value' => '30',
+				'price' => 0,
+				
+			),
+		)
+	
+	);
+	
+	$data[] = array(
 		'title' => 'Transport dokumentów',
 		'name' => 'dokumenty kierunek',
 		'opts_name' => 'dokumenty-transport',

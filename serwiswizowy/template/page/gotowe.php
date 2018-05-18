@@ -32,7 +32,7 @@
 		}
 		else{
 			// $mail->addAddress( $formularz['Kontakt_-_email'] );
-			$mail->addAddress( 'biuro@serwiswizowy.com' );	
+			$mail->addAddress( 'serwiswizowy@serwiswizowy.com' );	
 		}
 		
 		$mail->Subject = sprintf(
@@ -240,8 +240,8 @@ Mail wygenerowany automatycznie na %s',
 							</a>
 						</div>
 						<div class='cell'>
-							<a href='mailto:biuro@serwiswizowy.com'>
-								biuro@serwiswizowy.com
+							<a href='mailto:serwiswizowy@serwiswizowy.com'>
+								serwiswizowy@serwiswizowy.com
 							</a>
 						</div>
 						

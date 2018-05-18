@@ -24,25 +24,6 @@
 
 $data = array(
 	array(
-		'title' => 'Promesa wizowa',
-		'value' => 'tak',
-		'opts_name' => 'Promesa tryb',
-		// 'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'tryb normalny',
-				'value' => 'normalny',
-				'hint' => '',
-				'price' => 45,
-				'type' => 'checkbox',
-				// 'selected' => true,
-				
-			),
-			
-		),
-		
-	),
-	array(
 		'title' => 'Pośrednictwo wizowe',
 		'value' => 'tak',
 		'opts_name' => 'pośrednictwo tryb',
@@ -227,28 +208,6 @@ $data = array(
 		),
 		
 	),
-	array(
-		'title' => 'Polisa ubezpieczeniowa',
-		// 'value' => 'tak',
-		// 'opts_name' => 'Polisa na dni',
-		'hint' => 'O kosztach polisy ubezpieczeniowej zostaną Państwo poinformowani indywidualnie',
-		'required' => true,
-		'opts' => array(
-			array(
-				'title' => 'nie',
-				'price' => 0,
-				'selected' => true,
-				
-			),
-			array(
-				'title' => 'tak',
-				'price' => 0,
-				
-			),
-			
-		),
-		
-	),
-		
+	
 );
 

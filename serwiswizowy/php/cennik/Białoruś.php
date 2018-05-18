@@ -286,68 +286,6 @@ $data = array(
 		
 	),
 	array(
-		'title' => 'Opłata konsularna za wydanie wizy wielokrotnej',
-		'name' => 'krotność wizy',
-		'value' => 'wielokrotna',
-		'type' => 'radio',
-		'opts_name' => 'rodzaj wizy',
-		// 'required' => true,
-		// 'selected' => true,
-		'opts' => array(
-			array(
-				'title' => 'biznesowa 90-dniowa',
-				'hint' => nl2br( "Opis:
-				- biznes, wizyty na targach, rozmowy handlowe.
-
-				Ważność wiz:
-				- wg. dat podanych na wniosku,
-				- do 90 dni pobytu(ŁACZNIE Wszystkie WJAZDY)" ),
-				'price' => 260,
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'biznesowa 365-dniowa',
-				'hint' => nl2br( "Opis:
-				- biznes, wizyty na targach, rozmowy handlowe.
-
-				Ważność wiz:
-				- wg. dat podanych na wniosku,max 365 dni" ),
-				'price' => 260,
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'tranzytowa 2-dniowa',
-				'hint' => nl2br( "Opis: 
-				- tranzyt.
-
-				Ważność wiz: 
-				- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu,
-				- wielokrotna,
-				- każdy pobyt maks. 2 dni." ),
-				'price' => 260,
-				// 'selected' => true,
-				
-			),
-			array(
-				'title' => 'tranzytowa dla kierowców 2-dniowa',
-				'hint' => nl2br( "Opis: 
-				- tranzyt dla kierowców.
-
-				Ważność wiz: 
-				- wg dat ważności wizy rosyjskiej plus 2 dni przed rozpoczęciem wizy do Rosji i 2 dni po jej zakończeniu,
-				- wielokrotna,
-				- każdy pobyt maks. 2 dni." ),
-				'price' => 260,
-				// 'selected' => true,
-				
-			),
-			
-		),
-		
-	),
-	array(
 		'title' => 'Pośrednictwo wizowe',
 		'value' => 'tak',
 		'opts_name' => 'pośrednictwo tryb',
@@ -364,34 +302,6 @@ $data = array(
 				'title' => 'tryb ekspresowy',
 				'value' => 'ekspresowy',
 				'price' => 140,
-				
-			),
-			
-		),
-		
-	),
-	array(
-		'title' => 'Polisa ubezpieczeniowa',
-		'value' => 'tak',
-		'hint' => 'O kosztach polisy ubezpieczeniowej zostaną Państwo poinformowani indywidualnie',
-		'opts_name' => 'Polisa na dni',
-		'opts' => array(
-			array(
-				'title' => 'Polisa do 7 dni',
-				'value' => '7',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'Polisa do 14 dni',
-				'value' => '14',
-				'price' => 0,
-				
-			),
-			array(
-				'title' => 'Polisa do 30 dni',
-				'value' => '30',
-				'price' => 0,
 				
 			),
 			
